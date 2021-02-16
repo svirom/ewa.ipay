@@ -1,0 +1,38 @@
+.about-mission {
+  padding-top: 1.75rem;
+  padding-bottom: 0.75rem;
+  background-color: #C0C5CE;
+}
+
+.mission-card__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.5rem;
+  width: 6.125rem;
+  height: 6.125rem;
+}
+
+.mission-card__img img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .mission-card {
+    text-align: center;
+  }
+  .mission-card__img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 5rem;
+    height: 5rem;
+  }
+}
+/*# sourceMappingURL=about-mission.css.map */

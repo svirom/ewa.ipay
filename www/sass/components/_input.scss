@@ -1,0 +1,94 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the input component.
+// -----------------------------------------------------------------------------
+
+// .help-block {
+//   display: none;
+// }
+
+// .form-group {
+//   position: relative;
+
+//   &.has-success {
+//     .form-input {
+//       border-color: $middle-grey;
+
+//       &.form-control {
+//         &:focus {
+//           border-color: $btn-green;
+//           box-shadow: 0 0 0 0.2rem $light-green;
+//         }
+//       }
+//     }
+
+//     .form-label {
+//       top: 0.45rem;
+//       font-size: 0.77777rem;
+//       color: $main-blue;
+//     }
+//   }
+
+//   &.has-error {
+//     margin-bottom: 2.375rem;
+
+//     .form-input {
+//       border-color: $pink;
+//       box-shadow: 0 0 0 0.2rem $error-box-shadow;
+
+//       &.form-control {
+//         &:focus {
+//           border-color: $pink;
+//           box-shadow: 0 0 0 0.2rem $error-box-shadow;
+//         }
+//       }
+//     }
+
+//     .help-block {
+//       display: block;
+//       position: absolute;
+//       padding-top: 5px;
+//       padding-left: 4px;
+//       font-family: $text-font;
+//       font-size: 0.875rem;
+//       color: $btn-red;
+//       text-align: left;
+//       line-height: 1.2;
+//     }
+//   }
+// }
+
+// .form-control {
+//   color: $heading-color;
+// }
+
+// .form-input {
+//   position: relative;
+//   padding: 2.026rem 2.5rem 1.1rem 1.0775rem;
+//   border: 3px solid $middle-grey;
+//   border-radius: $border-radius;
+//   color: $heading-color;
+//   @include font(1.125rem, 400, 1.667);
+//   @include placeholder {
+//     color: $middle-grey;
+//     font-weight: 400;
+//     opacity: 0;
+//   }
+//   @include transition(all, 0.3s);
+//   background-repeat: no-repeat;
+//   background-position: right 1rem center;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   white-space: nowrap;
+
+//   &.form-control {
+//     &:focus {
+//       border-color: $main-blue;
+//       box-shadow: 0 0 0 0.2rem $light-grey;
+//     }
+//   }
+
+//   &.disabled, &:disabled {
+//     border-color: $light-grey;
+//     background-color: $light-grey;
+//   }
+// }

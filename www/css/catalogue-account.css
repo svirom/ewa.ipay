@@ -1,0 +1,146 @@
+.catalogue-account {
+  position: relative;
+  border-right: 1px solid #F0F5FA;
+}
+
+.catalogue-account li {
+  margin-bottom: 5px;
+}
+
+.catalogue-account__item {
+  display: block;
+  position: relative;
+  padding: 0.937rem 1.5rem 0.938rem 4.25rem;
+  font-size: 1.125rem;
+  color: #172A3A;
+  line-height: 1.1667;
+  border-radius: 0.5rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.catalogue-account__item:hover {
+  text-decoration: none;
+  background-color: #F0F5FA;
+}
+
+.catalogue-account__item:active, .catalogue-account__item.active {
+  color: #F0F5FA;
+  text-decoration: none;
+  background-color: #E84F35;
+}
+
+.catalogue-account__item:active span:not(.badge), .catalogue-account__item.active span:not(.badge) {
+  color: #F0F5FA;
+}
+
+.catalogue-account__item span {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.catalogue-account__item span:not(.badge) {
+  color: #172A3A;
+}
+
+.catalogue-account__item span.badge {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 0.75rem;
+}
+
+.catalogue-account__item span.badge ~ span {
+  padding-right: 3rem;
+}
+
+.catalogue-account__item::before {
+  position: absolute;
+  content: '';
+  left: 0.625rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-image: url("../img/dashboard-catalogue.png");
+  background-size: 120px;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.catalogue-account__item::after {
+  position: absolute;
+  content: '';
+  left: -2px;
+  top: 0;
+  width: 3.125rem;
+  height: 100%;
+  -webkit-box-shadow: 0px 3px 10px rgba(23, 42, 58, 0.1);
+          box-shadow: 0px 3px 10px rgba(23, 42, 58, 0.1);
+  border-radius: 0.5rem;
+  background-color: #fff;
+}
+
+.catalogue-account__account::before {
+  width: 24px;
+  height: 25px;
+  background-position: -72px 0;
+}
+
+.catalogue-account__account:active::before, .catalogue-account__account.active::before, .catalogue-account__account--red::before {
+  background-position: -72px -25px;
+}
+
+.catalogue-account__archive::before {
+  width: 24px;
+  height: 25px;
+  background-position: 0 0;
+}
+
+.catalogue-account__archive:active::before, .catalogue-account__archive.active::before, .catalogue-account__archive--red::before {
+  background-position: -24px 0;
+}
+
+.catalogue-account__templates::before {
+  width: 24px;
+  height: 25px;
+  background-position: -49px -49px;
+}
+
+.catalogue-account__templates:active::before, .catalogue-account__templates.active::before, .catalogue-account__templates--red::before {
+  background-position: -96px 0;
+}
+
+.catalogue-account__cards::before {
+  width: 24px;
+  height: 24px;
+  background-position: -24px -25px;
+}
+
+.catalogue-account__cards:active::before, .catalogue-account__cards.active::before, .catalogue-account__cards--red::before {
+  background-position: -48px -25px;
+}
+
+.catalogue-account__bonus::before {
+  width: 24px;
+  height: 24px;
+  background-position: -48px 0;
+}
+
+.catalogue-account__bonus:active::before, .catalogue-account__bonus.active::before, .catalogue-account__bonus--red::before {
+  background-position: 0 -25px;
+}
+
+.catalogue-account__settings::before {
+  width: 25px;
+  height: 25px;
+  background-position: 0 -49px;
+}
+
+.catalogue-account__settings:active::before, .catalogue-account__settings.active::before, .catalogue-account__settings--red::before {
+  background-position: -24px -49px;
+}
+/*# sourceMappingURL=catalogue-account.css.map */

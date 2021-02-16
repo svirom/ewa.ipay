@@ -1,0 +1,74 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+// .btn {
+//   padding: 0.625rem 2.175rem;
+//   font-size: 1.125rem; // 18px
+//   font-weight: bold;
+//   line-height: 1.667; // 21px
+//   border-radius: $border-radius;
+
+//   span {
+//     font-size: 1.125rem;
+//     font-weight: bold;
+//     line-height: 1.667;
+//   }
+// }
+
+// .btn-green {
+//   color: #fff;
+//   background-color: $btn-green;
+//   border: 3px solid $btn-green;
+
+//   span {
+//     color: #fff;
+//   }
+
+//   &:hover:not(.disabled) {
+//     color: #fff;
+//     background-color: $btn-green-hover;
+//     border-color: $btn-green-hover;
+//     box-shadow: 0px 9px 20px $btn-green-shadow;
+//   }
+// }
+
+// .btn-red {
+//   color: #fff;
+//   background-color: $btn-red;
+//   border: 3px solid $btn-red;
+
+//   span {
+//     color: #fff;
+//   }
+
+//   &:hover:not(.disabled) {
+//     color: #fff;
+//     background-color: $btn-red-hover;
+//     border-color: $btn-red-hover;
+//     box-shadow: 0px 9px 20px $btn-red-shadow;
+//   }
+// }
+
+// .btn-green, .btn-red {
+//   &:active:not(.disabled), &.active:not(.disabled) {
+//     color: #fff;
+//     background-color: $heading-color;
+//     border-color: $heading-color;
+//     outline: none;
+//   }
+
+//   &.disabled, &:disabled {
+//     color: $main-blue;
+//     background-color: $middle-grey;
+//     border-color: $middle-grey;
+//     box-shadow: none;
+
+//     &:hover {
+//       color: $main-blue;
+//       background-color: $middle-grey;
+//       border-color: $middle-grey;
+//       box-shadow: none;
+//     }
+//   }
+// }

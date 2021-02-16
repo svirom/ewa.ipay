@@ -1,0 +1,80 @@
+.bill-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #F0F5FA;
+}
+
+.bill-message__button {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .bill-message {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bill-message__content {
+    text-align: center;
+  }
+  .bill-message__button {
+    width: 100%;
+  }
+  .bill-message__button .btn {
+    display: block;
+    padding: 0.625rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+.bonus-message {
+  padding: 2.25rem 2.625rem;
+  border-radius: 0.5rem;
+  background-color: #56CCF2;
+}
+
+.bonus-message p {
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.bonus-message__left {
+  font-size: 1.125rem;
+}
+
+@media screen and (max-width: 767px) {
+  .bonus-message__left {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.bonus-message__center {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .bonus-message__center {
+    margin-bottom: 0.75rem;
+    text-align: left;
+  }
+}
+
+.bonus-message__button {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  text-align: right;
+}
+/*# sourceMappingURL=bill-message.css.map */
