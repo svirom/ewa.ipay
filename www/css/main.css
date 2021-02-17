@@ -26,7 +26,7 @@ ol, ul, li {
 }
 
 /**
- * Basic typography style for copy text
+ * Basic typography style
  */
 body {
   font-family: "Roboto", sans-serif;
@@ -34,6 +34,236 @@ body {
 }
 
 h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
+  font-size: 1.125rem;
   font-weight: 500;
+  line-height: 1.75rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #969DAC;
+}
+
+small, .small {
+  font-size: 0.875rem;
+}
+
+.extra-small {
+  font-size: 0.75rem;
+}
+
+.dark-blue {
+  color: #2D3C5A;
+}
+
+.blue {
+  color: #55A5FF;
+}
+
+.green {
+  color: #0AB48C;
+}
+
+.light-green {
+  color: #14D2A5;
+}
+
+.dark-green {
+  color: #0AA57D;
+}
+
+.grey {
+  color: #969DAC;
+}
+
+.light-grey {
+  color: #C0C5CE;
+}
+
+.red {
+  color: #FF5F5F;
+}
+
+.btn {
+  padding: 0.8125rem 3.535rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  border-radius: 0.5rem;
+  color: #ffffff;
+}
+
+.btn span {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  color: #ffffff;
+}
+
+.btn:hover {
+  color: #ffffff;
+  -webkit-box-shadow: 0px 20px 30px rgba(45, 60, 90, 0.1);
+          box-shadow: 0px 20px 30px rgba(45, 60, 90, 0.1);
+}
+
+.btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn.disabled, .btn:disabled {
+  color: #969DAC;
+  border-color: #F0F0F0;
+  background-color: #F5F5F7;
+  opacity: 1;
+}
+
+.btn.disabled:hover, .btn:disabled:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn.disabled:hover.disabled, .btn.disabled:hover:disabled, .btn:disabled:hover.disabled, .btn:disabled:hover:disabled {
+  border-color: #F0F0F0;
+  background-color: #F5F5F7;
+}
+
+.btn-blue {
+  border-color: #2D3C5A;
+  background-color: #2D3C5A;
+}
+
+.btn-blue:hover:not(.disabled) {
+  border-color: #55A5FF;
+  background-color: #55A5FF;
+}
+
+.btn-blue:active:not(.disabled), .btn-blue.active:not(.disabled), .btn-blue:focus:not(.disabled) {
+  border-color: #2D3C5A;
+  background-color: #2D3C5A;
+  outline: none;
+}
+
+.btn-green {
+  border-color: #0AB48C;
+  background-color: #0AB48C;
+}
+
+.btn-green:hover:not(.disabled) {
+  border-color: #0AA57D;
+  background-color: #0AA57D;
+}
+
+.btn-green:active:not(.disabled), .btn-green.active:not(.disabled), .btn-green:focus:not(.disabled) {
+  border-color: #0AB48C;
+  background-color: #0AB48C;
+  outline: none;
+}
+
+.form-control.form-input {
+  height: 3.25rem;
+  padding: 0 1rem;
+  border: 1px solid #E0E2E6;
+  border-radius: 0.5rem;
+  color: #2D3C5A;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 3.125rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.form-control.form-input::-webkit-input-placeholder {
+  color: #C0C5CE;
+}
+
+.form-control.form-input:-ms-input-placeholder {
+  color: #C0C5CE;
+}
+
+.form-control.form-input::-ms-input-placeholder {
+  color: #C0C5CE;
+}
+
+.form-control.form-input::placeholder {
+  color: #C0C5CE;
+}
+
+.form-control.form-input:hover::-webkit-input-placeholder {
+  color: #969DAC;
+}
+
+.form-control.form-input:hover:-ms-input-placeholder {
+  color: #969DAC;
+}
+
+.form-control.form-input:hover::-ms-input-placeholder {
+  color: #969DAC;
+}
+
+.form-control.form-input:hover::placeholder {
+  color: #969DAC;
+}
+
+.form-control.form-input:focus {
+  border-color: #C2C7D1;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.form-control.form-input.disabled, .form-control.form-input:disabled, .form-control.form-input:-moz-read-only {
+  background-color: #FCFCFC;
+}
+
+.form-control.form-input.disabled, .form-control.form-input:disabled, .form-control.form-input:read-only {
+  background-color: #FCFCFC;
+}
+
+.form-control.form-input.disabled:hover::-webkit-input-placeholder, .form-control.form-input:disabled:hover::-webkit-input-placeholder, .form-control.form-input:read-only:hover::-webkit-input-placeholder {
+  color: #C0C5CE;
+}
+
+.form-control.form-input.disabled:hover:-ms-input-placeholder, .form-control.form-input:disabled:hover:-ms-input-placeholder, .form-control.form-input:read-only:hover:-ms-input-placeholder {
+  color: #C0C5CE;
+}
+
+.form-control.form-input.disabled:hover::-ms-input-placeholder, .form-control.form-input:disabled:hover::-ms-input-placeholder, .form-control.form-input:read-only:hover::-ms-input-placeholder {
+  color: #C0C5CE;
+}
+
+.form-control.form-input.disabled:hover::-moz-placeholder, .form-control.form-input:disabled:hover::-moz-placeholder, .form-control.form-input:read-only:hover::-moz-placeholder {
+  color: #C0C5CE;
+}
+
+.form-control.form-input.disabled:hover::placeholder, .form-control.form-input:disabled:hover::placeholder, .form-control.form-input:read-only:hover::placeholder {
+  color: #C0C5CE;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group .help-block {
+  display: none;
+}
+
+.form-group.has-success .form-input {
+  border-color: #C0C5CE;
+}
+
+.form-group.has-error .form-input {
+  border-color: #FF5F5F;
+}
+
+.form-group.has-error .help-block {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #FF5F5F;
 }
 /*# sourceMappingURL=main.css.map */

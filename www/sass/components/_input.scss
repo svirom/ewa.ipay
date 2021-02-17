@@ -2,93 +2,70 @@
 // This file contains all styles related to the input component.
 // -----------------------------------------------------------------------------
 
-// .help-block {
-//   display: none;
-// }
+.form-control {
+  &.form-input {
+    height: 3.25rem;
+    padding: 0 1rem;
+    border: 1px solid #E0E2E6;
+    border-radius: 0.5rem;
+    color: $dark-blue;
+    @include font(1rem, 400, 3.125rem);
+    @include placeholder {
+      color: $light-grey;
+    }
+    @include transition(all, 0.3s);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 
-// .form-group {
-//   position: relative;
+    &:hover {
+      @include placeholder {
+        color: $grey;
+      }
+    }
 
-//   &.has-success {
-//     .form-input {
-//       border-color: $middle-grey;
+    &:focus {
+      border-color: #C2C7D1;
+      box-shadow: none;
+    }
+    
+  
+    &.disabled, &:disabled,
+    &:read-only {
+      background-color: #FCFCFC;
 
-//       &.form-control {
-//         &:focus {
-//           border-color: $btn-green;
-//           box-shadow: 0 0 0 0.2rem $light-green;
-//         }
-//       }
-//     }
+      &:hover {
+        @include placeholder {
+          color: $light-grey;
+        }
+      }
+    }
+  }
+}
 
-//     .form-label {
-//       top: 0.45rem;
-//       font-size: 0.77777rem;
-//       color: $main-blue;
-//     }
-//   }
+.form-group {
+  position: relative;
+  
+  .help-block {
+    display: none;
+  }
 
-//   &.has-error {
-//     margin-bottom: 2.375rem;
+  &.has-success {
+    .form-input {
+      border-color: $light-grey;
+    }
+  }
 
-//     .form-input {
-//       border-color: $pink;
-//       box-shadow: 0 0 0 0.2rem $error-box-shadow;
+  &.has-error {
+    .form-input {
+      border-color: $red;
+    }
 
-//       &.form-control {
-//         &:focus {
-//           border-color: $pink;
-//           box-shadow: 0 0 0 0.2rem $error-box-shadow;
-//         }
-//       }
-//     }
-
-//     .help-block {
-//       display: block;
-//       position: absolute;
-//       padding-top: 5px;
-//       padding-left: 4px;
-//       font-family: $text-font;
-//       font-size: 0.875rem;
-//       color: $btn-red;
-//       text-align: left;
-//       line-height: 1.2;
-//     }
-//   }
-// }
-
-// .form-control {
-//   color: $heading-color;
-// }
-
-// .form-input {
-//   position: relative;
-//   padding: 2.026rem 2.5rem 1.1rem 1.0775rem;
-//   border: 3px solid $middle-grey;
-//   border-radius: $border-radius;
-//   color: $heading-color;
-//   @include font(1.125rem, 400, 1.667);
-//   @include placeholder {
-//     color: $middle-grey;
-//     font-weight: 400;
-//     opacity: 0;
-//   }
-//   @include transition(all, 0.3s);
-//   background-repeat: no-repeat;
-//   background-position: right 1rem center;
-//   overflow: hidden;
-//   text-overflow: ellipsis;
-//   white-space: nowrap;
-
-//   &.form-control {
-//     &:focus {
-//       border-color: $main-blue;
-//       box-shadow: 0 0 0 0.2rem $light-grey;
-//     }
-//   }
-
-//   &.disabled, &:disabled {
-//     border-color: $light-grey;
-//     background-color: $light-grey;
-//   }
-// }
+    .help-block {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.75rem;
+      color: $red;
+    }
+  }
+}
