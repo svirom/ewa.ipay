@@ -1,0 +1,26 @@
+/*-- Image sprite-currency --*/
+	/*-- Rect icon-grey --*/
+		.icon-grey{
+			width:20px;
+			height:32px;
+			background:url('../images/sprite-currency.png') 0px 0px no-repeat;
+		}
+	/*-- Rect icon-light-grey --*/
+		.icon-light-grey{
+			width:20px;
+			height:32px;
+			background:url('../images/sprite-currency.png') -20px 0px no-repeat;
+		}
+	/*-- Rect icon-green --*/
+		.icon-green{
+			width:20px;
+			height:32px;
+			background:url('../images/sprite-currency.png') -40px 0px no-repeat;
+		}
+	/*-- Rect icon-red --*/
+		.icon-red{
+			width:20px;
+			height:32px;
+			background:url('../images/sprite-currency.png') -60px 0px no-repeat;
+		}
+/*-- Base64Rects --*/

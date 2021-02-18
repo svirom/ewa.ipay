@@ -9,7 +9,8 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <!-- plugins -->
+    <!-- libraries -->
+    <link rel="stylesheet" href="/css/coolicons.css">
 
     <!-- styles -->
     <link rel="stylesheet" href="/css/main.css">
@@ -254,12 +255,12 @@
             </code>
           </div>
           <div class="form-group has-success" style="max-width: 260px;">
-            <input type="tel" class="form-control form-input" placeholder="+ 380 (00) 000 00 00" value="+ 380 (66) 123 45 67">
+            <input type="tel" class="form-control form-input no-green" placeholder="+ 380 (00) 000 00 00" value="+ 380 (66) 123 45 67">
           </div>
           <div class="mb-4">
             <code>
               &lt;div class="form-group has-success"><br>
-              &nbsp;&lt;input type="tel" class="form-control form-input" placeholder="+ 380 (00) 000 00 00" value="+ 380 (66) 123 45 67"><br>
+              &nbsp;&lt;input type="tel" class="form-control form-input no-green" placeholder="+ 380 (00) 000 00 00" value="+ 380 (66) 123 45 67"><br>
               &lt;/div>
             </code>
           </div>
@@ -270,18 +271,18 @@
           <div class="mb-4">
             <code>
               &lt;div class="form-group has-error"><br>
-              &nbsp;&lt;input type="tel" class="form-control form-input" placeholder="+ 380 (00) 000 00 00"><br>
-              &nbsp;&lt;div class="help-block">Введите номер телефона&lt;/div><br>
+              &nbsp;&lt;input type="tel" class="form-control form-input" placeholder="+ 380 (00) 000 00 00" value="+ 380 (00) 0"><br>
+              &nbsp;&lt;div class="help-block">Неверно введен номер телефона&lt;/div><br>
               &lt;/div>
             </code>
           </div>
           <div class="form-group" style="max-width: 260px;">
-            <input type="text" class="form-control form-input" placeholder="+ 380 (00) 000 00 00" disabled>
+            <input type="text" class="form-control form-input" placeholder="+ 380 (00) 000 00 00" value="+ 380 (66) 123 45 67" disabled>
           </div>
           <div class="mb-4">
             <code>
               &lt;div class="form-group"><br>
-              &nbsp;&lt;input type="text" class="form-control form-input" placeholder="+ 380 (00) 000 00 00" disabled><br>
+              &nbsp;&lt;input type="text" class="form-control form-input" placeholder="+ 380 (00) 000 00 00" value="+ 380 (66) 123 45 67" disabled><br>
               &lt;/div>
             </code>
           </div>
@@ -289,45 +290,52 @@
         <div class="col-md-6">
           <h3 class="pl-3 pb-3 mb-0">Input currency</h3>
           <div class="form-group" style="max-width: 260px;">
-            <input type="tel" class="form-control form-input input-currency">
-            <label class="label-currency">&#8372;</label>
+            <input type="tel" class="form-control form-input input-currency" placeholder="5 - 25 000">
+            <label class="label-currency"></label>
           </div>
           <div class="mb-4">
             <code>
               &lt;div class="form-group"><br>
-              &nbsp;&lt;input type="password" class="form-control form-input" id="form-pass" name="pass" autocomplete="off" aria-required="true"><br>
-              &nbsp;&lt;label class="control-label form-label" for="form-pass">Пароль&lt;/label><br>
-              &nbsp;&lt;button type="button" class="password-button">&lt;/button><br>
+              &nbsp;&lt;input type="password" class="form-control form-input input-currency" placeholder="5 - 25 000"><br>
+              &nbsp;&lt;label class="label-currency">&lt;/label><br>
               &lt;/div>
             </code>
           </div>
           <div class="form-group has-success" style="max-width: 260px;">
-            <input type="password" class="form-control form-input" id="form-pass-success" name="pass" autocomplete="off" aria-required="true" value="New_pass">
-            <label class="control-label form-label" for="form-pass-success">Пароль</label>
-            <button type="button" class="password-button"></button>
+            <input type="tel" class="form-control form-input input-currency" value="12000">
+            <label class="label-currency"></label>
           </div>
           <div class="mb-4">
             <code>
               &lt;div class="form-group has-success"><br>
-              &nbsp;&lt;input type="password" class="form-control form-input" id="form-pass-success" name="pass" autocomplete="off" aria-required="true" value="New_pass"><br>
-              &nbsp;&lt;label class="control-label form-label" for="form-pass-success">Пароль&lt;/label><br>
-              &nbsp;&lt;button type="button" class="password-button">&lt;/button><br>
+              &nbsp;&lt;input type="tel" class="form-control form-input input-currency" value="12000"><br>
+              &nbsp;&lt;label class="label-currency">&lt;/label><br>
               &lt;/div>
             </code>
           </div>
-          <div class="form-group required has-error" style="max-width: 260px;">
-            <input type="password" class="form-control form-input" id="form-pass-error" name="pass" autocomplete="off" aria-required="true" value="PaSsWoRd">
-            <label class="control-label form-label" for="form-pass-error">Пароль</label>
-            <button type="button" class="password-button"></button>
-            <div class="help-block">Неверный пароль</div>
+          <div class="form-group has-error" style="max-width: 260px;">
+            <input type="tel" class="form-control form-input input-currency" value="5">
+            <label class="label-currency"></label>
+            <div class="help-block">Минимальная сумма 10 грн</div>
           </div>
           <div class="mb-4">
             <code>
               &lt;div class="form-group has-error"><br>
-              &nbsp;&lt;input type="password" class="form-control form-input" id="form-pass-error" name="pass" autocomplete="off" aria-required="true" value="PaSsWoRd"><br>
-              &nbsp;&lt;label class="control-label form-label" for="form-pass-error">Пароль&lt;/label><br>
-              &nbsp;&lt;button type="button" class="password-button">&lt;/button><br>
-              &nbsp;&lt;div class="help-block">Неверный пароль&lt;/div><br>
+              &nbsp;&lt;input type="tel" class="form-control form-input input-currency" value="5"><br>
+              &nbsp;&lt;label class="label-currency">&lt;/label><br>
+              &nbsp;&lt;div class="help-block">Минимальная сумма 10 грн&lt;/div><br>
+              &lt;/div>
+            </code>
+          </div>
+          <div class="form-group" style="max-width: 260px;">
+            <input type="tel" class="form-control form-input input-currency" value="5" disabled>
+            <label class="label-currency"></label>
+          </div>
+          <div class="mb-4">
+            <code>
+              &lt;div class="form-group"><br>
+              &nbsp;&lt;input type="tel" class="form-control form-input input-currency" value="5" disabled><br>
+              &nbsp;&lt;label class="label-currency">&lt;/label><br>
               &lt;/div>
             </code>
           </div>
@@ -335,7 +343,59 @@
       </div>
       <hr>
       <div class="row mt-3">
-        <div class="col-md-6"></div>
+        <div class="col-md-4">
+          <h3 class="pl-3 pb-3 mb-0">Card number</h3>
+          <div class="form-group">
+            <input type="tel" class="form-control form-input input-card" placeholder="0000 0000 0000 0000">
+            <label class="label-card"></label>
+          </div>
+          <div class="mb-4">
+            <code>
+              &lt;div class="form-group"><br>
+              &nbsp;&lt;input type="tel" class="form-control form-input input-card" value="5" placeholder="0000 0000 0000 0000"><br>
+              &nbsp;&lt;label class="label-card">&lt;/label><br>
+              &lt;/div>
+            </code>
+          </div>
+          <div class="form-group has-success">
+            <input type="tel" class="form-control form-input input-card" placeholder="0000 0000 0000 0000" value="5555 5555 5555 5555">
+            <label class="label-card card-visa"></label>
+          </div>
+          <div class="mb-4">
+            <code>
+              &lt;div class="form-group has-success"><br>
+              &nbsp;&lt;input type="tel" class="form-control form-input input-card" placeholder="0000 0000 0000 0000" value="5555 5555 5555 5555"><br>
+              &nbsp;&lt;label class="label-card card-visa">&lt;/label><br>
+              &lt;/div>
+            </code>
+          </div>
+          <div class="form-group has-error">
+            <input type="tel" class="form-control form-input input-card" placeholder="0000 0000 0000 0000" value="5555 5555 5555 5555">
+            <label class="label-card"></label>
+            <div class="help-block">Неверный номер карты</div>
+          </div>
+          <div class="mb-4">
+            <code>
+              &lt;div class="form-group has-success"><br>
+              &nbsp;&lt;input type="tel" class="form-control form-input input-card" placeholder="0000 0000 0000 0000" value="5555 5555 5555 5555"><br>
+              &nbsp;&lt;label class="label-card card-visa">&lt;/label><br>
+              &nbsp;&lt;div class="help-block">Неверный номер карты&lt;/div><br>
+              &lt;/div>
+            </code>
+          </div>
+          <div class="form-group">
+            <input type="tel" class="form-control form-input input-card" placeholder="0000 0000 0000 0000" value="5555 5555 5555 5555" disabled>
+            <label class="label-card"></label>
+          </div>
+          <div class="mb-4">
+            <code>
+              &lt;div class="form-group"><br>
+              &nbsp;&lt;input type="tel" class="form-control form-input input-card" placeholder="0000 0000 0000 0000" value="5555 5555 5555 5555" disabled><br>
+              &nbsp;&lt;label class="label-card">&lt;/label><br>
+              &lt;/div>
+            </code>
+          </div>
+        </div>
         <div class="col-md-6"></div>
       </div>
 
@@ -356,14 +416,76 @@
 
       <div class="w-100"><hr></div>
 
-      <!-- bank's card -->
+      <!-- notification card -->
       <div class="row">
         <div class="col-12">
-          <h2 class="mt-5"><u>Bank's Card</u></h2>
+          <h2 class="mt-5"><u>Notification Card</u></h2>
         </div>
       </div>
       <div class="row mt-3">
-        <div class="col-md-6 mt-3"></div>
+        <div class="col-md-6 mt-3 p-4">
+          <div class="notification-card">
+            <div class="notification-card__date">
+              <i class="ci-notification blue"></i>
+              <span>8 Ноября 2020</span>
+            </div>
+            <div class="notification-card__text">
+              <p>Вывод средств через наш сервис будет временно приостановлен за 3 дня до момента выдачи Вам з/п.</p>
+            </div>
+            <div class="notification-card__info blue">
+              <i class="ci-error"></i>
+              <span>Вывод средств будет недоступен с 11 по 13 ноября 2020.</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mt-3 p-4">
+          <div class="notification-card">
+            <div class="notification-card__date">
+              <i class="ci-notification blue"></i>
+              <span>8 Ноября 2020</span>
+            </div>
+            <div class="notification-card__text">
+              <p>Вывод средств через наш сервис будет временно приостановлен за 3 дня до момента выдачи Вам з/п.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-100"><hr></div>
+
+      <!-- support card -->
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-5"><u>Support Card</u></h2>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-7 mt-3 p-4">
+          <div class="support-card close-icon">
+            <div class="support-card__title">
+              <i class="ci-user_voice"></i>
+              <span>Служба поддержки</span>
+            </div>
+            <div class="support-card__text">
+              <p>Наши специалисты работают для вас 24/7, если у вас возникли вопросы пишите нам на почту или звоните по номеру ниже.</p>
+            </div>
+            <div class="support-card__info">
+              <div class="support-card__contact support-card__contact--email">
+                <span>
+                  <a href="mailto:help@ewa.com">help@ewa.com</a>
+                </span>
+                <p class="mb-0"><small>Пишите нам на email</small></p>
+              </div>
+              <div class="support-card__contact support-card__contact--phone">
+                <span>
+                  <a href="tel:+380 (44) 502 11 60">+380 (44) 502 11 60</a>
+                  <a href="tel:0 800 60 11 60">0 800 60 11 60</a>
+                </span>
+                <p class="mb-0"><small>Время работы с 9.00 до 21.00 / Пн - Вс</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="w-100"><hr></div>

@@ -1,0 +1,1 @@
+Rects: icon-grey, icon-light-grey, icon-green, icon-red

@@ -13,7 +13,12 @@ html {
 }
 
 a {
+  color: $dark-blue;
   text-decoration: none;
+
+  &:hover {
+    color: $dark-blue;
+  }
 }
 
 ol, ul, li { 

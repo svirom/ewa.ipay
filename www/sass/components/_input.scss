@@ -32,12 +32,63 @@
   
     &.disabled, &:disabled,
     &:read-only {
+      color: $light-grey;
       background-color: #FCFCFC;
 
       &:hover {
         @include placeholder {
           color: $light-grey;
         }
+      }
+    }
+  }
+
+  &.input-currency {
+    padding-right: 3.25rem;
+
+    & + .label-currency {
+      position: absolute;
+      right: 1.4375rem;
+      top: 18px;
+      height: 16px;
+      width: 10px;
+      margin-bottom: 0;
+      background-image: url('../img/sprite-currency.png');
+      background-position: -10px 0;
+      background-repeat: no-repeat;
+      background-size: 40px;
+    }
+
+    &:focus {
+      & + .label-currency {
+        background-position: 0 0;
+      }
+    }
+  }
+
+  &.input-card {
+    padding-right: 5rem;
+
+    & + .label-card {
+      position: absolute;
+      right: 1rem;
+      top: 12px;
+      height: 28px;
+      width: 54px;
+      margin-bottom: 0;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      &.card-visa {
+        background-image: url('../img/visa-logo.svg');
+      }
+
+      &.card-mastercard {
+        // background-image: url('../img/visa-logo.svg');
+      }
+
+      &.card-prostir {
+        // background-image: url('../img/visa-logo.svg');
       }
     }
   }
@@ -52,13 +103,29 @@
 
   &.has-success {
     .form-input {
-      border-color: $light-grey;
+      border-color: $light-green;
+
+      &.no-green {
+        border-color: $light-grey;
+      }
+    }
+
+    .input-currency {
+      & + .label-currency {
+        background-position: -20px 0;
+      }
     }
   }
 
   &.has-error {
     .form-input {
       border-color: $red;
+    }
+
+    .input-currency {
+      & + .label-currency {
+        background-position: -30px 0;
+      }
     }
 
     .help-block {

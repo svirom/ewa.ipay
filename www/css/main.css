@@ -11,7 +11,12 @@ html {
 }
 
 a {
+  color: #2D3C5A;
   text-decoration: none;
+}
+
+a:hover {
+  color: #2D3C5A;
 }
 
 ol, ul, li {
@@ -84,6 +89,10 @@ small, .small {
 
 .red {
   color: #FF5F5F;
+}
+
+.close-icon {
+  background-image: url('data:image/svg+xml,%3Csvg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M8.59 0L5 3.59L1.41 0L0 1.41L3.59 5L0 8.59L1.41 10L5 6.41L8.59 10L10 8.59L6.41 5L10 1.41L8.59 0Z" fill="%23969DAC"/%3E%3C/svg%3E');
 }
 
 .btn {
@@ -217,10 +226,12 @@ small, .small {
 }
 
 .form-control.form-input.disabled, .form-control.form-input:disabled, .form-control.form-input:-moz-read-only {
+  color: #C0C5CE;
   background-color: #FCFCFC;
 }
 
 .form-control.form-input.disabled, .form-control.form-input:disabled, .form-control.form-input:read-only {
+  color: #C0C5CE;
   background-color: #FCFCFC;
 }
 
@@ -244,6 +255,46 @@ small, .small {
   color: #C0C5CE;
 }
 
+.form-control.input-currency {
+  padding-right: 3.25rem;
+}
+
+.form-control.input-currency + .label-currency {
+  position: absolute;
+  right: 1.4375rem;
+  top: 18px;
+  height: 16px;
+  width: 10px;
+  margin-bottom: 0;
+  background-image: url("../img/sprite-currency.png");
+  background-position: -10px 0;
+  background-repeat: no-repeat;
+  background-size: 40px;
+}
+
+.form-control.input-currency:focus + .label-currency {
+  background-position: 0 0;
+}
+
+.form-control.input-card {
+  padding-right: 5rem;
+}
+
+.form-control.input-card + .label-card {
+  position: absolute;
+  right: 1rem;
+  top: 12px;
+  height: 28px;
+  width: 54px;
+  margin-bottom: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form-control.input-card + .label-card.card-visa {
+  background-image: url("../img/visa-logo.svg");
+}
+
 .form-group {
   position: relative;
 }
@@ -253,11 +304,23 @@ small, .small {
 }
 
 .form-group.has-success .form-input {
+  border-color: #14D2A5;
+}
+
+.form-group.has-success .form-input.no-green {
   border-color: #C0C5CE;
+}
+
+.form-group.has-success .input-currency + .label-currency {
+  background-position: -20px 0;
 }
 
 .form-group.has-error .form-input {
   border-color: #FF5F5F;
+}
+
+.form-group.has-error .input-currency + .label-currency {
+  background-position: -30px 0;
 }
 
 .form-group.has-error .help-block {
@@ -265,5 +328,129 @@ small, .small {
   margin-top: 0.5rem;
   font-size: 0.75rem;
   color: #FF5F5F;
+}
+
+.notification-card {
+  padding: 1.5rem;
+  border: 1px solid #F0F0F0;
+  border-radius: 0.875rem;
+  background-color: #ffffff;
+}
+
+.notification-card i {
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.notification-card__date {
+  padding-bottom: 1.125rem;
+}
+
+.notification-card__date span {
+  padding-left: 0.75rem;
+  vertical-align: middle;
+}
+
+.notification-card__text p {
+  margin-bottom: 0;
+}
+
+.notification-card__info {
+  position: relative;
+  margin-top: 0.875rem;
+  padding-top: 0.875rem;
+  border-top: 1px solid #E0E2E6;
+}
+
+.notification-card__info i {
+  position: absolute;
+  top: 0.825rem;
+  left: 0;
+}
+
+.notification-card__info span {
+  display: inline-block;
+  padding-left: 2.5rem;
+}
+
+.notification-card:hover {
+  -webkit-box-shadow: 0px 20px 50px rgba(45, 60, 90, 0.1);
+          box-shadow: 0px 20px 50px rgba(45, 60, 90, 0.1);
+}
+
+.support-card {
+  padding: 1.5rem;
+  border: 1px solid #F0F0F0;
+  border-radius: 0.875rem;
+  -webkit-box-shadow: 0px 40px 50px rgba(45, 60, 90, 0.1);
+          box-shadow: 0px 40px 50px rgba(45, 60, 90, 0.1);
+  background-color: #ffffff;
+  background-position: right 1.875rem top 1.875rem;
+  background-repeat: no-repeat;
+}
+
+.support-card i {
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.support-card__title {
+  padding-bottom: 1.5rem;
+}
+
+.support-card__title span {
+  padding-left: 0.75rem;
+  vertical-align: middle;
+}
+
+.support-card__text p {
+  margin-bottom: 0;
+}
+
+.support-card__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 1.25rem;
+}
+
+.support-card__contact {
+  padding-left: 3rem;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+.support-card__contact--email {
+  background-image: url('data:image/svg+xml,%3Csvg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M7.69518 13.3909C7.05042 13.3909 6.52661 12.8671 6.52661 12.2223C6.52661 11.5795 7.05042 11.0557 7.69518 11.0557C8.33994 11.0557 8.86375 11.5795 8.86375 12.2223C8.86375 12.8671 8.33994 13.3909 7.69518 13.3909ZM12.238 13.3909C11.5933 13.3909 11.0695 12.8671 11.0695 12.2223C11.0695 11.5795 11.5933 11.0557 12.238 11.0557C12.8828 11.0557 13.4066 11.5795 13.4066 12.2223C13.4066 12.8671 12.8828 13.3909 12.238 13.3909ZM15.6124 12.2223C15.6124 12.8671 16.1362 13.3909 16.781 13.3909C17.4258 13.3909 17.9496 12.8671 17.9496 12.2223C17.9496 11.5795 17.4258 11.0557 16.781 11.0557C16.1362 11.0557 15.6124 11.5795 15.6124 12.2223Z" fill="%2355A5FF"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M12.02 2C6.21 2 2 6.74612 2 12.015C2 13.6975 2.49 15.4291 3.35 17.0115C3.51 17.2729 3.53 17.6024 3.42 17.9139L2.75 20.1572C2.6 20.698 3.06 21.0976 3.57 20.9374L5.59 20.3375C6.14 20.1572 6.57 20.3866 7.08 20.698C8.54 21.5583 10.36 22 12 22C16.96 22 22 18.1642 22 11.985C22 6.65598 17.7 2 12.02 2Z" stroke="%2355A5FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/%3E%3C/svg%3E');
+}
+
+.support-card__contact--phone {
+  background-image: url('data:image/svg+xml,%3Csvg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M2.98995 4.87351C3.30627 4.34875 5.05018 2.44377 6.2929 2.50127C6.66469 2.53311 6.99334 2.75698 7.26037 3.01783H7.2614C7.87351 3.61756 9.62974 5.88094 9.72834 6.35745C9.97175 7.52611 8.57806 8.19978 9.00428 9.37769C10.0909 12.0364 11.9632 13.9086 14.6232 14.994C15.8002 15.4212 16.4739 14.0287 17.6427 14.2711C18.1192 14.3707 20.3839 16.1257 20.9826 16.7388V16.7388C21.2425 17.0048 21.4684 17.3344 21.4992 17.7062C21.5454 19.0155 19.5222 20.7829 19.1278 21.0088C18.1973 21.6753 16.9833 21.663 15.5034 20.975C11.3737 19.2569 4.77391 12.782 3.02384 8.49657C2.35421 7.02496 2.30902 5.8029 2.98995 4.87351Z" stroke="%2355A5FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/%3E%3Cpath d="M14.5654 2.75C18.2674 3.161 21.1904 6.081 21.6064 9.782" stroke="%2355A5FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/%3E%3Cpath d="M14.5654 6.29297C16.3354 6.63797 17.7184 8.02097 18.0634 9.79097" stroke="%2355A5FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/%3E%3C/svg%3E');
+}
+
+.support-card__contact--phone a {
+  position: relative;
+}
+
+.support-card__contact--phone a:first-child {
+  margin-right: 2rem;
+}
+
+.support-card__contact--phone a:first-child:after {
+  position: absolute;
+  content: '|';
+  right: -1rem;
+  top: 0;
+  width: 0;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #969DAC;
+}
+
+.support-card__contact p:last-child {
+  margin-top: 0.375rem;
 }
 /*# sourceMappingURL=main.css.map */
