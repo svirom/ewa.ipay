@@ -4,13 +4,13 @@
 
 .notification-card {
   padding: 1.5rem;
-  border: 1px solid #F0F0F0;
+  border: 1px solid $border-color;
   border-radius: 0.875rem;
   background-color: #ffffff;
 
   i {
-    font-size: 1.5rem;
-    vertical-align: middle;
+    // font-size: 1.5rem;
+    // vertical-align: middle;
   }
 
   &__date {
@@ -47,6 +47,6 @@
   }
 
   &:hover {
-    box-shadow: 0px 20px 50px rgba(45, 60, 90, 0.1);
+    box-shadow: 0px 20px 50px $card-shadow;
   }
 }

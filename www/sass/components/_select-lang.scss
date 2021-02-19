@@ -1,0 +1,63 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the select language component.
+// -----------------------------------------------------------------------------
+
+.select-lang {
+  position: relative;
+  color: $grey;
+  line-height: 1.25;
+  text-transform: uppercase;
+
+  .select-lang__select {
+    display: inline-block;
+    width: 3rem;
+    height: 2.625rem;
+    text-align: center;
+    line-height: 2.625rem;
+    border: 1px solid $border-color;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #F7F7F7;
+    }
+  }
+
+  .dropdown-menu {
+    width: 100%;
+    min-width: 3rem;
+    margin-top: -1px;
+    padding-top: 0;
+    text-align: center;
+    border: 1px solid $border-color;
+    border-radius: 0.5rem;
+
+    &.show {
+      border-top: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+    }
+  }
+
+  .dropdown-item {
+    height: 1.875rem;
+    padding: 0;
+    color: $grey;
+    line-height: 1.875rem;
+
+    &:hover {
+      background-color: #F6F6F6;
+    }
+  }
+
+  &.dropdown {
+    &.show {
+      .select-lang__select {
+        border-bottom: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+    }
+  }
+}

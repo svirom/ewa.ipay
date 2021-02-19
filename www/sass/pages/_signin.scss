@@ -1,0 +1,218 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the signin page of the site.
+// -----------------------------------------------------------------------------
+
+.signin-wrapper {
+  min-height: 100vh;
+
+  h1, .h1, h2, .h2 {
+    margin-bottom: 1.125rem;
+    @include font(1.5rem, 700, 1.33333);
+  }
+
+  @include until($sm) {
+    h1, .h1, h2, .h2 {
+      font-size: 1.125rem;
+    }
+  }
+}
+
+.signin-left-wrapper {
+  position: relative;
+  background-color: $blue;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 50vw;
+    height: 100%;
+    top: 0;
+    left: -50vw;
+    background-color: $blue;
+  }
+}
+
+.signin-left {
+  height: 100%;
+  background-position: right 4.375rem center;
+  background-repeat: no-repeat;
+  background-size: calc(100% - 4.375rem);
+
+  &--phone {
+    background-image: url('../img/signin/signin-phone.svg');
+  }
+
+  &--otp {
+    background-image: url('../img/signin/signin-otp.svg');
+  }
+
+  @include until($xl) {
+    background-position: right 2.125rem center;
+    background-size: calc(100% - 2.125rem);
+  }
+}
+
+.signin-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 6.875rem;
+
+  @include until($lg) {
+    justify-content: space-between;
+    padding-top: 2.5rem;
+    padding-bottom: 3.75rem;
+    padding-left: 0;
+  }
+
+  @include until($sm) {
+    padding-bottom: 1.875rem;
+  }
+}
+
+.signin-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.signin-form {
+  &__form {
+    max-width: 21.875rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  @include until($lg) {
+    &__form {
+      max-width: 26.25rem;
+    }
+  }
+}
+
+.support-card {
+  &.support-card--signin {
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+
+    .support-card__title {
+      padding-bottom: 0;
+    }
+
+    .support-card__info {
+      flex-direction: column;
+      padding-top: 1.5rem;
+    }
+
+    .support-card__contact--email {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  @include until($sm) {
+    &.support-card--signin {
+      display: none;
+    }
+  }
+}
+
+.signin-support {
+  &__dropdown {
+    display: none;
+  }
+
+  @include until($sm) {
+    &__dropdown {
+      display: block;
+    }
+  }
+}
+
+.signin-support {
+  margin-top: 6.25rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid #E0E2E6;
+
+  &__dropdown {
+    display: none;
+
+    .dropdown-menu {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      border-radius: 0.875rem;
+    }
+
+    .support-card__title {
+      margin-bottom: 1.125rem;
+
+      &::after {
+        bottom: 0;
+        left: -1.5rem;
+        width: calc(100% + 3rem);
+        height: 2px;
+      }
+    }
+
+    .support-card__text {
+      p {
+        font-size: 0.875rem;
+      }
+    }
+
+    .support-card__info {
+      flex-direction: column;
+
+      a {
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    .support-card__contact {
+      margin-bottom: 1.5rem;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      p {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__button {
+    i {
+      font-size: 1.125rem;
+    }
+
+    span {
+      padding-left: 0.75rem;
+      font-size: 0.875rem;
+    }
+  }
+
+  @include until($xxl) {
+    margin-top: 2.5rem;
+  }
+
+  @include until($lg) {
+    max-width: 31.875rem;
+  }
+
+  @include until($sm) {
+    border-top: 0;
+
+    &__dropdown {
+      display: block;
+    }
+  }
+}
+
