@@ -15,7 +15,7 @@
     <!-- styles -->
     <link rel="stylesheet" href="/css/main.css">
 
-    <title>Signin</title>
+    <title>Signin OTP</title>
   </head>
   <body>
 
@@ -24,7 +24,7 @@
         <div class="row">
 
           <div class="col-lg-5 signin-left-wrapper">
-            <div class="signin-left signin-left--phone"></div>
+            <div class="signin-left signin-left--otp"></div>
           </div>
 
           <div class="col-lg-7">
@@ -47,16 +47,19 @@
                 <div class="signin-form">
                   <div class="row">
                     <div class="col-md-8 col-lg-9">
-                      <h1>Введите номер телефона</h1>
-                      <p class="mb-0">Получите пароль для входа в систему.</p>
-                      <p>Укажите ваш номер телефона и получите пароль.</p>
+                      <h1>Введите OTP пароль</h1>
+                      <p>Проверьте ваши SMS сообщения. Мы отправли пароль на ваш номер <span class="signin-form__phone">+380 (66) 679 19 87</span></p>
                       <div class="signin-form__form">
                         <form action="/">
                           <div class="form-group">
-                            <input type="tel" class="form-control form-input no-green" placeholder="+ 380 (00) 000 00 00">
+                            <input type="tel" class="form-control form-input no-green" placeholder="0 0 0 0">
                           </div>
-                          <button type="submit" class="btn btn-blue btn-block">Получить пароль</button>
+                          <button type="submit" class="btn btn-blue btn-block">Войти в систему</button>
                         </form>
+                      </div>
+                      <div class="signin-form__otp-help mt-2">
+                        <p class="mb-1">Не получили пароль?</p>
+                        <p class="signin-form__otp-again"><span>Отправить пароль еще раз</span> <span class="blue">45 сек</span></p>
                       </div>
                     </div>
                   </div>

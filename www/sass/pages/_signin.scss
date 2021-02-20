@@ -4,6 +4,7 @@
 
 .signin-wrapper {
   min-height: 100vh;
+  overflow-x: hidden;
 
   h1, .h1, h2, .h2 {
     margin-bottom: 1.125rem;
@@ -30,6 +31,20 @@
     left: -50vw;
     background-color: $blue;
   }
+
+  @include until($lg) {
+    &--404 {
+      &::after {
+        position: absolute;
+        content: '';
+        width: 50vw;
+        height: 100%;
+        top: 0;
+        right: -50vw;
+        background-color: $blue;
+      }
+    }
+  }
 }
 
 .signin-left {
@@ -46,9 +61,27 @@
     background-image: url('../img/signin/signin-otp.svg');
   }
 
+  &--404 {
+    background-image: url('../img/signin/404.svg');
+  }
+
   @include until($xl) {
     background-position: right 2.125rem center;
     background-size: calc(100% - 2.125rem);
+  }
+
+  @include until($lg) {
+    &--404 {
+      height: 12.5rem;
+      background-position: center top;
+      background-size: 80%;
+    }
+  }
+
+  @include until($sm) {
+    &--404 {
+      height: 0;
+    }
   }
 }
 
@@ -66,10 +99,18 @@
     padding-top: 2.5rem;
     padding-bottom: 3.75rem;
     padding-left: 0;
+
+    &--404 {
+      min-height: calc(100vh - 12.5rem);
+    }
   }
 
   @include until($sm) {
     padding-bottom: 1.875rem;
+
+    &--404 {
+      min-height: 100vh;
+    }
   }
 }
 
@@ -87,10 +128,35 @@
     padding-bottom: 1rem;
   }
 
+  &__phone {
+    color: $dark-blue;
+    white-space: nowrap;
+  }
+
+  &__otp-help {
+    max-width: 21.875rem;
+  }
+
+  &__otp-again {
+    display: flex;
+    justify-content: space-between;
+  }
+
   @include until($lg) {
     &__form {
       max-width: 26.25rem;
     }
+
+    &__otp-help {
+      max-width: 26.25rem;
+    }
+  }
+}
+
+.signin-404 {
+  .btn {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
