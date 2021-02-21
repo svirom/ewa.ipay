@@ -2,6 +2,12 @@
 // This file contains all styles related to the signin page of the site.
 // -----------------------------------------------------------------------------
 
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
 .signin-wrapper {
   min-height: 100vh;
   overflow-x: hidden;
