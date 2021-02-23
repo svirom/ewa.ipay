@@ -1,3 +1,112 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+
+.main-footer {
+  display: flex;
+  align-items: center;
+  min-height: 4.5rem;
+  padding-top: 0.875rem;
+  padding-bottom: 0.9375rem;
+  border-top: 1px solid #EBECEF;
+  background-color: #ffffff;
+
+  span {
+    color: $grey;
+    vertical-align: middle;
+  }
+}
+
+.back-to-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: -1px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px; 
+  width: 2rem;
+  height: 2rem;
+  color: $blue;
+  transition: all 0.2s;
+  z-index: 1001;
+
+  i {
+    font-size: 2rem;
+  }
+
+  &:hover {
+    color: #0F82FF;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+}
+
+.footer-copyright {
+  display: flex;
+  align-items: center;
+
+  p {
+    margin-bottom: 0;
+    padding-left: 3.875rem;
+    // line-height: 1.5625;
+  }
+
+  @include until($md) {
+    padding-top: 1rem;
+    order: 1;
+    
+    p {
+      width: 100%;
+      padding-left: 0;
+      font-size: 0.875rem;
+      text-align: right;
+    }
+  }
+}
+
+.footer-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  &__support {
+    span {
+      margin-right: 0.5rem;
+    }
+
+    &:hover {
+      text-decoration: none;
+
+      span, i {
+        color: $dark-blue;
+      }
+    }
+  }
+
+  &__money {
+    margin-top: 2px;
+    margin-left: 1.875rem;
+    width: 10rem;
+  }
+
+  i {
+    color: $grey;
+  }
+
+  @include until($md) {
+    &__support {
+      display: none;
+    }
+  }
+}
+
+.no-money-button {
+  @include until($md) {
+    .footer-copyright {
+      order: 0;
+      padding-top: 0;
+    }
+  }
+}

@@ -2,3 +2,19 @@
 // This file contains all styles related to the main content of the site.
 // -----------------------------------------------------------------------------
 
+.main {
+  display: flex;
+  flex-direction: column;
+  // min-height: calc(100vh - 4.5rem);
+  min-height: 100vh;
+  padding-top: 4.5rem;
+  background-color: #F5F5F5;
+
+  // @include until($md) {
+  //   min-height: calc(100vh - 7rem);
+  // }
+}
+
+.main-content {
+  flex-grow: 1;
+}

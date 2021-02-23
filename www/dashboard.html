@@ -27,11 +27,6 @@
             <div class="header-nav">
 
               <div class="lang-nav">
-                <div class="mobile-nav">
-                  <button type="button" data-trigger="#navbar_main" class="mobile-nav__button">
-                    <span class="nav-opener"><span></span></span>
-                  </button>
-                </div>
                 <a href="#" class="lang-nav__home">
                   <img src="/img/logo-nav.svg" alt="Logo">
                 </a>
@@ -40,6 +35,35 @@
                   <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">UA</a>
                     <a class="dropdown-item" href="#">EN</a>
+                  </div>
+                </div>
+                <div class="mobile-nav">
+                  <button type="button" data-trigger="#mobile-menu" class="mobile-nav__button">
+                    <span class="nav-opener"><span></span></span>
+                  </button>
+                  <div class="mobile-overlay"></div>
+                  <div class="mobile-menu" id="mobile-menu">
+                    <button type="button" class="close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="mobile-menu__main">
+                      <ul>
+                        <li><a href="#"><span>Главная страница</span></a></li>
+                        <li class="dropdown-divider"></li>
+                        <li><a href="#" class="mobile-menu__money-link"><span>Снять деньги</span><span class="badge money-badge">12 000</span></a></li>
+                        <li><a href="#"><span>Статистика</span></a></li>
+                        <li><a href="#"><span>Профиль</span></a></li>
+                        <li><a href="#"><span>Уведомления</span><span class="badge notification-badge">2</span></a></li>
+                      </ul>
+                    </div>
+                    <div class="mobile-menu__account">
+                      <ul>
+                        <li><a href="#"><i class="ci-file_blank_outline"></i><span>Правила использования</span></a></li>
+                        <li><a href="#"><i class="ci-user_voice"></i><span>Служба поддержки</span></a></li>
+                        <li class="dropdown-divider"></li>
+                        <li><a href="#"><i class="ci-exit"></i><span>Выйти</span></a></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -188,6 +212,33 @@
         </div>
       </div>
     </header>
+
+    <div class="main">
+
+      <main class="main-content"></main>
+
+      <!-- <footer class="main-footer no-money-button"> -->
+      <footer class="main-footer">
+        <div class="container-md">
+          <div class="row">
+            <div class="col-auto px-0">
+              <a href="#" class="back-to-top" id="back-to-top"><i class="ci-circle_up"></i></a>
+            </div>
+            <div class="col-12 col-md footer-copyright">
+              <p>&copy; All Right Reserved. Ewa. 2021</p>
+            </div>
+            <div class="col footer-links">
+              <a href="#" class="footer-links__support">
+                <span class="d-none d-lg-inline">Техническая поддержка</span>
+                <i class="ci-user_voice"></i>
+              </a>
+              <a href="#" class="btn btn-money footer-links__money">Снять деньги</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
     
 
     <!-- Optional JavaScript -->

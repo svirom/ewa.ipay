@@ -3,6 +3,10 @@
 // -----------------------------------------------------------------------------
 
 .main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 4.5rem;
   border-bottom: 1px solid #EBECEF;
   background-color: #ffffff;
@@ -164,7 +168,7 @@
         padding: 0.25rem 0.285rem;
         color: #ffffff;
         line-height: 0.5625rem;
-        border-radius: 50%;
+        border-radius: 0.5rem;
         vertical-align: top;
         background-color: $blue;
       }
@@ -232,14 +236,14 @@
 
         svg {
           fill: $dark-blue;
-          @include transform(rotate(180deg));
-          @include transition(all, 0.3s);
+          transform: rotate(180deg);
+          transition: all 0.3s ease-in;
         }
       }
 
       &[aria-expanded="false"] {
         svg {
-          @include transition(all, 0.3s);
+          transition: all 0.3s ease-in;
         }
       }
     }
@@ -306,6 +310,7 @@
 
 .mobile-nav {
   display: none;
+  order: -1;
   margin-right: 1.5rem;
 
   &__button {
@@ -315,6 +320,10 @@
     border: 0;
     vertical-align: middle;
     background-color: #ffffff;
+
+    &:focus {
+      outline: none;
+    }
   }
 
   .nav-opener {
@@ -336,7 +345,7 @@
       height: 2px;
       border-radius: 0;
       background-color: $dark-blue;
-      @include transition(all 0.3s);
+      transition: all 0.3s ease-in;
     }
 
     &::before {
@@ -350,7 +359,190 @@
     }
   }
 
-  @include until($md) {
+  @include until($lg) {
     display: block;
+  }
+}
+
+.mobile-overlay {
+  visibility: hidden;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.2s linear, visibility 0.1s, width 1s ease-in;
+  background-color: rgba(45, 60, 90, 0.3);
+  z-index: 1199;
+
+  &.show {
+    visibility: visible;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 0.5s ease, width 0s;
+  }
+}
+
+.mobile-menu {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0; 
+  left: 0;
+  height: 100%;
+  width: 80%;
+  padding: 7.3125rem 2.8125rem 2.8125rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transform: translateX(-100%);
+  transition: visibility .2s ease-in-out, transform .2s ease-in-out;
+  box-shadow: 20px 0px 50px rgba(45, 60, 90, 0.1);
+  background-color: #ffffff;
+  z-index: 1200;
+
+  &.show {
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  button.close {
+    position: absolute;
+    left: 0.9375rem;
+    top: 1.5rem;
+    width: 1.5rem;
+    color: $grey;
+    opacity: 1;
+  }
+
+  li {
+    &.dropdown-divider {
+      margin-top: 2.8125rem;
+      margin-bottom: 2.8125rem;
+      border-top-color: #EBECEF;
+    }
+  }
+
+  &__main {
+    li {
+      margin-bottom: 1.5rem;
+    }
+
+    a {
+      display: block;
+      padding: 0.3125rem 0;
+      @include font(2rem, 700, 1);
+      color: $dark-blue;
+
+      &.mobile-menu__money-link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+      }
+    }
+
+    .money-badge {
+      height: 2.625rem;
+      padding: 0.8125rem 2.875rem 0.75rem 1rem;
+      font-size: 1.125rem;
+      line-height: 1;
+      border-radius: 1.3125rem;
+      background: rgba(45, 60, 90, 0.1) url('data:image/svg+xml,%3Csvg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M4.146 9.32997H7.11132L7.85602 8.67053H4.89069L4.146 9.32997Z" fill="%232D3C5A" fill-opacity="0.5"/%3E%3Cpath d="M5.99951 15.8094C5.94219 15.8094 5.88541 15.8082 5.82792 15.8055C4.82218 15.7604 4.00165 15.2269 3.63297 14.3783C3.33419 13.691 3.33087 12.6767 4.21674 11.8921L5.03587 11.1667H2.1829C1.30174 12.2912 1.09923 13.7175 1.67618 15.0455C2.34138 16.5762 3.89157 17.5783 5.72064 17.6603C5.81289 17.6645 5.90602 17.6667 5.99951 17.6667C8.98632 17.6667 11.4161 15.5144 11.4161 12.8691H9.31936C9.31936 14.4904 7.83014 15.8094 5.99951 15.8094Z" fill="%232D3C5A" fill-opacity="0.5"/%3E%3Cpath d="M5.99961 2.1905C6.05692 2.1905 6.11371 2.19174 6.1712 2.19437C7.17694 2.23956 7.99747 2.77302 8.36614 3.62157C8.66493 4.30886 8.66825 5.32316 7.78237 6.1078L6.96324 6.83332H9.81622C10.6974 5.70883 10.9001 4.28255 10.3229 2.95455C9.65774 1.42382 8.10754 0.421742 6.27848 0.339719C6.18605 0.335541 6.09309 0.333374 5.99961 0.333374C3.01279 0.333374 0.583008 2.48563 0.583008 5.13095H2.67976C2.67976 3.50952 4.16897 2.1905 5.99961 2.1905Z" fill="%232D3C5A" fill-opacity="0.5"/%3E%3Cpath d="M10.9796 9.63953H1.02002V10.8573H10.9796V9.63953Z" fill="%232D3C5A" fill-opacity="0.5"/%3E%3Cpath d="M10.9796 7.14313H1.02002V8.36094H10.9796V7.14313Z" fill="%232D3C5A" fill-opacity="0.5"/%3E%3C/svg%3E') right 1.125rem center no-repeat;
+    }
+
+    .notification-badge {
+      height: 1.5rem;
+      margin-left: 0.5rem;
+      margin-top: -0.375rem;
+      padding: 0.375rem 0.46375rem;
+      color: #ffffff;
+      @include font(1rem, 700, 0.875);
+      border-radius: 0.75rem;
+      vertical-align: top;
+      background-color: $dark-blue;
+    }
+  }
+
+  &__account {
+    li {
+      margin-bottom: 2rem;
+    }
+
+    a {
+      display: block;
+      padding: 0.1875rem 0;
+      @include font(1.5rem, 400, 1);
+      color: $dark-blue;
+    }
+
+    i {
+      font-size: 2rem;
+    }
+
+    span {
+      padding-left: 1.5rem;
+      vertical-align: middle;
+    }
+  }
+
+  @include until($md) {
+    padding: 6rem 0.9375rem 0.9375rem;
+
+    li {
+      margin-bottom: 1.125rem;
+
+      &.dropdown-divider {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    &__main {
+      a {
+        font-size: 1.5rem;
+      }
+
+      .money-badge {
+        height: 2rem;
+        padding: 0.675rem 1.787rem 0.6rem 0.5rem;
+        font-size: 0.75rem;
+        border-radius: 1rem;
+        background-size: 0.5rem;
+        background-position: right 0.75rem center;
+      }
+
+      .notification-badge {
+        height: 1.125rem;
+        min-width: 1.125rem;
+        margin-left: 0.25rem;
+        padding: 0.25rem 0.345rem;
+        font-size: 0.75rem;
+        border-radius: 0.75rem;
+      }
+    }
+
+    &__account {
+      li {
+        margin-bottom: 0.375rem;
+      }
+
+      a {
+        font-size: 0.875rem;
+      }
+
+      i {
+        font-size: 1.125rem;
+      }
+
+      span {
+        padding-left: 0.75rem;
+      }
+    }
+  }
+
+  @include until($sm) {
+    width: 85%;
   }
 }

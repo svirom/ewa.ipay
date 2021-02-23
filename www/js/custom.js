@@ -10,4 +10,26 @@ $(document).ready(function() {
     $('#dropdown-support').dropdown('toggle');
   })
 
+  // mobile menu
+  $('[data-trigger]').on('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    var mobileId =  $(this).attr('data-trigger');
+    $(mobileId).toggleClass('show');
+    $('body').toggleClass('overflow-hidden');
+    $('.mobile-overlay').toggleClass('show');
+  }); 
+
+  $('.mobile-menu .close, .mobile-overlay').click(function() {
+    $('.mobile-overlay').removeClass('show');
+    $('.mobile-menu').removeClass('show');
+    $('body').removeClass('overflow-hidden');
+  });
+
+  // back-to-top
+  $('#back-to-top').click(function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop: 0}, 600);
+ });
+
 })

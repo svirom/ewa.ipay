@@ -13,7 +13,7 @@
     @include placeholder {
       color: $light-grey;
     }
-    @include transition(all, 0.3s);
+    transition: all 0.3s ease-in;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;

@@ -22,22 +22,6 @@
 	line-height: $lineHeight;
 }
 
-// transition
-@mixin transition($object, $time) {
-	-webkit-transition: $object $time ease;
-	-moz-transition: $object $time ease;
-	-o-transition: $object $time ease;
-	transition: $object $time ease;
-}
-
-// transform
-@mixin transform($object) {
-	-webkit-transform: $object;
-	-moz-transform: $object;
-	-ms-transform: $object;
-	transform: $object;
-}
-
 // input placeholder
 @mixin placeholder {
   &::-webkit-input-placeholder {
