@@ -1,0 +1,103 @@
+// ------------------------------------------------------------------
+// This file contains all styles related to the dashboard main widget
+// ------------------------------------------------------------------
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.dashboard-main {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+
+  &.widget {
+    background-color: $blue;
+  }
+
+  &__title {
+    position: relative;
+    padding-left: 5.25rem;
+    background-position: left 0.75rem top;
+    background-repeat: no-repeat;
+    background-size: 3rem;
+
+    &--day {
+      background-image: url('../img/dashboard/day@2x.png');
+    }
+
+    &--night {
+      background-image: url('../img/dashboard/night@2x.png');
+    }
+  }
+
+  p, span, a {
+    color: #ffffff;
+  }
+
+  p {
+    &:last-child {
+      font-weight: 700;
+    }
+
+    &.dashboard-main__name {
+      margin-bottom: 0.75rem;
+      @include font(1.5rem, 700, 1);
+    }
+  }
+
+  .ellipse {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s;
+
+    &-1 {
+      width: 60px;
+      height: 60px;
+      bottom: -30px;
+      left: 20px;
+    }
+
+    &-2 {
+      width: 120px;
+      height: 120px;
+      bottom: -80px;
+      right: 40px;
+    }
+
+    &-3 {
+      width: 80px;
+      height: 80px;
+      top: -40px;
+      right: 170px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  &:hover {
+    cursor: url('../img/dashboard/cursor.svg'), auto;
+
+    .btn-dashboard {
+      border-color: rgba(255, 255, 255, 0.3);
+      box-shadow: 0px 20px 50px rgba(45, 60, 90, 0.1);
+    }
+
+    .ellipse {
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
+  }
+}
+
+.btn {
+  &.btn-dashboard {
+    padding: 0.8125rem 1.875rem; 
+    font-size: 0.875rem;
+    line-height: 1;
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+}

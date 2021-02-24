@@ -2,19 +2,68 @@
 // This file contains all styles related to the main content of the site.
 // -----------------------------------------------------------------------------
 
-.main {
+.main-wrapper {
   display: flex;
   flex-direction: column;
-  // min-height: calc(100vh - 4.5rem);
   min-height: 100vh;
   padding-top: 4.5rem;
   background-color: #F5F5F5;
-
-  // @include until($md) {
-  //   min-height: calc(100vh - 7rem);
-  // }
 }
 
 .main-content {
   flex-grow: 1;
+  padding-top: 2.5rem;
+}
+
+/* basic widget style */
+.widget {
+  margin-bottom: 1.875rem;
+  padding: 1.5rem;
+  border-radius: 0.875rem;
+  background-color: #ffffff;
+
+  @include until($sm) {
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+  }
+}
+
+.widget-title {
+  padding-bottom: 1.5rem;
+
+  i {
+    color: $blue;
+  }
+
+  span {
+    padding-left: 0.75rem;
+    vertical-align: middle;
+  }
+
+  &.bottom-dashed {
+    &::after {
+      bottom: 0;
+      left: -1.5rem;
+      width: calc(100% + 3rem);
+      height: 2px;
+    }
+
+  }
+
+  @include until($sm) {
+    &.bottom-dashed {
+      &::after {
+        left: -0.875rem;
+        width: calc(100% + 1.75rem);
+      }
+  
+    }
+  }
+}
+
+.widget-subtitle {
+  margin-bottom: 0;
+  padding-left: 2.25rem;
+  font-size: 0.875rem;
+  line-height: 1;
 }

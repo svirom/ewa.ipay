@@ -1,0 +1,154 @@
+.dashboard-money__content {
+  padding-top: 1.125rem;
+}
+
+.dashboard-money__content .btn:hover:not(.disabled):not(:disabled) {
+  -webkit-box-shadow: 0px 40px 50px rgba(45, 60, 90, 0.1);
+          box-shadow: 0px 40px 50px rgba(45, 60, 90, 0.1);
+}
+
+.dashboard-money__content .btn.disabled, .dashboard-money__content .btn:disabled {
+  color: #C0C5CE;
+}
+
+.dashboard-money__amount {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.dashboard-money__amount span {
+  padding-right: 1.625rem;
+  background-position: right center;
+}
+
+.dashboard-money__notification {
+  position: relative;
+  margin-top: -2px;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  padding: 0.695rem 1.5rem;
+  font-size: 0.875rem;
+}
+
+.dashboard-money__notification i {
+  position: absolute;
+  left: 1.5rem;
+  top: 0.8125rem;
+  font-size: 1.125rem;
+}
+
+.dashboard-money__notification span {
+  display: inline-block;
+  padding-left: 1.625rem;
+  vertical-align: middle;
+}
+
+.dashboard-money__notification-time {
+  position: relative;
+}
+
+.dashboard-money__notification-time::after {
+  position: absolute;
+  content: '|';
+  top: 0;
+  right: -1rem;
+}
+
+.dashboard-money__notification--info {
+  color: #55A5FF;
+  border-top: 1px solid rgba(85, 165, 255, 0.15);
+  border-bottom: 1px solid rgba(85, 165, 255, 0.15);
+  background-color: #EEF6FF;
+}
+
+.dashboard-money__notification--success {
+  color: #0AB48C;
+  border-top: 1px solid rgba(20, 210, 165, 0.15);
+  border-bottom: 1px solid rgba(20, 210, 165, 0.15);
+  background-color: #E8FBF6;
+}
+
+.dashboard-money__support {
+  padding-top: 1.125rem;
+  font-size: 0.875rem;
+}
+
+.dashboard-money__support a.blue:hover {
+  color: #55A5FF;
+}
+
+.dashboard-money__support span {
+  line-height: 1.75;
+}
+
+.dashboard-money__payment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dashboard-money__payment-left {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-preferred-size: 12.5rem;
+      flex-basis: 12.5rem;
+}
+
+.dashboard-money__payment-right {
+  padding-left: 0.75rem;
+  padding-top: 0.125rem;
+}
+
+.dashboard-money__method {
+  margin-top: 0.25rem;
+  padding: 0.875rem;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  background-color: #55A5FF;
+}
+
+.dashboard-money__method-title {
+  line-height: 1.35;
+}
+
+.dashboard-money__method-iban {
+  margin-top: 0.5rem;
+  font-size: 1.125rem;
+  line-height: 1.35;
+}
+
+@media screen and (max-width: 575px) {
+  .dashboard-money__notification {
+    margin-left: -0.875rem;
+    margin-right: -0.875rem;
+  }
+  .dashboard-money__notification span.dashboard-money__notification-time {
+    display: block;
+  }
+  .dashboard-money__notification span.dashboard-money__notification-time::after {
+    display: none;
+  }
+  .dashboard-money__support span {
+    line-height: 1.25;
+  }
+  .dashboard-money__support span:first-child {
+    display: block;
+  }
+  .dashboard-money__payment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .dashboard-money__payment-left {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+  .dashboard-money__payment-right {
+    padding-left: 0;
+    padding-top: 0;
+  }
+}
+/*# sourceMappingURL=dashboard-money.css.map */

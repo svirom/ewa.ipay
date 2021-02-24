@@ -50,7 +50,6 @@
   p {
     margin-bottom: 0;
     padding-left: 3.875rem;
-    // line-height: 1.5625;
   }
 
   @include until($md) {
@@ -102,7 +101,7 @@
   }
 }
 
-.no-money-button {
+.no-button {
   @include until($md) {
     .footer-copyright {
       order: 0;

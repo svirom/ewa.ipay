@@ -11,9 +11,9 @@ body {
 // }
 
 h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
-  @include font(1.125rem, 500, 1.75rem);
+  @include font(1.125rem, 500, 1);
   // font-size: 18px;
-  // line-height: 28px;
+  // line-height: 18px;
 }
 
 p {
@@ -28,16 +28,3 @@ small, .small {
 .extra-small {
   font-size: 0.75rem; // 12px
 }
-
-// a[download] {
-//   &:not(.btn) {
-//     word-break: break-word;
-//     color: $btn-red;
-//     text-decoration: underline;
-//   }
-// }
-
-// label {
-//   font-family: $text-font;
-//   color: $text-color;
-// }

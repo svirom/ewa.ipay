@@ -1,0 +1,165 @@
+// -------------------------------------------------------------------------
+// This file contains all styles related to the dashboard get money widget
+// -------------------------------------------------------------------------
+
+// 1. Configuration and helpers
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.dashboard-money {
+  &__content {
+    padding-top: 1.125rem;
+
+    .btn {
+      &:hover:not(.disabled):not(:disabled) {
+        box-shadow: 0px 40px 50px rgba(45, 60, 90, 0.1);
+      }
+
+      &.disabled, &:disabled {
+        color: #C0C5CE;
+      }
+    }
+  }
+
+  &__amount {
+    margin-bottom: 0.5rem;
+    @include font(2rem, 700, 1.2);
+
+    span {
+      padding-right: 1.625rem;
+      background-position: right center;
+    }
+  }
+
+  &__notification {
+    position: relative;
+    margin-top: -2px;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    padding: 0.695rem 1.5rem;
+    font-size: 0.875rem;
+
+    i {
+      position: absolute;
+      left: 1.5rem;
+      top: 0.8125rem;
+      font-size: 1.125rem;
+    }
+
+    span {
+      display: inline-block;
+      padding-left: 1.625rem;
+      vertical-align: middle;
+    }
+
+    &-time {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: '|';
+        top: 0;
+        right: -1rem;
+      }
+    }
+
+    &--info {
+      color: $blue;
+      border-top: 1px solid rgba(85, 165, 255, 0.15);
+      border-bottom: 1px solid rgba(85, 165, 255, 0.15);
+      background-color: #EEF6FF;
+    }
+
+    &--success {
+      color: $green;
+      border-top: 1px solid rgba(20, 210, 165, 0.15);
+      border-bottom: 1px solid rgba(20, 210, 165, 0.15);
+      background-color: #E8FBF6;
+    }
+  }
+
+  &__support {
+    padding-top: 1.125rem;
+    font-size: 0.875rem;
+
+    a.blue {
+      &:hover {
+        color: $blue;
+      }
+    }
+
+    span {
+      line-height: 1.75;
+    }
+  }
+
+  &__payment {
+    display: flex;
+
+    &-left {
+      flex-shrink: 0;
+      flex-basis: 12.5rem;
+    }
+
+    &-right {
+      padding-left: 0.75rem;
+      padding-top: 0.125rem;
+    }
+  }
+
+  &__method {
+    margin-top: 0.25rem;
+    padding: 0.875rem;
+    color: #ffffff;
+    border-radius: 0.5rem;
+    background-color: $blue;
+
+    &-title {
+      line-height: 1.35;
+    }
+
+    &-iban {
+      margin-top: 0.5rem;
+      font-size: 1.125rem;
+      line-height: 1.35;
+    }
+  }
+
+  @include until($sm) {
+    &__notification {
+      margin-left: -0.875rem;
+      margin-right: -0.875rem;
+
+      span.dashboard-money__notification-time {
+        display: block;
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    &__support {
+      span {
+        line-height: 1.25;
+
+        &:first-child {
+          display: block;
+        }
+      }
+    }
+
+    &__payment {
+      flex-direction: column;
+
+      &-left {
+        flex-basis: auto;
+      }
+
+      &-right {
+        padding-left: 0;
+        padding-top: 0;
+      }
+    }
+  }
+}

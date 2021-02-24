@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="/css/dashboard-main.css">
     <link rel="stylesheet" href="/css/dashboard-money.css">
 
-    <title>Dashboard</title>
+    <title>Dashboard No Balance</title>
   </head>
   <body>
 
@@ -247,11 +247,17 @@
                   <h2><i class="ci-credit_card"></i><span>Снять деньги</span></h2>
                   <p class="widget-subtitle">Снимайте доступные вам деньги</p>
                 </div>
+                <!-- notification block -->
+                <div class="dashboard-money__notification dashboard-money__notification--info">
+                  <i class="ci-notification"></i>
+                  <span>Недостаточный баланс для снятия</span>
+                </div><!-- notification block -->
                 <div class="dashboard-money__content">
-                  <div class="dashboard-money__amount"><span class="currency-icon-light">12 000</span></div>
+                  <div class="dashboard-money__amount"><span class="currency-icon-light">5</span></div>
                   <p class="small">Доступные средства для снятия</p>
-                  <a href="#" class="btn btn-green btn-block">Снять деньги</a>
+                  <a href="#" class="btn btn-green btn-block disabled">Снять деньги</a>
                 </div>
+                <div class="dashboard-money__support"><span>Остались вопросы? </span><span>Обратитесь в <a href="#" class="blue">службу поддержки</a>.</span></div>
               </div><!-- dashboard get money widget -->
 
             </div>

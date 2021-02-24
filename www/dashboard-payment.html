@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="/css/dashboard-main.css">
     <link rel="stylesheet" href="/css/dashboard-money.css">
 
-    <title>Dashboard</title>
+    <title>Dashboard Balance Payment</title>
   </head>
   <body>
 
@@ -244,14 +244,38 @@
               <!-- dashboard get money widget -->
               <div class="dashboard-money widget" id="dashboard-money-widget">
                 <div class="widget-title bottom-dashed">
-                  <h2><i class="ci-credit_card"></i><span>Снять деньги</span></h2>
-                  <p class="widget-subtitle">Снимайте доступные вам деньги</p>
+                  <h2><i class="ci-credit_card"></i><span>Выплата баланса</span></h2>
+                  <p class="widget-subtitle">Выплата текущего баланса на ваши реквизиты</p>
                 </div>
+                <!-- notification block -->
+                <div class="dashboard-money__notification dashboard-money__notification--success">
+                  <i class="ci-stopwatch"></i>
+                  <span class="dashboard-money__notification-time">71 час 55 минут</span>
+                  <span>Осталось до выплаты</span>
+                </div><!-- notification block -->
                 <div class="dashboard-money__content">
-                  <div class="dashboard-money__amount"><span class="currency-icon-light">12 000</span></div>
-                  <p class="small">Доступные средства для снятия</p>
-                  <a href="#" class="btn btn-green btn-block">Снять деньги</a>
+                  <div class="dashboard-money__payment">
+                    <div class="dashboard-money__payment-left">
+                      <div class="dashboard-money__amount"><span class="currency-icon-light">24 000</span></div>
+                      <p class="small">Ваш текущий баланс</p>
+                    </div>
+                    <div class="dashboard-money__payment-right">
+                      <p class="small">Сумма вашей выплаты формируется из расчета вашей з/п за вычетом средств, которые вы выводили ранее.</p>
+                    </div>
+                  </div>
+                  <div class="dashboard-money__method">
+                    <div class="dashboard-money__method-requisites">
+                      <div class="dashboard-money__method-title small">IBAN Счет</div>
+                      <div class="dashboard-money__method-iban">
+                        <span><strong>UA 38</strong></span>
+                        <span>123456</span>
+                        <span>00000</span>
+                        <span><strong>12345678912345</strong></span>
+                      </div>
+                    </div>
+                  </div>                
                 </div>
+                <div class="dashboard-money__support"><span>Остались вопросы? </span><span>Обратитесь в <a href="#" class="blue">службу поддержки</a>.</span></div>
               </div><!-- dashboard get money widget -->
 
             </div>
