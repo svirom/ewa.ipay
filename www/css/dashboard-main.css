@@ -76,7 +76,7 @@
 }
 
 .dashboard-main:hover {
-  cursor: url("../img/dashboard/cursor.svg"), auto;
+  cursor: url("../img/cursor.svg"), auto;
 }
 
 .dashboard-main:hover .btn-dashboard {

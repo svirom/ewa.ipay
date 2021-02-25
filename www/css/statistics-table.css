@@ -1,0 +1,208 @@
+.statistics-table-wrapper {
+  padding-top: 1.125rem;
+}
+
+.statistics-table {
+  padding-top: 0.625rem;
+  padding-bottom: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.statistics-table__period {
+  color: #969DAC;
+}
+
+.statistics-table__row, .statistics-table__content, .statistics-table__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.statistics-table__row {
+  position: relative;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  padding: 0.5rem 1.5rem;
+  cursor: url("../img/cursor.svg"), auto;
+}
+
+.statistics-table__row--plus .statistics-table__img {
+  background-color: rgba(20, 210, 165, 0.15);
+}
+
+.statistics-table__row--plus .statistics-table__amount {
+  color: #0AB48C;
+}
+
+.statistics-table__row--plus .statistics-table__amount::before {
+  content: '+';
+}
+
+.statistics-table__row--plus:hover {
+  background-color: #F5F5F7;
+}
+
+.statistics-table__row--minus .statistics-table__img {
+  background-color: rgba(255, 95, 95, 0.15);
+}
+
+.statistics-table__row--minus .statistics-table__amount {
+  color: #FF5F5F;
+}
+
+.statistics-table__row--minus .statistics-table__amount::before {
+  content: '-';
+}
+
+.statistics-table__row--minus:hover .btn-withdraw {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.statistics-table__content {
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 23rem;
+  padding-left: 1.5rem;
+  line-height: 1.75;
+}
+
+.statistics-table__img {
+  position: absolute;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 1.5rem;
+          flex: 0 0 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 1.5rem;
+  width: 1.5rem;
+  left: 0;
+  top: 0;
+  border-radius: 0.375rem;
+}
+
+.statistics-table__img img {
+  max-width: calc(100% - 8px);
+  max-height: calc(100% - 8px);
+}
+
+.statistics-table__name {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 15.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.25rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.statistics-table__date {
+  width: 5.9375rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  color: #969DAC;
+  line-height: 1;
+  text-align: right;
+}
+
+.statistics-table__amount {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  text-align: right;
+  line-height: 1.75;
+}
+
+.statistics-table .btn-withdraw {
+  position: absolute;
+  right: 1.5rem;
+  top: 0;
+  padding: 7px 15px;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  color: #FF5F5F;
+  border-radius: 1.25rem;
+  background-color: #FFE7E7;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.statistics-table .btn-withdraw:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+@media screen and (max-width: 991px) {
+  .statistics-table__content {
+    width: 29.25rem;
+  }
+  .statistics-table__name {
+    width: 21.75rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .statistics-table__content {
+    width: calc(100% - 92px);
+  }
+  .statistics-table__name {
+    width: 100%;
+  }
+  .statistics-table__date {
+    display: block;
+    text-align: left;
+    font-size: 0.75rem;
+  }
+  .statistics-table__amount {
+    width: 92px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .statistics-table__row {
+    margin-left: -0.875rem;
+    margin-right: -0.875rem;
+    padding: 0.5rem 0.875rem;
+  }
+  .statistics-table .btn-withdraw {
+    right: 0.875rem;
+  }
+}
+
+.statistics-more {
+  margin-top: 0.75rem;
+  padding-top: 1.125rem;
+  border-top: 1px solid #E0E2E6;
+}
+
+.statistics-more a {
+  display: block;
+  line-height: 1.25;
+}
+
+.statistics-more a:hover {
+  color: #55A5FF;
+  text-decoration: none;
+}
+
+.statistics-more span {
+  margin-right: 0.375rem;
+  vertical-align: middle;
+}
+/*# sourceMappingURL=statistics-table.css.map */

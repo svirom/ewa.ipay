@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- libraries -->
+    <link rel="stylesheet" href="/css/coolicons.css">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/statistics-table.css">
+
+    <title>Statistics</title>
+  </head>
+  <body>
+
+    <div class="main-wrapper">
+
+      <!-- main header -->
+      <header class="main-header">
+        <div class="container-md">
+          <div class="row">
+            <div class="col-12">
+
+              <div class="header-nav">
+
+                <div class="lang-nav">
+                  <a href="#" class="lang-nav__home">
+                    <img src="/img/logo-nav.svg" alt="Logo">
+                  </a>
+                  <div class="select-lang dropdown">
+                    <a role="button" class="select-lang__select" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">RU</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">UA</a>
+                      <a class="dropdown-item" href="#">EN</a>
+                    </div>
+                  </div>
+                  <div class="mobile-nav">
+                    <button type="button" data-trigger="#mobile-menu" class="mobile-nav__button">
+                      <span class="nav-opener"><span></span></span>
+                    </button>
+                    <div class="mobile-overlay"></div>
+                    <div class="mobile-menu" id="mobile-menu">
+                      <button type="button" class="close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <div class="mobile-menu__main">
+                        <ul>
+                          <li><a href="#"><span>Главная страница</span></a></li>
+                          <li class="dropdown-divider"></li>
+                          <li><a href="#" class="mobile-menu__money-link"><span>Снять деньги</span><span class="badge money-badge currency-icon">12 000</span></a></li>
+                          <li><a href="#"><span>Статистика</span></a></li>
+                          <li><a href="#"><span>Профиль</span></a></li>
+                          <li><a href="#"><span>Уведомления</span><span class="badge notification-badge">2</span></a></li>
+                        </ul>
+                      </div>
+                      <div class="mobile-menu__account">
+                        <ul>
+                          <li><a href="#"><i class="ci-file_blank_outline"></i><span>Правила использования</span></a></li>
+                          <li><a href="#"><i class="ci-user_voice"></i><span>Служба поддержки</span></a></li>
+                          <li class="dropdown-divider"></li>
+                          <li><a href="#"><i class="ci-exit"></i><span>Выйти</span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <nav>
+                  <ul class="main-nav">
+
+                    <li class="main-nav__item main-nav__get-money">
+                      <a href="#" class="main-nav__link">
+                        <i class="ci-credit_card"></i>
+                        <span class="main-nav__item-text">Снять деньги</span>
+                      </a>
+                    </li>
+
+                    <li class="main-nav__item main-nav__statistics active">
+                      <a href="#" class="main-nav__link">
+                        <i class="ci-bar_chart_horizontal"></i>
+                        <span class="main-nav__item-text">Статистика</span>
+                      </a>
+                    </li>
+
+                    <li class="main-nav__item main-nav__support dropdown">
+                      <a href="#" role="button" class="main-nav__link" id="dropdown-support" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="ci-user_voice"></i>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-support">
+                        <div class="support-card">
+                          <button type="button" class="close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                          <div class="support-card__title">
+                            <i class="ci-user_voice"></i>
+                            <span>Служба поддержки</span>
+                          </div>
+                          <div class="support-card__text">
+                            <p>Наши специалисты работают для вас 24/7, если у вас возникли вопросы пишите нам на почту или звоните по номеру ниже.</p>
+                          </div>
+                          <div class="support-card__info">
+                            <div class="support-card__contact support-card__contact--email">
+                              <span>
+                                <a href="mailto:help@ewa.com">help@ewa.com</a>
+                              </span>
+                              <p class="mb-0"><small>Пишите нам на email</small></p>
+                            </div>
+                            <div class="support-card__contact support-card__contact--phone">
+                              <span>
+                                <a href="tel:+380 (44) 502 11 60">+380 (44) 502 11 60</a>
+                                <a href="tel:0 800 60 11 60">0 800 60 11 60</a>
+                              </span>
+                              <p class="mb-0"><small>Время работы с 9.00 до 21.00 / Пн - Вс</small></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="main-nav__item main-nav__notification">
+                      <span class="main-nav__link">
+                        <i class="ci-notification_dot"></i>
+                      </span>
+                    </li>
+
+                    <li class="main-nav__item main-nav__account dropdown">
+                      <a href="#" role="button" class="main-nav__link" id="dropdown-account" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="main-nav__item-text">Святослав</span>
+                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7.00023 7.71309L13.0102 1.70309L11.5972 0.288086L7.00023 4.88809L2.40423 0.288086L0.990234 1.70209L7.00023 7.71309Z"/>
+                        </svg>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-account">
+                        <a class="dropdown-item" href="#">
+                          <i class="ci-user"></i>
+                          <span>Профиль</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                          <i class="ci-user_voice"></i>
+                          <span>Техническая поддержка</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                          <i class="ci-file_blank_outline"></i>
+                          <span>Правила использования</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                          <i class="ci-exit"></i>
+                          <span>Выйти</span>
+                        </a>
+                      </div>
+                    </li>
+
+                  </ul>
+                </nav>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </header><!-- main header -->
+
+      <!-- main content -->
+      <main class="main-content">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-9">
+
+              <!-- statistics filter widget -->
+              <div class="statistics-main" id="statistics-main-widget">
+                <div class="row">
+  
+                  <div class="col-lg-4">
+                    <div class="widget">
+                      <div class="widget-title">
+                        <p><i class="ci-slider_03"></i><span>Фильтры</span></p>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-lg-8">
+      
+                    <!-- dashboard statistics widget -->
+                    <div class="dashboard-statistics widget" id="dashboard-statistics-widget">
+                      <div class="widget-title bottom-dashed">
+                        <h2><i class="ci-bar_chart_horizontal"></i><span>Статистика</span></h2>
+                        <p class="widget-subtitle">Ваша активность в системе</p>
+                      </div>
+                      <!-- statistics table -->
+                      <div class="statistics-table-wrapper">
+                        <div class="statistics-table__period">Ноябрь 2020</div>
+                        <div class="statistics-table">
+                          <div class="statistics-table__row statistics-table__row--plus">
+                            <div class="statistics-table__content">
+                              <div class="statistics-table__img">
+                                <img src="../img/test/heart.png" alt="">
+                              </div>
+                              <div class="statistics-table__name">Выплата за первую половину ноября</div>
+                              <div class="statistics-table__date">29.11.2020</div>
+                            </div>
+                            <div class="statistics-table__amount">
+                              <span>15 000 грн</span>
+                            </div>
+                          </div>
+                          <div class="statistics-table__row statistics-table__row--plus">
+                            <div class="statistics-table__content">
+                              <div class="statistics-table__img">
+                                <img src="../img/test/heart.png" alt="">
+                              </div>
+                              <div class="statistics-table__name">Премия</div>
+                              <div class="statistics-table__date">21.11.2020</div>
+                            </div>
+                            <div class="statistics-table__amount">
+                              <span>10 000 грн</span>
+                            </div>
+                          </div>
+                          <div class="statistics-table__row statistics-table__row--minus">
+                            <div class="statistics-table__content">
+                              <div class="statistics-table__img">
+                                <img src="../img/test/trending_down.png" alt="">
+                              </div>
+                              <div class="statistics-table__name">Вывод средств</div>
+                              <div class="statistics-table__date">7.11.2020</div>
+                            </div>
+                            <div class="statistics-table__amount">
+                              <span>300 грн</span>
+                              <a href="#" class="btn btn-withdraw">Квитанция</a>
+                            </div>
+                          </div>
+                          <div class="statistics-table__row statistics-table__row--plus">
+                            <div class="statistics-table__content">
+                              <div class="statistics-table__img">
+                                <img src="../img/test/heart.png" alt="">
+                              </div>
+                              <div class="statistics-table__name">Премия</div>
+                              <div class="statistics-table__date">1.11.2020</div>
+                            </div>
+                            <div class="statistics-table__amount">
+                              <span>1 000 грн</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- statistics table -->
+                      <!-- statistics table -->
+                      <div class="statistics-table-wrapper">
+                        <div class="statistics-table__period">Октябрь 2020</div>
+                        <div class="statistics-table">
+                          <div class="statistics-table__row statistics-table__row--plus">
+                            <div class="statistics-table__content">
+                              <div class="statistics-table__img">
+                                <img src="../img/test/heart.png" alt="">
+                              </div>
+                              <div class="statistics-table__name">Выплата за вторую половину октября</div>
+                              <div class="statistics-table__date">31.10.2020</div>
+                            </div>
+                            <div class="statistics-table__amount">
+                              <span>8 500 грн</span>
+                            </div>
+                          </div>
+                          <div class="statistics-table__row statistics-table__row--plus">
+                            <div class="statistics-table__content">
+                              <div class="statistics-table__img">
+                                <img src="../img/test/heart.png" alt="">
+                              </div>
+                              <div class="statistics-table__name">Премия</div>
+                              <div class="statistics-table__date">20.10.2020</div>
+                            </div>
+                            <div class="statistics-table__amount">
+                              <span>11 300 грн</span>
+                            </div>
+                          </div>
+                          <div class="statistics-table__row statistics-table__row--minus">
+                            <div class="statistics-table__content">
+                              <div class="statistics-table__img">
+                                <img src="../img/test/trending_down.png" alt="">
+                              </div>
+                              <div class="statistics-table__name">Вывод средств</div>
+                              <div class="statistics-table__date">17.11.2020</div>
+                            </div>
+                            <div class="statistics-table__amount">
+                              <span>10 000 грн</span>
+                              <a href="#" class="btn btn-withdraw">Квитанция</a>
+                            </div>
+                          </div>
+                          <div class="statistics-table__row statistics-table__row--plus">
+                            <div class="statistics-table__content">
+                              <div class="statistics-table__img">
+                                <img src="../img/test/heart.png" alt="">
+                              </div>
+                              <div class="statistics-table__name">Премия</div>
+                              <div class="statistics-table__date">1.11.2020</div>
+                            </div>
+                            <div class="statistics-table__amount">
+                              <span>1 000 грн</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- statistics table -->
+                    </div><!-- dashboard statistics widget -->
+      
+                  </div>
+  
+                </div>
+              </div><!-- statistics filter widget -->
+
+            </div>
+
+            <div class="col-lg-3">
+              <div class="widget">
+                <div class="widget-title">
+                  <h2><i class="ci-credit_card"></i><span>Фильтры</span></h2>
+                  <p class="widget-subtitle">Ваша активность в системе</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </main><!-- main content -->
+
+      <!-- main footer -->
+      <!-- <footer class="main-footer no-button"> -->
+      <footer class="main-footer">
+        <div class="container-md">
+          <div class="row">
+            <div class="col-auto px-0">
+              <a href="#" class="back-to-top" id="back-to-top"><i class="ci-circle_up"></i></a>
+            </div>
+            <div class="col-12 col-md footer-copyright">
+              <p>&copy; All Right Reserved. Ewa. 2021</p>
+            </div>
+            <div class="col footer-links">
+              <a href="#" class="footer-links__support">
+                <span class="d-none d-lg-inline">Техническая поддержка</span>
+                <i class="ci-user_voice"></i>
+              </a>
+              <a href="#" class="btn btn-money footer-links__money">Снять деньги</a>
+            </div>
+          </div>
+        </div>
+      </footer><!-- main footer -->
+
+    </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="/js/custom.js"></script>
+  </body>
+</html>
