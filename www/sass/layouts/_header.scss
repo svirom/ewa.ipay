@@ -78,6 +78,12 @@
         color: $dark-blue;
         @extend .main-nav__link:hover;
       }
+
+      &.main-nav__notification {
+        .main-nav__link {
+          color: $blue;
+        }
+      }
     }
   }
 

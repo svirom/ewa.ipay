@@ -15,6 +15,8 @@
     <!-- styles -->
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/statistics-table.css">
+    <link rel="stylesheet" href="/css/statistics-main.css">
+    <link rel="stylesheet" href="/css/withdraw-common.css">
 
     <title>Statistics</title>
   </head>
@@ -176,152 +178,330 @@
 
             <div class="col-lg-9">
 
-              <!-- statistics filter widget -->
+              <!-- statistics main widget -->
               <div class="statistics-main" id="statistics-main-widget">
+
                 <div class="row">
   
                   <div class="col-lg-4">
-                    <div class="widget">
+                    <div class="statistics-filter widget">
                       <div class="widget-title">
-                        <p><i class="ci-slider_03"></i><span>Фильтры</span></p>
+                        <p class="mb-0 dark-blue"><i class="ci-slider_03"></i><span class="small">Фильтры</span></p>
+                      </div>
+                      <div class="statistics-filter__nav">
+                        <ul class="nav nav-pills" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active" id="filter-all-tab" data-toggle="pill" href="#filter-all" role="tab" aria-controls="filter-all" aria-selected="true">Вся статистика</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="filter-income-tab" data-toggle="pill" href="#filter-income" role="tab" aria-controls="filter-income" aria-selected="false">Поступления</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="filter-withdraw-tab" data-toggle="pill" href="#filter-withdraw" role="tab" aria-controls="filter-withdraw" aria-selected="false">Выводы</a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
       
                   <div class="col-lg-8">
       
-                    <!-- dashboard statistics widget -->
-                    <div class="dashboard-statistics widget" id="dashboard-statistics-widget">
+                    <div class="statistics-content widget">
                       <div class="widget-title bottom-dashed">
                         <h2><i class="ci-bar_chart_horizontal"></i><span>Статистика</span></h2>
                         <p class="widget-subtitle">Ваша активность в системе</p>
                       </div>
-                      <!-- statistics table -->
-                      <div class="statistics-table-wrapper">
-                        <div class="statistics-table__period">Ноябрь 2020</div>
-                        <div class="statistics-table">
-                          <div class="statistics-table__row statistics-table__row--plus">
-                            <div class="statistics-table__content">
-                              <div class="statistics-table__img">
-                                <img src="../img/test/heart.png" alt="">
+
+                      <div class="tab-content">
+                        
+                        <div class="tab-pane fade show active" id="filter-all" role="tabpanel" aria-labelledby="filter-all-tab">
+                          <!-- statistics table -->
+                          <div class="statistics-table-wrapper">
+                            <div class="statistics-table__period">Ноябрь 2020</div>
+                            <div class="statistics-table">
+                              <div class="statistics-table__row statistics-table__row--plus">
+                                <div class="statistics-table__content">
+                                  <div class="statistics-table__img">
+                                    <img src="../img/test/heart.png" alt="">
+                                  </div>
+                                  <div class="statistics-table__name">Выплата за первую половину ноября</div>
+                                  <div class="statistics-table__date">29.11.2020</div>
+                                </div>
+                                <div class="statistics-table__amount">
+                                  <span>15 000 грн</span>
+                                </div>
                               </div>
-                              <div class="statistics-table__name">Выплата за первую половину ноября</div>
-                              <div class="statistics-table__date">29.11.2020</div>
-                            </div>
-                            <div class="statistics-table__amount">
-                              <span>15 000 грн</span>
-                            </div>
-                          </div>
-                          <div class="statistics-table__row statistics-table__row--plus">
-                            <div class="statistics-table__content">
-                              <div class="statistics-table__img">
-                                <img src="../img/test/heart.png" alt="">
+                              <div class="statistics-table__row statistics-table__row--plus">
+                                <div class="statistics-table__content">
+                                  <div class="statistics-table__img">
+                                    <img src="../img/test/heart.png" alt="">
+                                  </div>
+                                  <div class="statistics-table__name">Премия</div>
+                                  <div class="statistics-table__date">21.11.2020</div>
+                                </div>
+                                <div class="statistics-table__amount">
+                                  <span>10 000 грн</span>
+                                </div>
                               </div>
-                              <div class="statistics-table__name">Премия</div>
-                              <div class="statistics-table__date">21.11.2020</div>
-                            </div>
-                            <div class="statistics-table__amount">
-                              <span>10 000 грн</span>
-                            </div>
-                          </div>
-                          <div class="statistics-table__row statistics-table__row--minus">
-                            <div class="statistics-table__content">
-                              <div class="statistics-table__img">
-                                <img src="../img/test/trending_down.png" alt="">
+                              <div class="statistics-table__row statistics-table__row--minus">
+                                <div class="statistics-table__content">
+                                  <div class="statistics-table__img">
+                                    <img src="../img/test/trending_down.png" alt="">
+                                  </div>
+                                  <div class="statistics-table__name">Вывод средств</div>
+                                  <div class="statistics-table__date">7.11.2020</div>
+                                </div>
+                                <div class="statistics-table__amount">
+                                  <span>300 грн</span>
+                                  <a href="#" class="btn btn-withdraw">Квитанция</a>
+                                </div>
                               </div>
-                              <div class="statistics-table__name">Вывод средств</div>
-                              <div class="statistics-table__date">7.11.2020</div>
-                            </div>
-                            <div class="statistics-table__amount">
-                              <span>300 грн</span>
-                              <a href="#" class="btn btn-withdraw">Квитанция</a>
-                            </div>
-                          </div>
-                          <div class="statistics-table__row statistics-table__row--plus">
-                            <div class="statistics-table__content">
-                              <div class="statistics-table__img">
-                                <img src="../img/test/heart.png" alt="">
+                              <div class="statistics-table__row statistics-table__row--plus">
+                                <div class="statistics-table__content">
+                                  <div class="statistics-table__img">
+                                    <img src="../img/test/heart.png" alt="">
+                                  </div>
+                                  <div class="statistics-table__name">Премия</div>
+                                  <div class="statistics-table__date">1.11.2020</div>
+                                </div>
+                                <div class="statistics-table__amount">
+                                  <span>1 000 грн</span>
+                                </div>
                               </div>
-                              <div class="statistics-table__name">Премия</div>
-                              <div class="statistics-table__date">1.11.2020</div>
                             </div>
-                            <div class="statistics-table__amount">
-                              <span>1 000 грн</span>
+                          </div><!-- statistics table -->
+                          <!-- statistics table -->
+                          <div class="statistics-table-wrapper">
+                            <div class="statistics-table__period">Октябрь 2020</div>
+                            <div class="statistics-table">
+                              <div class="statistics-table__row statistics-table__row--plus">
+                                <div class="statistics-table__content">
+                                  <div class="statistics-table__img">
+                                    <img src="../img/test/heart.png" alt="">
+                                  </div>
+                                  <div class="statistics-table__name">Выплата за вторую половину октября</div>
+                                  <div class="statistics-table__date">31.10.2020</div>
+                                </div>
+                                <div class="statistics-table__amount">
+                                  <span>8 500 грн</span>
+                                </div>
+                              </div>
+                              <div class="statistics-table__row statistics-table__row--plus">
+                                <div class="statistics-table__content">
+                                  <div class="statistics-table__img">
+                                    <img src="../img/test/heart.png" alt="">
+                                  </div>
+                                  <div class="statistics-table__name">Премия</div>
+                                  <div class="statistics-table__date">20.10.2020</div>
+                                </div>
+                                <div class="statistics-table__amount">
+                                  <span>11 300 грн</span>
+                                </div>
+                              </div>
+                              <div class="statistics-table__row statistics-table__row--minus">
+                                <div class="statistics-table__content">
+                                  <div class="statistics-table__img">
+                                    <img src="../img/test/trending_down.png" alt="">
+                                  </div>
+                                  <div class="statistics-table__name">Вывод средств</div>
+                                  <div class="statistics-table__date">17.11.2020</div>
+                                </div>
+                                <div class="statistics-table__amount">
+                                  <span>10 000 грн</span>
+                                  <a href="#" class="btn btn-withdraw">Квитанция</a>
+                                </div>
+                              </div>
+                              <div class="statistics-table__row statistics-table__row--plus">
+                                <div class="statistics-table__content">
+                                  <div class="statistics-table__img">
+                                    <img src="../img/test/heart.png" alt="">
+                                  </div>
+                                  <div class="statistics-table__name">Премия</div>
+                                  <div class="statistics-table__date">1.11.2020</div>
+                                </div>
+                                <div class="statistics-table__amount">
+                                  <span>1 000 грн</span>
+                                </div>
+                              </div>
                             </div>
-                          </div>
+                          </div><!-- statistics table -->
                         </div>
-                      </div><!-- statistics table -->
-                      <!-- statistics table -->
-                      <div class="statistics-table-wrapper">
-                        <div class="statistics-table__period">Октябрь 2020</div>
-                        <div class="statistics-table">
-                          <div class="statistics-table__row statistics-table__row--plus">
-                            <div class="statistics-table__content">
-                              <div class="statistics-table__img">
-                                <img src="../img/test/heart.png" alt="">
+
+                        <div class="tab-pane fade" id="filter-income" role="tabpanel" aria-labelledby="filter-income-tab">
+
+                          <!-- statistics table -->
+                          <div class="statistics-table-wrapper">
+                            <div class="statistics-table__period">Ноябрь 2020</div>
+                            <div class="statistics-table">
+                              <div class="statistics-table__row statistics-table__row--plus">
+                                <div class="statistics-table__content">
+                                  <div class="statistics-table__img">
+                                    <img src="../img/test/heart.png" alt="">
+                                  </div>
+                                  <div class="statistics-table__name">Выплата за первую половину ноября</div>
+                                  <div class="statistics-table__date">29.11.2020</div>
+                                </div>
+                                <div class="statistics-table__amount">
+                                  <span>15 000 грн</span>
+                                </div>
                               </div>
-                              <div class="statistics-table__name">Выплата за вторую половину октября</div>
-                              <div class="statistics-table__date">31.10.2020</div>
-                            </div>
-                            <div class="statistics-table__amount">
-                              <span>8 500 грн</span>
-                            </div>
-                          </div>
-                          <div class="statistics-table__row statistics-table__row--plus">
-                            <div class="statistics-table__content">
-                              <div class="statistics-table__img">
-                                <img src="../img/test/heart.png" alt="">
+                              <div class="statistics-table__row statistics-table__row--plus">
+                                <div class="statistics-table__content">
+                                  <div class="statistics-table__img">
+                                    <img src="../img/test/heart.png" alt="">
+                                  </div>
+                                  <div class="statistics-table__name">Премия</div>
+                                  <div class="statistics-table__date">21.11.2020</div>
+                                </div>
+                                <div class="statistics-table__amount">
+                                  <span>10 000 грн</span>
+                                </div>
                               </div>
-                              <div class="statistics-table__name">Премия</div>
-                              <div class="statistics-table__date">20.10.2020</div>
-                            </div>
-                            <div class="statistics-table__amount">
-                              <span>11 300 грн</span>
-                            </div>
-                          </div>
-                          <div class="statistics-table__row statistics-table__row--minus">
-                            <div class="statistics-table__content">
-                              <div class="statistics-table__img">
-                                <img src="../img/test/trending_down.png" alt="">
+                              <div class="statistics-table__row statistics-table__row--plus">
+                                <div class="statistics-table__content">
+                                  <div class="statistics-table__img">
+                                    <img src="../img/test/heart.png" alt="">
+                                  </div>
+                                  <div class="statistics-table__name">Премия</div>
+                                  <div class="statistics-table__date">1.11.2020</div>
+                                </div>
+                                <div class="statistics-table__amount">
+                                  <span>1 000 грн</span>
+                                </div>
                               </div>
-                              <div class="statistics-table__name">Вывод средств</div>
-                              <div class="statistics-table__date">17.11.2020</div>
                             </div>
-                            <div class="statistics-table__amount">
-                              <span>10 000 грн</span>
-                              <a href="#" class="btn btn-withdraw">Квитанция</a>
-                            </div>
-                          </div>
-                          <div class="statistics-table__row statistics-table__row--plus">
-                            <div class="statistics-table__content">
-                              <div class="statistics-table__img">
-                                <img src="../img/test/heart.png" alt="">
+                          </div><!-- statistics table -->
+                          <!-- statistics table -->
+                          <div class="statistics-table-wrapper">
+                            <div class="statistics-table__period">Октябрь 2020</div>
+                            <div class="statistics-table">
+                              <div class="statistics-table__row statistics-table__row--plus">
+                                <div class="statistics-table__content">
+                                  <div class="statistics-table__img">
+                                    <img src="../img/test/heart.png" alt="">
+                                  </div>
+                                  <div class="statistics-table__name">Выплата за вторую половину октября</div>
+                                  <div class="statistics-table__date">31.10.2020</div>
+                                </div>
+                                <div class="statistics-table__amount">
+                                  <span>8 500 грн</span>
+                                </div>
                               </div>
-                              <div class="statistics-table__name">Премия</div>
-                              <div class="statistics-table__date">1.11.2020</div>
+                              <div class="statistics-table__row statistics-table__row--plus">
+                                <div class="statistics-table__content">
+                                  <div class="statistics-table__img">
+                                    <img src="../img/test/heart.png" alt="">
+                                  </div>
+                                  <div class="statistics-table__name">Премия</div>
+                                  <div class="statistics-table__date">20.10.2020</div>
+                                </div>
+                                <div class="statistics-table__amount">
+                                  <span>11 300 грн</span>
+                                </div>
+                              </div>
+                              <div class="statistics-table__row statistics-table__row--plus">
+                                <div class="statistics-table__content">
+                                  <div class="statistics-table__img">
+                                    <img src="../img/test/heart.png" alt="">
+                                  </div>
+                                  <div class="statistics-table__name">Премия</div>
+                                  <div class="statistics-table__date">1.11.2020</div>
+                                </div>
+                                <div class="statistics-table__amount">
+                                  <span>1 000 грн</span>
+                                </div>
+                              </div>
                             </div>
-                            <div class="statistics-table__amount">
-                              <span>1 000 грн</span>
-                            </div>
-                          </div>
+                          </div><!-- statistics table -->
+
                         </div>
-                      </div><!-- statistics table -->
-                    </div><!-- dashboard statistics widget -->
+                        <div class="tab-pane fade" id="filter-withdraw" role="tabpanel" aria-labelledby="filter-withdraw-tab">
+
+                          <!-- statistics table -->
+                          <div class="statistics-table-wrapper">
+                            <div class="statistics-table__period">Ноябрь 2020</div>
+                            <div class="statistics-table">
+                              <div class="statistics-table__row statistics-table__row--minus">
+                                <div class="statistics-table__content">
+                                  <div class="statistics-table__img">
+                                    <img src="../img/test/trending_down.png" alt="">
+                                  </div>
+                                  <div class="statistics-table__name">Вывод средств</div>
+                                  <div class="statistics-table__date">7.11.2020</div>
+                                </div>
+                                <div class="statistics-table__amount">
+                                  <span>300 грн</span>
+                                  <a href="#" class="btn btn-withdraw">Квитанция</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div><!-- statistics table -->
+                          <!-- statistics table -->
+                          <div class="statistics-table-wrapper">
+                            <div class="statistics-table__period">Октябрь 2020</div>
+                            <div class="statistics-table">
+                              <div class="statistics-table__row statistics-table__row--minus">
+                                <div class="statistics-table__content">
+                                  <div class="statistics-table__img">
+                                    <img src="../img/test/trending_down.png" alt="">
+                                  </div>
+                                  <div class="statistics-table__name">Вывод средств</div>
+                                  <div class="statistics-table__date">17.11.2020</div>
+                                </div>
+                                <div class="statistics-table__amount">
+                                  <span>10 000 грн</span>
+                                  <a href="#" class="btn btn-withdraw">Квитанция</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div><!-- statistics table -->
+
+                        </div>
+                      </div>
+                      
+                    </div>
       
                   </div>
   
                 </div>
-              </div><!-- statistics filter widget -->
+
+                <div class="row justify-content-end">
+                  <div class="col-lg-8">
+
+                    <div class="statistics-button">
+                      <p>Начало работы с платформой</p>
+                      <button type="button" class="btn btn-statistics">
+                        <i class="ci-chevron_up"></i>
+                      </button>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div><!-- statistics main widget -->
 
             </div>
 
-            <div class="col-lg-3">
-              <div class="widget">
+            <div class="col-lg-3 d-none d-lg-block">
+              <!-- withdraw common widget -->
+              <div class="withdraw-common widget" id="withdraw-common-widget">
                 <div class="widget-title">
-                  <h2><i class="ci-credit_card"></i><span>Фильтры</span></h2>
-                  <p class="widget-subtitle">Ваша активность в системе</p>
+                  <p class="h2">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.28882 8.30451H6.02604L6.71345 7.6958H3.97623L3.28882 8.30451Z"/>
+                      <path d="M4.99987 14.2855C4.94697 14.2855 4.89455 14.2844 4.84148 14.282C3.91311 14.2402 3.1557 13.7478 2.81538 12.9645C2.53957 12.3301 2.53651 11.3938 3.35424 10.6696L4.11036 10H1.47684C0.663467 11.038 0.476534 12.3546 1.00911 13.5804C1.62313 14.9934 3.05408 15.9184 4.74245 15.9941C4.82761 15.9979 4.91358 15.9999 4.99987 15.9999C7.75693 15.9999 9.99981 14.0133 9.99981 11.5714H8.06435C8.06435 13.068 6.68969 14.2855 4.99987 14.2855Z"/>
+                      <path d="M4.99994 1.71427C5.05284 1.71427 5.10526 1.71541 5.15833 1.71784C6.0867 1.75956 6.84411 2.25198 7.18443 3.03526C7.46024 3.66968 7.4633 4.60596 6.64557 5.33024L5.88945 5.99995H8.52297C9.33634 4.96196 9.52344 3.6454 8.9907 2.41955C8.37668 1.00656 6.94573 0.0815708 5.25736 0.00585714C5.17204 0.00200003 5.08623 0 4.99994 0C2.24288 0 0 1.9867 0 4.42853H1.93546C1.93546 2.93183 3.31012 1.71427 4.99994 1.71427Z"/>
+                      <path d="M9.5971 8.59033H0.403656V9.71447H9.5971V8.59033Z"/>
+                      <path d="M9.5971 6.28589H0.403656V7.41002H9.5971V6.28589Z"/>
+                    </svg>
+                  </p>
                 </div>
-              </div>
+                <div class="withdraw-common__amount"><span class="currency-icon-light">12 000</span></div>
+                <p class="small mb-0">Доступные средства для снятия</p>
+                <div class="withdraw-common__link">
+                  <a href="#"><span>Снять деньги</span><i class="ci-long_right"></i></a>
+                </div>
+              </div><!-- withdraw common widget -->
             </div>
 
           </div>

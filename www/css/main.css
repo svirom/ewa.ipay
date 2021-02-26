@@ -635,6 +635,10 @@ small, .small {
   color: #2D3C5A;
 }
 
+.main-nav__item.active.main-nav__notification .main-nav__link {
+  color: #55A5FF;
+}
+
 .main-nav__item-text {
   margin-left: 0.375rem;
   vertical-align: middle;

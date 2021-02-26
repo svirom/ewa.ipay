@@ -1,0 +1,141 @@
+// --------------------------------------------------------------------
+// This file contains all styles related to the statistics main widget
+// --------------------------------------------------------------------
+
+// 1. Configuration and helpers
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.statistics-filter {
+  font-size: 0.875rem;
+
+  &__nav {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+
+    .nav {
+      flex-direction: column;
+    }
+
+    .nav-item {
+      .nav-link {
+        border-bottom: 1px solid #EBECEF;
+      }
+
+      &:last-child {
+        .nav-link {
+          border-bottom-color: transparent;
+        }
+      }
+    }
+
+    .nav-link {
+      padding: 0.594rem 1.5rem 0.5315rem;
+      color: $grey;
+      border-radius: 0;
+
+      &:hover {
+        color: $dark-blue;
+        background-color: #F5F5F7;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      &.active {
+        color: $dark-blue;
+        background-color: #ffffff;
+      }
+    }
+  }
+
+  @include until($lg) {
+    position: fixed;
+    left: 0;
+    top: 4.5rem;
+    width: 100%;
+    font-size: 1rem;
+    z-index: 1000;
+
+    &.widget {
+      padding: 0;
+      border-radius: 0;
+    }
+
+    .widget-title {
+      display: none;
+    }
+
+    &__nav {
+      margin-left: 0;
+      margin-right: 0;
+
+      .nav {
+        flex-direction: row;
+      }
+
+      .nav-item, .nav-item:last-child {
+        flex: 0 0 33.33333%;
+        text-align: center;
+
+        .nav-link {
+          padding: 1rem 0 0.9375rem;
+          border-bottom-color: #F0F0F0;
+
+          &:hover, &.active {
+            border-bottom-color: $blue;
+            background-color: #F5F5F7;
+          }
+        }
+      }
+    }
+  }
+
+  @include until($sm) {
+    font-size: 0.75rem;
+
+    &__nav {
+      .nav-item, .nav-item:last-child {
+        .nav-link {
+          padding: 0.9375rem 0 0.875rem;
+        }
+      }
+    }
+  }
+}
+
+.statistics-content {
+  @include until($lg) {
+    margin-top: 2.375rem;
+  }
+}
+
+.statistics-button {
+  margin-top: 1.875rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+
+  p {
+    margin-bottom: 1.5rem;
+    color: #C0C5CE;
+  }
+
+  .btn-statistics {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+    color: $grey;
+    line-height: 1.25;
+    border: 1px solid #F0F0F0;
+    border-radius: 0.75rem;
+    box-shadow: 10px 30px 50px rgba(45, 60, 90, 0.1);
+    background-color: #ffffff;
+  }
+
+  @include until($sm) {
+    p {
+      font-size: 0.875rem;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+// -----------------------------------------------------------------------
+// This file contains all styles related to the notifications main widget
+// -----------------------------------------------------------------------
+
+// 1. Configuration and helpers
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.notifications-main {
+  padding-bottom: 2.5rem;
+
+  h3 {
+    margin-bottom: 1.5rem;
+  }
+
+  .notification-card {
+    margin-bottom: 1.5rem;
+  }
+
+  &__period {
+    padding-bottom: 0.5rem;
+  }
+}

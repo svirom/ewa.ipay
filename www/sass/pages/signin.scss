@@ -39,7 +39,7 @@
   }
 
   @include until($lg) {
-    &--404 {
+    &--404, &--support {
       &::after {
         position: absolute;
         content: '';
@@ -49,6 +49,10 @@
         right: -50vw;
         background-color: $blue;
       }
+    }
+
+    &--support {
+      order: 1;
     }
   }
 }
@@ -71,6 +75,18 @@
     background-image: url('../img/signin/404.svg');
   }
 
+  &--support {
+    background-image: url('../img/signin/support-large.svg');
+    background-position: right 3.75rem top 11.25rem;
+    background-size: calc(100% - 3.75rem);
+  }
+
+  @include until($xxl) {
+    &--support {
+      background-position: right 3.75rem center;
+    }
+  }
+
   @include until($xl) {
     background-position: right 2.125rem center;
     background-size: calc(100% - 2.125rem);
@@ -81,6 +97,21 @@
       height: 12.5rem;
       background-position: center top;
       background-size: 80%;
+    }
+
+    &--support {
+      height: 29.375rem;
+      background-image: url('../img/signin/support-small.svg');
+      background-position: center;
+      background-size: auto;
+    }
+  }
+
+  @include until($md) {
+    &--support {
+      height: 15rem;
+      background-size: contain;
+      background-position: center bottom -1.875rem;
     }
   }
 
@@ -284,6 +315,78 @@
 
     &__dropdown {
       display: block;
+    }
+  }
+}
+
+.signin-right {
+  &--support {
+    justify-content: flex-start;
+    padding-top: 11.25rem;
+
+    .support-link {
+      font-size: 0.875rem;
+      color: $grey;
+    }
+
+    .signin-support {
+      margin-top: 3.75rem;
+      padding-top: 0;
+      border-top: 0;
+    }
+  }
+
+  @include until($lg) {
+    &--support {
+      min-height: calc(100vh - 29.375rem);
+      padding-top: 2.5rem;
+
+      .signin-support {
+        margin-top: 2.25rem;
+      }
+    }
+  }
+
+  @include until($md) {
+    &--support {
+      min-height: calc(100vh - 15rem);
+      padding-top: 2.5rem;
+
+      .signin-support {
+        margin-top: 2.25rem;
+      }
+    }
+  }
+
+  @include until($sm) {
+    &--support {
+      // min-height: auto;
+      padding-top: 3.2rem;
+      padding-bottom: 3.25rem;
+
+      .signin-support {
+        margin-top: 1.25rem;
+      }
+
+      .support-card {
+        &.support-card--signin {
+          display: block;
+        }
+        
+        &__contact {
+          padding-left: 2.375rem;
+
+          &--phone {
+            a:first-child {
+              margin-right: 1rem;
+
+              &::after {
+                right: -0.5rem;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
