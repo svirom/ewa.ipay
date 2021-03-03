@@ -225,73 +225,13 @@
 }
 
 .signin-support {
-  &__dropdown {
-    display: none;
-  }
-
-  @include until($sm) {
-    &__dropdown {
-      display: block;
-    }
-  }
-}
-
-.signin-support {
   margin-top: 6.25rem;
   padding-top: 2.5rem;
   border-top: 1px solid #E0E2E6;
 
-  &__dropdown {
+  &__button {
     display: none;
 
-    .dropdown-menu {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      border-radius: 0.875rem;
-    }
-
-    .support-card__title {
-      margin-bottom: 1.125rem;
-
-      &::after {
-        bottom: 0;
-        left: -1.5rem;
-        width: calc(100% + 3rem);
-        height: 2px;
-      }
-    }
-
-    .support-card__text {
-      p {
-        font-size: 0.875rem;
-      }
-    }
-
-    .support-card__info {
-      flex-direction: column;
-
-      a {
-        &::after {
-          display: none;
-        }
-      }
-    }
-
-    .support-card__contact {
-      margin-bottom: 1.5rem;
-
-      &:last-of-type {
-        margin-bottom: 0;
-      }
-
-      p {
-        margin-top: 0;
-      }
-    }
-  }
-
-  &__button {
     i {
       font-size: 1.125rem;
     }
@@ -313,7 +253,7 @@
   @include until($sm) {
     border-top: 0;
 
-    &__dropdown {
+    &__button {
       display: block;
     }
   }
@@ -360,7 +300,6 @@
 
   @include until($sm) {
     &--support {
-      // min-height: auto;
       padding-top: 3.2rem;
       padding-bottom: 3.25rem;
 

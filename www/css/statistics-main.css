@@ -1,4 +1,7 @@
 .statistics-filter {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 7rem;
   font-size: 0.875rem;
 }
 
@@ -96,36 +99,6 @@
 @media screen and (max-width: 991px) {
   .statistics-content {
     margin-top: 2.375rem;
-  }
-}
-
-.statistics-button {
-  margin-top: 1.875rem;
-  margin-bottom: 2.5rem;
-  text-align: center;
-}
-
-.statistics-button p {
-  margin-bottom: 1.5rem;
-  color: #C0C5CE;
-}
-
-.statistics-button .btn-statistics {
-  width: 2.5rem;
-  height: 2.5rem;
-  padding: 0;
-  color: #969DAC;
-  line-height: 1.25;
-  border: 1px solid #F0F0F0;
-  border-radius: 0.75rem;
-  -webkit-box-shadow: 10px 30px 50px rgba(45, 60, 90, 0.1);
-          box-shadow: 10px 30px 50px rgba(45, 60, 90, 0.1);
-  background-color: #ffffff;
-}
-
-@media screen and (max-width: 575px) {
-  .statistics-button p {
-    font-size: 0.875rem;
   }
 }
 /*# sourceMappingURL=statistics-main.css.map */

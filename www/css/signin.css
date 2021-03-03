@@ -234,69 +234,14 @@
   }
 }
 
-.signin-support__dropdown {
-  display: none;
-}
-
-@media screen and (max-width: 575px) {
-  .signin-support__dropdown {
-    display: block;
-  }
-}
-
 .signin-support {
   margin-top: 6.25rem;
   padding-top: 2.5rem;
   border-top: 1px solid #E0E2E6;
 }
 
-.signin-support__dropdown {
+.signin-support__button {
   display: none;
-}
-
-.signin-support__dropdown .dropdown-menu {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  border-radius: 0.875rem;
-}
-
-.signin-support__dropdown .support-card__title {
-  margin-bottom: 1.125rem;
-}
-
-.signin-support__dropdown .support-card__title::after {
-  bottom: 0;
-  left: -1.5rem;
-  width: calc(100% + 3rem);
-  height: 2px;
-}
-
-.signin-support__dropdown .support-card__text p {
-  font-size: 0.875rem;
-}
-
-.signin-support__dropdown .support-card__info {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.signin-support__dropdown .support-card__info a::after {
-  display: none;
-}
-
-.signin-support__dropdown .support-card__contact {
-  margin-bottom: 1.5rem;
-}
-
-.signin-support__dropdown .support-card__contact:last-of-type {
-  margin-bottom: 0;
-}
-
-.signin-support__dropdown .support-card__contact p {
-  margin-top: 0;
 }
 
 .signin-support__button i {
@@ -324,7 +269,7 @@
   .signin-support {
     border-top: 0;
   }
-  .signin-support__dropdown {
+  .signin-support__button {
     display: block;
   }
 }
