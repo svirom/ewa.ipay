@@ -1,0 +1,76 @@
+.profile-main__info {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #E0E2E6;
+}
+
+.profile-main__info-row:not(:last-of-type) {
+  margin-bottom: 1.5rem;
+}
+
+.profile-main__info h3 {
+  line-height: 1.35;
+}
+
+.profile-main__info p {
+  margin-bottom: 0;
+}
+
+.profile-main__phone {
+  position: relative;
+  padding-top: 1.5rem;
+}
+
+.profile-main__phone h3 {
+  padding-right: 1.75rem;
+  line-height: 1.35;
+}
+
+.profile-main__phone p {
+  margin-bottom: 0;
+}
+
+.profile-main__phone-text {
+  display: none;
+}
+
+.profile-main__phone .profile-main__phone-edit {
+  position: absolute;
+  top: 1.5rem;
+  right: 0;
+  padding: 0;
+  color: #969DAC;
+  border: 0;
+  background-color: transparent;
+}
+
+.profile-main__phone .profile-main__phone-edit:hover {
+  color: #2D3C5A;
+}
+
+.profile-main__phone .profile-main__phone-edit:focus {
+  outline: none;
+}
+
+.profile-main__phone .profile-main__phone-edit[aria-expanded="true"] {
+  color: #55A5FF;
+}
+
+.profile-main__phone .profile-main__phone-edit[aria-expanded="true"] ~ h3 .profile-main__phone-text,
+.profile-main__phone .profile-main__phone-edit[aria-expanded="true"] ~ .profile-main__phone-text {
+  display: block;
+}
+
+.profile-main__phone .profile-main__phone-edit[aria-expanded="true"] ~ h3 .profile-main__phone-current,
+.profile-main__phone .profile-main__phone-edit[aria-expanded="true"] ~ .profile-main__phone-current {
+  display: none;
+}
+
+.profile-main__form form {
+  padding-top: 1.125rem;
+}
+
+.profile-main__form .btn-cancel {
+  margin-top: 0.875rem;
+}
+/*# sourceMappingURL=profile-main.css.map */

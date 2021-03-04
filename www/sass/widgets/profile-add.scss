@@ -1,0 +1,182 @@
+// ------------------------------------------------------------------
+// This file contains all styles related to the profile add card widget
+// ------------------------------------------------------------------
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.profile-add {
+  &__info {
+    padding-top: 1.5rem;
+  }
+
+  &__title {
+    h3 {
+      margin-bottom: 0.875rem;
+      @include font(1rem, 400, 1.5);
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      line-height: 1.35;
+    }
+  }
+}
+
+.profile-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 12.5rem;
+  margin-bottom: 1.125rem;
+  padding: 1.5rem 2.25rem;
+  border-radius: 0.875rem;
+  background-color: #F5F5F7;
+
+  &:first-of-type {
+    margin-top: 1.125rem;
+  }
+
+  &:last-of-type {
+    margin-bottom: 1.5rem;
+  }
+
+  .btn-delete {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 3.25rem;
+    height: 3.25rem;
+    padding: 0;
+    border-radius: 0.875rem;
+
+    i {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__logo {
+    height: 2.5rem;
+    background-position: left center;
+    background-repeat: no-repeat;
+
+    &.logo-visa {
+      background-image: url('../img/visa-logo.svg');
+    }
+
+    &.logo-mastercard {
+      background-image: url('../img/visa-mastercard.svg');
+    }
+
+    &.logo-prostir {
+      background-image: url('../img/visa-prostir.svg');
+    }
+  }
+
+  &__mask {
+    @include font(1.125rem, 700, 1rem);
+
+    span {
+      vertical-align: middle;
+    }
+
+    .profile-card__bulls {
+      font-size: 1.625rem;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    color: $grey;
+  }
+}
+
+.delete-card {
+  .modal-content {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border: 0;
+    border-radius: 0.875rem;
+    box-shadow: 20px 80px 90px rgba(45, 60, 90, 0.15);;
+  }
+
+  .modal-header, .modal-body, .modal-footer {
+    width: 21.875rem;
+    margin: auto;
+    padding: 0;
+  }
+
+  .modal-header {
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 0;
+
+    .modal-title {
+      margin-bottom: 0.75rem;
+      line-height: 1.35;
+    }
+
+    .close {
+      position: absolute;
+      right: 1.5rem;
+      top: 1.5rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      margin: 0;
+      padding: 0;
+      text-shadow: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .modal-footer {
+    border-top: 0;
+
+    .btn {
+      margin: 0;
+    }
+
+    .btn-delete {
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  @include at-least($sm) {
+    .modal-dialog {
+      max-width: 540px;
+    }
+  }
+
+  @include until($sm) {
+    .modal-content {
+      padding-left: 0.875rem;
+      padding-right: 0.875rem;
+    }
+
+    .modal-header, .modal-body, .modal-footer {
+      width: 100%;
+    }
+
+    .modal-header {
+      .close {
+        top: 0.875rem;
+        right: 0.875rem;
+      }
+    }
+
+    .modal-body {
+      .profile-card {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+    }
+  }
+}

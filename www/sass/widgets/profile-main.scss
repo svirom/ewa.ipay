@@ -1,0 +1,87 @@
+// ------------------------------------------------------------------
+// This file contains all styles related to the profile main widget
+// ------------------------------------------------------------------
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.profile-main {
+  &__info {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #E0E2E6;
+
+    &-row:not(:last-of-type) {
+      margin-bottom: 1.5rem;
+    }
+
+    h3 {
+      line-height: 1.35;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  &__phone {
+    position: relative;
+    padding-top: 1.5rem;
+
+    h3 {
+      padding-right: 1.75rem;
+      line-height: 1.35;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    &-text {
+      display: none;
+    }
+
+    .profile-main__phone-edit {
+      position: absolute;
+      top: 1.5rem;
+      right: 0;
+      padding: 0;
+      color: $grey;
+      border: 0;
+      background-color: transparent;
+
+      &:hover {
+        color: $dark-blue;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      &[aria-expanded="true"] {
+        color: $blue;
+        & ~ h3 .profile-main__phone-text,
+        & ~ .profile-main__phone-text {
+          display: block;
+        }
+
+        & ~ h3 .profile-main__phone-current,
+        & ~ .profile-main__phone-current {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__form {
+    form {
+      padding-top: 1.125rem;
+    }
+
+    .btn-cancel {
+      margin-top: 0.875rem;
+    }
+  }
+}
