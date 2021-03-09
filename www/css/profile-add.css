@@ -14,88 +14,12 @@
   line-height: 1.35;
 }
 
-.profile-card {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 12.5rem;
-  margin-bottom: 1.125rem;
-  padding: 1.5rem 2.25rem;
-  border-radius: 0.875rem;
-  background-color: #F5F5F7;
-}
-
-.profile-card:first-of-type {
+.profile-add__cards .profile-card:first-of-type {
   margin-top: 1.125rem;
 }
 
-.profile-card:last-of-type {
+.profile-add__cards .profile-card:last-of-type {
   margin-bottom: 1.5rem;
-}
-
-.profile-card .btn-delete {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  width: 3.25rem;
-  height: 3.25rem;
-  padding: 0;
-  border-radius: 0.875rem;
-}
-
-.profile-card .btn-delete i {
-  font-size: 1.5rem;
-}
-
-.profile-card__logo {
-  height: 2.5rem;
-  background-position: left center;
-  background-repeat: no-repeat;
-}
-
-.profile-card__logo.logo-visa {
-  background-image: url("../img/visa-logo.svg");
-}
-
-.profile-card__logo.logo-mastercard {
-  background-image: url("../img/visa-mastercard.svg");
-}
-
-.profile-card__logo.logo-prostir {
-  background-image: url("../img/visa-prostir.svg");
-}
-
-.profile-card__mask {
-  font-size: 1.125rem;
-  font-weight: 700;
-  line-height: 1rem;
-}
-
-.profile-card__mask span {
-  vertical-align: middle;
-}
-
-.profile-card__mask .profile-card__bulls {
-  font-size: 1.625rem;
-}
-
-.profile-card__footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 1rem;
-  color: #969DAC;
 }
 
 .delete-card .modal-content {
@@ -142,6 +66,11 @@
 
 .delete-card .modal-header .close:focus {
   outline: none;
+}
+
+.delete-card .modal-body .profile-card {
+  margin-top: 1.125rem;
+  margin-bottom: 1.5rem;
 }
 
 .delete-card .modal-footer {

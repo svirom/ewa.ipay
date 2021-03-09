@@ -1,0 +1,60 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the checkbox (radio) component.
+// -----------------------------------------------------------------------------
+
+.radio-control {
+  position: relative;
+  // padding-left: 1.5rem;
+  // cursor: pointer;
+}
+
+.radio-label {
+  position: relative;
+  margin-bottom: 0;
+  padding-left: 2.5rem;
+  cursor: pointer;
+
+  &::before, &::after {
+    display: block;
+    position: absolute;
+    content: ' ';
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+
+  &::before {
+    left: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    pointer-events: none;
+    border: 2px solid #E0E2E6;
+  }
+
+  &::after {
+    left: 0.4rem;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+}
+
+.radio-input {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 0;
+
+  &:checked {
+    & ~ .radio-label {
+      &::before {
+        border-color: $blue;
+      }
+
+      &::after {
+        background-color: $blue;
+      }
+    }
+  }
+}

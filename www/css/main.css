@@ -417,6 +417,58 @@ small, .small {
   line-height: 1.2;
 }
 
+.radio-control {
+  position: relative;
+}
+
+.radio-label {
+  position: relative;
+  margin-bottom: 0;
+  padding-left: 2.5rem;
+  cursor: pointer;
+}
+
+.radio-label::before, .radio-label::after {
+  display: block;
+  position: absolute;
+  content: ' ';
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.radio-label::before {
+  left: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  pointer-events: none;
+  border: 2px solid #E0E2E6;
+}
+
+.radio-label::after {
+  left: 0.4rem;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.radio-input {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 0;
+}
+
+.radio-input:checked ~ .radio-label::before {
+  border-color: #55A5FF;
+}
+
+.radio-input:checked ~ .radio-label::after {
+  background-color: #55A5FF;
+}
+
 .select-lang {
   position: relative;
   color: #969DAC;
@@ -472,6 +524,94 @@ small, .small {
   border-bottom: 0;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+}
+
+.profile-card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 12.5rem;
+  margin-bottom: 1.125rem;
+  padding: 1.5rem 2.25rem;
+  border-radius: 0.875rem;
+  background-color: #F5F5F7;
+}
+
+.profile-card .btn-delete {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 3.25rem;
+  height: 3.25rem;
+  padding: 0;
+  border-radius: 0.875rem;
+}
+
+.profile-card .btn-delete i {
+  font-size: 1.5rem;
+}
+
+.profile-card__logo {
+  height: 2.5rem;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.profile-card__logo.logo-visa {
+  background-image: url("../img/visa-logo.svg");
+}
+
+.profile-card__logo.logo-mastercard {
+  background-image: url("../img/visa-mastercard.svg");
+}
+
+.profile-card__logo.logo-prostir {
+  background-image: url("../img/visa-prostir.svg");
+}
+
+.profile-card__logo.logo-visa-white {
+  background-image: url("../img/visa-logo-white.svg");
+}
+
+.profile-card__logo.logo-mastercard-white {
+  background-image: url("../img/visa-mastercard-white.svg");
+}
+
+.profile-card__logo.logo-prostir-white {
+  background-image: url("../img/visa-prostir-white.svg");
+}
+
+.profile-card__mask {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1rem;
+}
+
+.profile-card__mask span {
+  vertical-align: middle;
+}
+
+.profile-card__mask .profile-card__bulls {
+  font-size: 1.625rem;
+}
+
+.profile-card__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1rem;
+  color: #969DAC;
 }
 
 .notification-card {

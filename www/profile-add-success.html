@@ -14,10 +14,9 @@
 
     <!-- styles -->
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/profile-main.css">
-    <link rel="stylesheet" href="/css/profile-add.css">
+    <link rel="stylesheet" href="/css/card-success.css">
 
-    <title>Profile 0 cards</title>
+    <title>Add card Success</title>
   </head>
   <body>
 
@@ -179,7 +178,7 @@
                       </div>
                     </li>
 
-                    <li class="main-nav__item main-nav__account dropdown active">
+                    <li class="main-nav__item main-nav__account dropdown">
                       <a href="#" role="button" class="main-nav__link" id="dropdown-account" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="main-nav__item-text">Святослав</span>
                         <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -221,65 +220,34 @@
       <!-- main content -->
       <main class="main-content">
         <div class="container">
-          <div class="row">
+          <div class="row justify-content-center">
 
-            <div class="col-lg">
+            <div class="col-lg-6 col-xl-5">
 
-              <!-- profile main widget -->
-              <div class="profile-main widget" id="profile-main-widget">
-                <div class="widget-title bottom-dashed">
-                  <h2><i class="ci-user"></i><span>Ваш профиль</span></h2>
-                  <p class="widget-subtitle">Общая информация</p>
+              <!-- card add success widget -->
+              <div class="card-success" id="card-success-widget">
+                <div class="card-success__icon">
+                  <i class="ci-circle_check"></i>
                 </div>
-                <div class="profile-main__info">
-                  <div class="profile-main__info-row">
-                    <h3>Святослав Тернопольский</h3>
-                    <p>Главный инженер</p>
-                  </div>
-                  <div class="profile-main__info-row">
-                    <h3>iPay.ua - Онлайн платежи и переводы</h3>
-                    <p>Компания</p>
-                  </div>
-                </div>
-                <div class="profile-main__phone">
-                  <button class="profile-main__phone-edit" type="button" data-toggle="collapse" data-target="#phone-edit" aria-expanded="false" aria-controls="phone-edit"><i class="ci-edit"></i></button>
-                  <h3>
-                    <span class="profile-main__phone-current">+380 (66) 123 45 67</span>
-                    <span class="profile-main__phone-text">Новый номер телефона</span>
-                  </h3>
-                  <p class="profile-main__phone-current">Номер телефона</p>
-                  <p class="profile-main__phone-text">+380 (66) 123 45 67</p>
-                </div>
-                <div class="profile-main__form collapse" id="phone-edit">
-                  <form action="/">
-                    <div class="form-group">
-                      <input type="tel" class="form-control form-input" placeholder="+ 380 (00) 000 00 00">
+                <div class="card-success__card">
+                  <div class="profile-card">
+                    <div class="profile-card__logo logo-visa-white"></div>
+                    <div class="profile-card__info">
+                      <div class="profile-card__mask">
+                        <span class="profile-card__mask-number"><span>4545</span>&nbsp;&nbsp;&nbsp;<span>4545</span>&nbsp;&nbsp;&nbsp;<span>4545</span>&nbsp;&nbsp;&nbsp;<span>1456</span></span>
+                      </div>
+                      <div class="profile-card__footer">
+                        <span class="profile-card__name">Svyatoslav Ternopilsky</span>
+                        <span class="profile-card__expiry">04 / 22</span>
+                      </div>
                     </div>
-                    <button type="submit" class="btn btn-blue btn-block">Сохранить</button>
-                    <button class="btn btn-cancel btn-block" type="button" data-toggle="collapse" data-target="#phone-edit" aria-expanded="false" aria-controls="phone-edit">Отменить</button>
-                  </form>
-                </div>
-              </div><!-- profile main widget -->
-
-            </div>
-
-            <div class="col-lg">
-
-              <!-- profile add card widget -->
-              <div class="profile-add widget" id="profile-add-widget">
-                <div class="widget-title bottom-dashed">
-                  <h2><i class="ci-bar_chart_horizontal"></i><span>Добавить карту</span></h2>
-                  <p class="widget-subtitle">Сохраняйте ваши любимые карты</p>
-                </div>
-                <div class="profile-add__info">
-                  <div class="profile-add__title">
-                    <h3>Ваши карты</h3>
-                    <p>У вас еще нет сохраненных карт, нажмите “Добавить карту”, что бы сохранить и быстро получать деньги до зарплаты.</p>
                   </div>
-                  <div class="profile-add__cards"></div>
                 </div>
-                <a href="#" class="btn btn-blue btn-block">Добавить карту</a>
-              </div><!-- profile add card widget -->
+                <div class="card-success__close">
+                  <p>Ваша карта успешно добавлена</p>
+                  <a href="#" class="btn btn-green btn-block">Закрыть</a>
+                </div>
+              </div><!-- card add success widget -->
 
             </div>
 
@@ -288,7 +256,8 @@
       </main><!-- main content -->
 
       <!-- main footer -->
-      <footer class="main-footer">
+      <!-- <footer class="main-footer"> -->
+      <footer class="main-footer no-button">
         <div class="container-md">
           <div class="row">
             <div class="col-auto px-0">
@@ -302,14 +271,13 @@
                 <span class="d-none d-lg-inline">Техническая поддержка</span>
                 <i class="ci-user_voice"></i>
               </a>
-              <a href="#" class="btn btn-money footer-links__money">Снять деньги</a>
+              <!-- <a href="#" class="btn btn-money footer-links__money">Снять деньги</a> -->
             </div>
           </div>
         </div>
       </footer><!-- main footer -->
 
-    </div>
-    
+    </div>    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -317,5 +285,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="/js/custom.js"></script>
+    <script src="/js/profile-add.js"></script>
   </body>
 </html>

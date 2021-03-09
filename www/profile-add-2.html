@@ -14,10 +14,9 @@
 
     <!-- styles -->
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/profile-main.css">
-    <link rel="stylesheet" href="/css/profile-add.css">
+    <link rel="stylesheet" href="/css/card-add.css">
 
-    <title>Profile 0 cards</title>
+    <title>Add card 2</title>
   </head>
   <body>
 
@@ -179,7 +178,7 @@
                       </div>
                     </li>
 
-                    <li class="main-nav__item main-nav__account dropdown active">
+                    <li class="main-nav__item main-nav__account dropdown">
                       <a href="#" role="button" class="main-nav__link" id="dropdown-account" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="main-nav__item-text">Святослав</span>
                         <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -221,65 +220,77 @@
       <!-- main content -->
       <main class="main-content">
         <div class="container">
-          <div class="row">
+          <div class="row justify-content-center">
 
-            <div class="col-lg">
+            <div class="col-lg-7 col-xl-6">
 
-              <!-- profile main widget -->
-              <div class="profile-main widget" id="profile-main-widget">
+              <!-- card add widget -->
+              <div class="card-add widget" id="card-add-widget">
                 <div class="widget-title bottom-dashed">
-                  <h2><i class="ci-user"></i><span>Ваш профиль</span></h2>
-                  <p class="widget-subtitle">Общая информация</p>
+                  <h2><i class="ci-bar_chart_horizontal"></i><span>Добавление карты</span></h2>
+                  <p class="widget-subtitle">Добавляйте ваши любимые карты</p>
                 </div>
-                <div class="profile-main__info">
-                  <div class="profile-main__info-row">
-                    <h3>Святослав Тернопольский</h3>
-                    <p>Главный инженер</p>
+                <div class="card-add__info">
+                  <div class="card-add__title">
+                    <h3>Подтверждение карты</h3>
+                    <p>Для подтверждения карты у вас будут списаны и возвращены средства в размере 1 грн.</p>
                   </div>
-                  <div class="profile-main__info-row">
-                    <h3>iPay.ua - Онлайн платежи и переводы</h3>
-                    <p>Компания</p>
+                  <div class="card-add__form card-form">
+                    <form action="/">
+
+                      <div class="card-form__label">Введите Имя и Фамилию с карты</div>
+
+                      <div class="row no-gutters">
+                        <div class="col-sm-6 p-right">
+                          <div class="form-group has-success">
+                            <input type="text" class="form-control form-input" placeholder="Имя" value="Альберт">
+                            <div class="help-block"></div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 p-left">
+                          <div class="form-group has-success">
+                            <input type="text" class="form-control form-input" placeholder="Фамилия" value="Кравець">
+                            <div class="help-block"></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card-form__label">Введите данные карты</div>
+
+                      <div class="row no-gutters mb-1">
+                        <div class="col-sm p-right">
+                          <div class="form-group has-success">
+                            <input type="tel" class="form-control form-input input-card" placeholder="0000 0000 0000 0000" value="4444 4444 4444 4444">
+                            <label class="label-card card-visa"></label>
+                            <div class="help-block"></div>
+                          </div>
+                        </div>
+                        <div class="col-sm-auto p-left">
+
+                          <div class="row no-gutters card-form__data">
+                            <div class="col-6 col-sm-auto p-right">
+                              <div class="form-group has-success">
+                                <input type="tel" class="form-control form-input text-center" placeholder="MM / ГГ" value="12 / 24">
+                                <div class="help-block"></div>
+                              </div>
+                            </div>
+                            <div class="col-6 col-sm-auto p-left">
+                              <div class="form-group has-success">
+                                <input type="password" class="form-control form-input text-center" placeholder="CVV" value="123">
+                                <div class="help-block"></div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+
+                      <button type="submit" class="btn btn-green btn-block">Добавить карту</button>
+
+                    </form>
                   </div>
                 </div>
-                <div class="profile-main__phone">
-                  <button class="profile-main__phone-edit" type="button" data-toggle="collapse" data-target="#phone-edit" aria-expanded="false" aria-controls="phone-edit"><i class="ci-edit"></i></button>
-                  <h3>
-                    <span class="profile-main__phone-current">+380 (66) 123 45 67</span>
-                    <span class="profile-main__phone-text">Новый номер телефона</span>
-                  </h3>
-                  <p class="profile-main__phone-current">Номер телефона</p>
-                  <p class="profile-main__phone-text">+380 (66) 123 45 67</p>
-                </div>
-                <div class="profile-main__form collapse" id="phone-edit">
-                  <form action="/">
-                    <div class="form-group">
-                      <input type="tel" class="form-control form-input" placeholder="+ 380 (00) 000 00 00">
-                    </div>
-                    <button type="submit" class="btn btn-blue btn-block">Сохранить</button>
-                    <button class="btn btn-cancel btn-block" type="button" data-toggle="collapse" data-target="#phone-edit" aria-expanded="false" aria-controls="phone-edit">Отменить</button>
-                  </form>
-                </div>
-              </div><!-- profile main widget -->
-
-            </div>
-
-            <div class="col-lg">
-
-              <!-- profile add card widget -->
-              <div class="profile-add widget" id="profile-add-widget">
-                <div class="widget-title bottom-dashed">
-                  <h2><i class="ci-bar_chart_horizontal"></i><span>Добавить карту</span></h2>
-                  <p class="widget-subtitle">Сохраняйте ваши любимые карты</p>
-                </div>
-                <div class="profile-add__info">
-                  <div class="profile-add__title">
-                    <h3>Ваши карты</h3>
-                    <p>У вас еще нет сохраненных карт, нажмите “Добавить карту”, что бы сохранить и быстро получать деньги до зарплаты.</p>
-                  </div>
-                  <div class="profile-add__cards"></div>
-                </div>
-                <a href="#" class="btn btn-blue btn-block">Добавить карту</a>
-              </div><!-- profile add card widget -->
+              </div><!-- card add widget -->
 
             </div>
 
@@ -288,7 +299,8 @@
       </main><!-- main content -->
 
       <!-- main footer -->
-      <footer class="main-footer">
+      <!-- <footer class="main-footer"> -->
+      <footer class="main-footer no-button">
         <div class="container-md">
           <div class="row">
             <div class="col-auto px-0">
@@ -302,14 +314,13 @@
                 <span class="d-none d-lg-inline">Техническая поддержка</span>
                 <i class="ci-user_voice"></i>
               </a>
-              <a href="#" class="btn btn-money footer-links__money">Снять деньги</a>
+              <!-- <a href="#" class="btn btn-money footer-links__money">Снять деньги</a> -->
             </div>
           </div>
         </div>
       </footer><!-- main footer -->
 
-    </div>
-    
+    </div>    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -14,10 +14,11 @@
 
     <!-- styles -->
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/profile-main.css">
-    <link rel="stylesheet" href="/css/profile-add.css">
+    <link rel="stylesheet" href="/css/withdraw-main.css">
+    <link rel="stylesheet" href="/css/withdraw-faq.css">
+    <link rel="stylesheet" href="/css/support-common.css">
 
-    <title>Profile 0 cards</title>
+    <title>Withdraw Money</title>
   </head>
   <body>
 
@@ -76,7 +77,7 @@
                 <nav>
                   <ul class="main-nav">
 
-                    <li class="main-nav__item main-nav__get-money">
+                    <li class="main-nav__item main-nav__get-money active">
                       <a href="#" class="main-nav__link">
                         <i class="ci-credit_card"></i>
                         <span class="main-nav__item-text">Снять деньги</span>
@@ -126,12 +127,9 @@
                     </li>
 
                     <li class="main-nav__item main-nav__notification main-nav__notification--new dropdown">
-                      <!-- <span class="main-nav__link">
-                        <i class="ci-notification_dot"></i>
-                      </span> -->
                       <a href="#" role="button" class="main-nav__link" id="dropdown-notification" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="ci-notification_dot"></i>
-                        <span class="badge notification-badge">2</span>
+                        <span class="badge notification-badge">4</span>
                       </a>
                       <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-notification">
 
@@ -179,7 +177,7 @@
                       </div>
                     </li>
 
-                    <li class="main-nav__item main-nav__account dropdown active">
+                    <li class="main-nav__item main-nav__account dropdown">
                       <a href="#" role="button" class="main-nav__link" id="dropdown-account" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="main-nav__item-text">Святослав</span>
                         <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -223,63 +221,204 @@
         <div class="container">
           <div class="row">
 
-            <div class="col-lg">
-
-              <!-- profile main widget -->
-              <div class="profile-main widget" id="profile-main-widget">
+            <div class="col-lg-3 d-none d-lg-block">
+              <!-- withdraw faq widget -->
+              <div class="withdraw-faq widget" id="withdraw-faq-widget">
                 <div class="widget-title bottom-dashed">
-                  <h2><i class="ci-user"></i><span>Ваш профиль</span></h2>
-                  <p class="widget-subtitle">Общая информация</p>
+                  <h2>
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="#55A5FF" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.28882 8.30451H6.02604L6.71345 7.6958H3.97623L3.28882 8.30451Z"/>
+                      <path d="M4.99987 14.2855C4.94697 14.2855 4.89455 14.2844 4.84148 14.282C3.91311 14.2402 3.1557 13.7478 2.81538 12.9645C2.53957 12.3301 2.53651 11.3938 3.35424 10.6696L4.11036 10H1.47684C0.663467 11.038 0.476534 12.3546 1.00911 13.5804C1.62313 14.9934 3.05408 15.9184 4.74245 15.9941C4.82761 15.9979 4.91358 15.9999 4.99987 15.9999C7.75693 15.9999 9.99981 14.0133 9.99981 11.5714H8.06435C8.06435 13.068 6.68969 14.2855 4.99987 14.2855Z"/>
+                      <path d="M4.99994 1.71427C5.05284 1.71427 5.10526 1.71541 5.15833 1.71784C6.0867 1.75956 6.84411 2.25198 7.18443 3.03526C7.46024 3.66968 7.4633 4.60596 6.64557 5.33024L5.88945 5.99995H8.52297C9.33634 4.96196 9.52344 3.6454 8.9907 2.41955C8.37668 1.00656 6.94573 0.0815708 5.25736 0.00585714C5.17204 0.00200003 5.08623 0 4.99994 0C2.24288 0 0 1.9867 0 4.42853H1.93546C1.93546 2.93183 3.31012 1.71427 4.99994 1.71427Z"/>
+                      <path d="M9.5971 8.59033H0.403656V9.71447H9.5971V8.59033Z"/>
+                      <path d="M9.5971 6.28589H0.403656V7.41002H9.5971V6.28589Z"/>
+                    </svg>
+                    <span class="dark-blue">Как снять деньги</span>
+                  </h2>
                 </div>
-                <div class="profile-main__info">
-                  <div class="profile-main__info-row">
-                    <h3>Святослав Тернопольский</h3>
-                    <p>Главный инженер</p>
+                <div class="withdraw-faq__list">
+                  <ul>
+                    <li>1. Укажите сумму</li>
+                    <li>2. Выберите способ получения</li>
+                    <li>3. Нажмите “Снять деньги”</li>
+                  </ul>
+                </div>
+              </div><!-- withdraw faq widget -->
+            </div>
+
+            <div class="col-lg-6">
+
+              <!-- withdraw main widget -->
+              <div class="withdraw-main widget" id="withdraw-main-widget">
+                <div class="widget-title bottom-dashed">
+                  <h2><i class="ci-credit_card"></i><span>Снять деньги</span></h2>
+                  <p class="widget-subtitle">Снимайте доступные вам деньги</p>
+                </div>
+                <div class="withdraw-main__money bottom-dashed">
+                  <div class="withdraw-main__amount">
+                    <span class="currency-icon-light">12 000</span>
                   </div>
-                  <div class="profile-main__info-row">
-                    <h3>iPay.ua - Онлайн платежи и переводы</h3>
-                    <p>Компания</p>
-                  </div>
+                  <p class="small">Доступные средства для снятия</p>
                 </div>
-                <div class="profile-main__phone">
-                  <button class="profile-main__phone-edit" type="button" data-toggle="collapse" data-target="#phone-edit" aria-expanded="false" aria-controls="phone-edit"><i class="ci-edit"></i></button>
-                  <h3>
-                    <span class="profile-main__phone-current">+380 (66) 123 45 67</span>
-                    <span class="profile-main__phone-text">Новый номер телефона</span>
-                  </h3>
-                  <p class="profile-main__phone-current">Номер телефона</p>
-                  <p class="profile-main__phone-text">+380 (66) 123 45 67</p>
-                </div>
-                <div class="profile-main__form collapse" id="phone-edit">
+
+                <div class="withdraw-form">
                   <form action="/">
-                    <div class="form-group">
-                      <input type="tel" class="form-control form-input" placeholder="+ 380 (00) 000 00 00">
+                    
+                    <div class="withdraw-form__title">Сколько вы хотите снять?</div>
+
+                    <div class="withdraw-form__buttons">
+                      <button type="button" class="btn btn-withdraw-amount">500 грн</button>
+                      <button type="button" class="btn btn-withdraw-amount">1 000 грн</button>
+                      <button type="button" class="btn btn-withdraw-amount">1 500 грн</button>
+                      <button type="button" class="btn btn-withdraw-amount">2 000 грн</button>
                     </div>
-                    <button type="submit" class="btn btn-blue btn-block">Сохранить</button>
-                    <button class="btn btn-cancel btn-block" type="button" data-toggle="collapse" data-target="#phone-edit" aria-expanded="false" aria-controls="phone-edit">Отменить</button>
+
+                    <div class="withdraw-form__title">Или введите желаемую сумму</div>
+
+                    <div class="withdraw-form__amount">
+                      <div class="form-group withdraw-form__amount-input">
+                        <input type="password" class="form-control form-input input-currency" placeholder="5 - 25 000">
+                        <label class="label-currency"></label>
+                      </div>
+                      <div class="form-group withdraw-form__amount-commission">
+                        <p class="mb-1">Комиссия</p>
+                        <p class="mb-0 dark-blue"><span>0</span> грн</p>
+                      </div>
+                    </div>
+
+                    <div class="withdraw-form__title">Выберите способ получения</div>
+
+                    <div class="withdraw-form__method" id="withdraw-form__method">
+
+                      <!-- radiobuttons -->
+                      <div class="withdraw-form__radio">
+                        <div class="radio-control">
+                          <input type="radio" id="methodRadio1" name="methodRadio" class="radio-input" checked>
+                          <label class="radio-label" for="methodRadio1" data-toggle="collapse" data-target="#methodPanel-1" aria-expanded="true" role="button">Зарплатные реквизиты</label> 
+                        </div>
+                        <div class="radio-control">
+                          <input type="radio" id="methodRadio2" name="methodRadio" class="radio-input">
+                          <label class="radio-label" for="methodRadio2" data-toggle="collapse" data-target="#methodPanel-2" aria-expanded="false" role="button">Список сохраненных карт</label> 
+                        </div>
+                        <div class="radio-control">
+                          <input type="radio" id="methodRadio3" name="methodRadio" class="radio-input">
+                          <label class="radio-label" for="methodRadio3" data-toggle="collapse" data-target="#methodPanel-3" aria-expanded="false" role="button">Указать данные карты вручную</label>
+                        </div>
+                      </div>
+                      
+                      <!-- radiobuttons content -->
+                      <div id="methodPanel-1" class="collapse show" data-parent="#withdraw-form__method">
+                        <div class="withdraw-form__panel">
+                          <div class="form-iban">
+                            <div class="form-iban__title small">IBAN Счет</div>
+                            <div class="form-iban__number">
+                              <span><strong>UA 38</strong></span>
+                              <span>123456</span>
+                              <span>00000</span>
+                              <span><strong>12345678912345</strong></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="methodPanel-2" class="collapse" data-parent="#withdraw-form__method">
+                        <div class="withdraw-form__panel">
+                          <div class="form-group mb-0 form-cards">
+                            <div class="radio-control">
+                              <input type="radio" id="cardRadio1" name="cardRadio" class="radio-input" checked="">
+                              <label class="radio-label" for="cardRadio1">
+                                <div class="profile-card">
+                                  <div class="profile-card__logo logo-visa"></div>
+                                  <div class="profile-card__info">
+                                    <div class="profile-card__mask">
+                                      <span class="profile-card__bulls">&bull;&bull;&bull;&bull;&nbsp;&nbsp;&bull;&bull;&bull;&bull;&nbsp;&nbsp;&bull;&bull;&bull;&bull;&nbsp;</span>
+                                      <span class="profile-card__mask-number">1456</span>
+                                    </div>
+                                    <div class="profile-card__footer">
+                                      <span class="profile-card__name">Svyatoslav Ternopilsky</span>
+                                      <span class="profile-card__expiry">04 / 22</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </label>
+                            </div>
+                            <div class="radio-control">
+                              <input type="radio" id="cardRadio2" name="cardRadio" class="radio-input">
+                              <label class="radio-label" for="cardRadio2">
+                                <div class="profile-card">
+                                  <div class="profile-card__logo logo-visa"></div>
+                                  <div class="profile-card__info">
+                                    <div class="profile-card__mask">
+                                      <span class="profile-card__bulls">&bull;&bull;&bull;&bull;&nbsp;&nbsp;&bull;&bull;&bull;&bull;&nbsp;&nbsp;&bull;&bull;&bull;&bull;&nbsp;</span>
+                                      <span class="profile-card__mask-number">7678</span>
+                                    </div>
+                                    <div class="profile-card__footer">
+                                      <span class="profile-card__name">Svyatoslav Romaniuk</span>
+                                      <span class="profile-card__expiry">12 / 28</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="methodPanel-3" class="collapse" data-parent="#withdraw-form__method">
+                        <div class="withdraw-form__panel"></div>
+                      </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-blue btn-block">Снять деньги</button>
+
                   </form>
                 </div>
-              </div><!-- profile main widget -->
+
+              </div><!-- withdraw main widget -->              
 
             </div>
 
-            <div class="col-lg">
+            <div class="col-lg-3">
 
-              <!-- profile add card widget -->
-              <div class="profile-add widget" id="profile-add-widget">
-                <div class="widget-title bottom-dashed">
-                  <h2><i class="ci-bar_chart_horizontal"></i><span>Добавить карту</span></h2>
-                  <p class="widget-subtitle">Сохраняйте ваши любимые карты</p>
-                </div>
-                <div class="profile-add__info">
-                  <div class="profile-add__title">
-                    <h3>Ваши карты</h3>
-                    <p>У вас еще нет сохраненных карт, нажмите “Добавить карту”, что бы сохранить и быстро получать деньги до зарплаты.</p>
+              <!-- support commomn widget -->
+              <div class="support-common widget" id="support-common-widget">
+                <div class="support-card">
+                  <div class="widget-title bottom-dashed">
+                    <h2><i class="ci-user_voice"></i><span>Служба поддержки</span></h2>
                   </div>
-                  <div class="profile-add__cards"></div>
+                  <div class="support-card__text">
+                    <p class="d-none d-sm-block d-lg-none">Наши специалисты работают для вас 24/7, если у вас возникли вопросы пишите нам на почту или звоните по номеру ниже.</p>
+                    <p class="small d-sm-none d-lg-block">Если у вас возникли вопросы пишите или звоните нам.</p>
+                  </div>
+                  <div class="support-card__info">
+                    <div class="support-card__contact support-card__contact--email">
+                      <span>
+                        <a href="mailto:help@ewa.com">help@ewa.com</a>
+                      </span>
+                      <p class="mb-0"><small>Пишите нам на email</small></p>
+                    </div>
+                    <div class="support-card__contact support-card__contact--phone d-none d-sm-block d-lg-none">
+                      <span>
+                        <a href="tel:+380 (44) 502 11 60">+380 (44) 502 11 60</a>
+                        <a href="tel:0 800 60 11 60">0 800 60 11 60</a>
+                      </span>
+                      <p class="mb-0"><small>Время работы с 9.00 до 21.00 / Пн - Вс</small></p>
+                    </div>
+                    <div class="support-card__contact support-card__contact--phone d-sm-none d-lg-block">
+                      <span>
+                        <a href="tel:+380 (44) 502 11 60">+380 (44) 502 11 60</a>
+                      </span>
+                      <p class="mb-0"><small>Пн - Пт / c 9:00 до 21:00</small></p>
+                    </div>
+                    <div class="support-card__contact support-card__contact--phone mb-0 d-sm-none d-lg-block">
+                      <span>
+                        <a href="tel:0 800 60 11 60">0 800 60 11 60</a>
+                      </span>
+                      <p class="mb-0"><small>Круглосуточно</small></p>
+                    </div>
+                  </div>
                 </div>
-                <a href="#" class="btn btn-blue btn-block">Добавить карту</a>
-              </div><!-- profile add card widget -->
+              </div><!-- support commomn widget -->
 
             </div>
 
@@ -288,7 +427,8 @@
       </main><!-- main content -->
 
       <!-- main footer -->
-      <footer class="main-footer">
+      <footer class="main-footer no-button">
+      <!-- <footer class="main-footer"> -->
         <div class="container-md">
           <div class="row">
             <div class="col-auto px-0">
@@ -302,7 +442,7 @@
                 <span class="d-none d-lg-inline">Техническая поддержка</span>
                 <i class="ci-user_voice"></i>
               </a>
-              <a href="#" class="btn btn-money footer-links__money">Снять деньги</a>
+              <!-- <a href="#" class="btn btn-money footer-links__money">Снять деньги</a> -->
             </div>
           </div>
         </div>
@@ -317,5 +457,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="/js/custom.js"></script>
+    <script src="/js/withdraw-main.js"></script>
   </body>
 </html>

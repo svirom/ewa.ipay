@@ -110,6 +110,7 @@
 }
 
 .dashboard-money__method-title {
+  color: rgba(255, 255, 255, 0.8);
   line-height: 1.35;
 }
 

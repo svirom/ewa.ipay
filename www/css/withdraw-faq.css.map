@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAQA,AAGI,aAHS,CAEX,aAAa,CACX,EAAE,CAAC;EACD,MAAM,EAAE,MAAM;EACd,aAAa,EAAE,CAAC;EEMrB,SAAS,EFLU,IAAI;EEMvB,WAAW,EFNc,GAAG;EEO5B,WAAW,EFPmB,KAAK;CAC/B;;AAGF,AAAD,mBAAO,CAAC;EACN,WAAW,EAAE,QAAQ;CAUtB;;AAXA,AAGC,mBAHK,CAGL,EAAE,CAAC;EEFN,SAAS,EFGU,QAAQ;EEF3B,WAAW,EFEkB,GAAG;EEDhC,WAAW,EFCuB,IAAI;EACjC,KAAK,ECVJ,OAAO;CDeT;;AAVF,AAOG,mBAPG,CAGL,EAAE,AAIC,IAAK,CAAA,WAAW,EAAE;EACjB,aAAa,EAAE,IAAI;CACpB",
+    "sources": [
+        "../sass/widgets/withdraw-faq.scss",
+        "../sass/abstracts/_variables.scss",
+        "../sass/abstracts/_mixins.scss"
+    ],
+    "names": [],
+    "file": "withdraw-faq.css"
+}
