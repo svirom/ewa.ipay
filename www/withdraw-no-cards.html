@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="/css/withdraw-faq.css">
     <link rel="stylesheet" href="/css/support-common.css">
 
-    <title>Withdraw Money</title>
+    <title>Withdraw Money No Cards</title>
   </head>
   <body>
 
@@ -293,11 +293,11 @@
                       <!-- radiobuttons -->
                       <div class="withdraw-form__radio">
                         <div class="radio-control">
-                          <input type="radio" id="methodRadio1" name="methodRadio" class="radio-input" checked>
+                          <input type="radio" id="methodRadio1" name="methodRadio" class="radio-input">
                           <label class="radio-label" for="methodRadio1" data-toggle="collapse" data-target="#methodPanel-1" aria-expanded="true" role="button">Зарплатные реквизиты</label> 
                         </div>
                         <div class="radio-control">
-                          <input type="radio" id="methodRadio2" name="methodRadio" class="radio-input">
+                          <input type="radio" id="methodRadio2" name="methodRadio" class="radio-input" checked>
                           <label class="radio-label" for="methodRadio2" data-toggle="collapse" data-target="#methodPanel-2" aria-expanded="false" role="button">Список сохраненных карт</label> 
                         </div>
                         <div class="radio-control">
@@ -307,7 +307,7 @@
                       </div>
                       
                       <!-- radiobuttons content -->
-                      <div id="methodPanel-1" class="collapse show" data-parent="#withdraw-form__method">
+                      <div id="methodPanel-1" class="collapse" data-parent="#withdraw-form__method">
                         <div class="withdraw-form__panel">
                           <div class="form-iban">
                             <div class="form-iban__title small">IBAN Счет</div>
@@ -321,46 +321,9 @@
                         </div>
                       </div>
 
-                      <div id="methodPanel-2" class="collapse" data-parent="#withdraw-form__method">
+                      <div id="methodPanel-2" class="collapse show" data-parent="#withdraw-form__method">
                         <div class="withdraw-form__panel">
-                          <div class="form-group mb-0 form-cards">
-                            <div class="radio-control">
-                              <input type="radio" id="cardRadio1" name="cardRadio" class="radio-input" checked="">
-                              <label class="radio-label" for="cardRadio1">
-                                <div class="profile-card">
-                                  <div class="profile-card__logo logo-visa"></div>
-                                  <div class="profile-card__info">
-                                    <div class="profile-card__mask">
-                                      <span class="profile-card__bulls">&bull;&bull;&bull;&bull;&nbsp;&nbsp;&bull;&bull;&bull;&bull;&nbsp;&nbsp;&bull;&bull;&bull;&bull;&nbsp;</span>
-                                      <span class="profile-card__mask-number">1456</span>
-                                    </div>
-                                    <div class="profile-card__footer">
-                                      <span class="profile-card__name">Svyatoslav Ternopilsky</span>
-                                      <span class="profile-card__expiry">04 / 22</span>
-                                    </div>
-                                  </div>
-                                </div>
-                              </label>
-                            </div>
-                            <div class="radio-control">
-                              <input type="radio" id="cardRadio2" name="cardRadio" class="radio-input">
-                              <label class="radio-label" for="cardRadio2">
-                                <div class="profile-card">
-                                  <div class="profile-card__logo logo-visa"></div>
-                                  <div class="profile-card__info">
-                                    <div class="profile-card__mask">
-                                      <span class="profile-card__bulls">&bull;&bull;&bull;&bull;&nbsp;&nbsp;&bull;&bull;&bull;&bull;&nbsp;&nbsp;&bull;&bull;&bull;&bull;&nbsp;</span>
-                                      <span class="profile-card__mask-number">7678</span>
-                                    </div>
-                                    <div class="profile-card__footer">
-                                      <span class="profile-card__name">Svyatoslav Romaniuk</span>
-                                      <span class="profile-card__expiry">12 / 28</span>
-                                    </div>
-                                  </div>
-                                </div>
-                              </label>
-                            </div>
-                          </div>
+                          <p class="mb-0">Сохраненных карт нет. У вас есть возможность добавить ваши любымые карты в личном кабинете, перейдите в <a href="#" class="blue">Профайл</a>, чтобы добавить нужную вам карту.</p>
                         </div>
                       </div>
 

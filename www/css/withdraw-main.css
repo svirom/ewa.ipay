@@ -208,6 +208,10 @@
   color: #ffffff;
 }
 
+.withdraw-form__panel a.blue:hover {
+  color: #55A5FF;
+}
+
 @media screen and (max-width: 575px) {
   .withdraw-form__buttons {
     -ms-flex-wrap: wrap;

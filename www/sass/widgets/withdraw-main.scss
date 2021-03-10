@@ -224,6 +224,14 @@
         }
       }
     }
+
+    a {
+      &.blue {
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
   }
 
   @include until($sm) {

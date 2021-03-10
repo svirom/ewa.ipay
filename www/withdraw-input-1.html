@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="/css/withdraw-faq.css">
     <link rel="stylesheet" href="/css/support-common.css">
 
-    <title>Withdraw Money</title>
+    <title>Withdraw Money Input 1</title>
   </head>
   <body>
 
@@ -293,7 +293,7 @@
                       <!-- radiobuttons -->
                       <div class="withdraw-form__radio">
                         <div class="radio-control">
-                          <input type="radio" id="methodRadio1" name="methodRadio" class="radio-input" checked>
+                          <input type="radio" id="methodRadio1" name="methodRadio" class="radio-input">
                           <label class="radio-label" for="methodRadio1" data-toggle="collapse" data-target="#methodPanel-1" aria-expanded="true" role="button">Зарплатные реквизиты</label> 
                         </div>
                         <div class="radio-control">
@@ -301,13 +301,13 @@
                           <label class="radio-label" for="methodRadio2" data-toggle="collapse" data-target="#methodPanel-2" aria-expanded="false" role="button">Список сохраненных карт</label> 
                         </div>
                         <div class="radio-control">
-                          <input type="radio" id="methodRadio3" name="methodRadio" class="radio-input">
+                          <input type="radio" id="methodRadio3" name="methodRadio" class="radio-input" checked>
                           <label class="radio-label" for="methodRadio3" data-toggle="collapse" data-target="#methodPanel-3" aria-expanded="false" role="button">Указать данные карты вручную</label>
                         </div>
                       </div>
                       
                       <!-- radiobuttons content -->
-                      <div id="methodPanel-1" class="collapse show" data-parent="#withdraw-form__method">
+                      <div id="methodPanel-1" class="collapse" data-parent="#withdraw-form__method">
                         <div class="withdraw-form__panel">
                           <div class="form-iban">
                             <div class="form-iban__title small">IBAN Счет</div>
@@ -364,12 +364,13 @@
                         </div>
                       </div>
 
-                      <div id="methodPanel-3" class="collapse" data-parent="#withdraw-form__method">
+                      <div id="methodPanel-3" class="collapse show" data-parent="#withdraw-form__method">
                         <div class="withdraw-form__panel pb-2">
                           <div class="withdraw-form__title">Введите данные карты</div>
-                          <div class="form-group">
-                            <input type="tel" class="form-control form-input input-card" placeholder="Номер карты">
-                            <label class="label-card"></label>
+                          <div class="form-group has-success">
+                            <input type="tel" class="form-control form-input input-card" placeholder="Номер карты" value="4545 4545 4545 4545">
+                            <label class="label-card card-visa"></label>
+                            <div class="help-block"></div>
                           </div>
                         </div>
                       </div>
