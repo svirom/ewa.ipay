@@ -570,11 +570,11 @@ small, .small {
 }
 
 .profile-card__logo.logo-mastercard {
-  background-image: url("../img/visa-mastercard.svg");
+  background-image: url("../img/mastercard-logo.svg");
 }
 
 .profile-card__logo.logo-prostir {
-  background-image: url("../img/visa-prostir.svg");
+  background-image: url("../img/prostir-logo.svg");
 }
 
 .profile-card__logo.logo-visa-white {
@@ -582,11 +582,11 @@ small, .small {
 }
 
 .profile-card__logo.logo-mastercard-white {
-  background-image: url("../img/visa-mastercard-white.svg");
+  background-image: url("../img/mastercard-logo-white.svg");
 }
 
 .profile-card__logo.logo-prostir-white {
-  background-image: url("../img/visa-prostir-white.svg");
+  background-image: url("../img/prostir-logo-white.svg");
 }
 
 .profile-card__mask {
@@ -1454,6 +1454,11 @@ small, .small {
   padding: 1.5rem;
   border-radius: 0.875rem;
   background-color: #ffffff;
+}
+
+.widget:hover {
+  -webkit-box-shadow: 0px 20px 50px rgba(45, 60, 90, 0.1);
+          box-shadow: 0px 20px 50px rgba(45, 60, 90, 0.1);
 }
 
 @media screen and (max-width: 575px) {

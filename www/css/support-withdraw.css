@@ -1,0 +1,83 @@
+.support-common .widget-title {
+  padding-bottom: 0;
+}
+
+.support-common .widget-title h2 {
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.support-common .widget-title.bottom-dashed::after {
+  display: none;
+}
+
+.support-common .widget-title i {
+  color: #2D3C5A;
+}
+
+.support-common .support-card {
+  padding: 0;
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.support-common .support-card__info {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 1.5rem;
+}
+
+.support-common .support-card__text {
+  padding-top: 1.25rem;
+  line-height: 1.65;
+}
+
+.support-common .support-card__contact {
+  margin-bottom: 1.5rem;
+  padding-left: 2.25rem;
+}
+
+.support-common .support-card__contact a {
+  margin-right: 2rem;
+}
+
+.support-common .support-card__contact p {
+  font-size: 0.875rem;
+}
+
+.support-common .support-card__contact p:last-child {
+  margin-top: 0.375rem;
+}
+
+@media screen and (max-width: 767px) {
+  .support-common .widget-title {
+    padding-bottom: 1.5rem;
+  }
+  .support-common .widget-title.bottom-dashed::after {
+    display: block;
+  }
+  .support-common .widget-title i {
+    color: #55A5FF;
+  }
+  .support-common .support-card__contact a {
+    margin-right: 0;
+  }
+  .support-common .support-card__contact a::after {
+    display: none;
+  }
+  .support-common .support-card__contact p {
+    margin-top: 0;
+    line-height: 1.15;
+  }
+  .support-common .support-card__contact p:last-child {
+    margin-top: 0.125rem;
+  }
+  .support-common .support-card__text {
+    padding-top: 1.125rem;
+  }
+}
+/*# sourceMappingURL=support-withdraw.css.map */

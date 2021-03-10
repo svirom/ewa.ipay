@@ -30,7 +30,8 @@ $(document).ready(function() {
       $(this).find('.profile-card__mask-number').text('');
       $(this).find('.profile-card__name').text('');
       $(this).find('.profile-card__expiry').text('');
-      $(this).find('.profile-card__logo').removeClass(logoType);
+      $(this).find('.profile-card__logo').removeClass('logo-visa logo-mastercard logo-prostir');
+      logoType = '';
     })
   })
 

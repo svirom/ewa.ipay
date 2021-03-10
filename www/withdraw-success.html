@@ -14,7 +14,10 @@
 
     <!-- styles -->
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/card-success.css">
+    <link rel="stylesheet" href="/css/withdraw-result.css">
+    <link rel="stylesheet" href="/css/receipt.css">
+    <link rel="stylesheet" href="/css/receipt-send.css">
+    <link rel="stylesheet" href="/css/support-withdraw.css">
 
     <title>Withdraw Money Success</title>
   </head>
@@ -75,7 +78,7 @@
                 <nav>
                   <ul class="main-nav">
 
-                    <li class="main-nav__item main-nav__get-money">
+                    <li class="main-nav__item main-nav__get-money active">
                       <a href="#" class="main-nav__link">
                         <i class="ci-credit_card"></i>
                         <span class="main-nav__item-text">Снять деньги</span>
@@ -222,32 +225,185 @@
         <div class="container">
           <div class="row justify-content-center">
 
-            <div class="col-lg-6 col-xl-5">
+            <div class="col-lg-7 col-xl-6">
 
-              <!-- card add success widget -->
-              <div class="card-success" id="card-success-widget">
-                <div class="card-success__icon">
+              <!-- withdraw result widget -->
+              <div class="withdraw-result withdraw-result--success" id="withdraw-result-widget">
+
+                <div class="withdraw-result__icon">
                   <i class="ci-circle_check"></i>
                 </div>
-                <div class="card-success__card">
-                  <div class="profile-card">
-                    <div class="profile-card__logo logo-visa-white"></div>
-                    <div class="profile-card__info">
-                      <div class="profile-card__mask">
-                        <span class="profile-card__mask-number"><span>4545</span>&nbsp;&nbsp;&nbsp;<span>4545</span>&nbsp;&nbsp;&nbsp;<span>4545</span>&nbsp;&nbsp;&nbsp;<span>1456</span></span>
+
+                <div class="withdraw-result__amount">
+                  <span>1 500</span>
+                  <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.71826 11.4061H8.36789L9.28444 10.5945H5.63481L4.71826 11.4061Z"/>
+                    <path d="M6.99958 19.3808C6.92904 19.3808 6.85915 19.3793 6.7884 19.376C5.55056 19.3204 4.54068 18.6638 4.08693 17.6195C3.71919 16.7736 3.7151 15.5252 4.80541 14.5595L5.81357 13.6667H2.30221C1.21771 15.0507 0.968469 16.8061 1.67857 18.4406C2.49727 20.3246 4.4052 21.5579 6.65636 21.6589C6.7699 21.664 6.88453 21.6667 6.99958 21.6667C10.6757 21.6667 13.6662 19.0178 13.6662 15.762H11.0856C11.0856 17.7574 9.25267 19.3808 6.99958 19.3808Z"/>
+                    <path d="M6.99984 2.61907C7.07038 2.61907 7.14027 2.62059 7.21102 2.62383C8.44886 2.67945 9.45874 3.33601 9.9125 4.38039C10.2802 5.22628 10.2843 6.47465 9.19401 7.44036L8.18585 8.3333H11.6972C12.7817 6.94932 13.0312 5.1939 12.3209 3.55944C11.5022 1.67546 9.59422 0.442135 7.34306 0.341184C7.2293 0.336041 7.11489 0.333374 6.99984 0.333374C3.32376 0.333374 0.333252 2.9823 0.333252 6.23808H2.91387C2.91387 4.24248 4.74675 2.61907 6.99984 2.61907Z"/>
+                    <path d="M13.1295 11.7871H0.871582V13.286H13.1295V11.7871Z"/>
+                    <path d="M13.1295 8.7146H0.871582V10.2134H13.1295V8.7146Z"/>
+                  </svg>
+                </div>
+
+                <div class="withdraw-result__title">Перевод успешно отправлен!</div>
+
+                <div class="withdraw-result__close">
+                  <a href="#" class="btn btn-green btn-block">Закрыть</a>
+                </div>
+
+              </div><!-- withdraw result widget -->
+
+              <!-- receipt widget -->
+              <div class="receipt" id="receipt-widget">
+
+                <div class="receipt__title" role="button" data-toggle="collapse" data-target="#receipt-info" aria-expanded="false">
+                  <div class="widget">
+                    <div class="widget-title">
+                      <h2><i class="ci-file_pdf"></i><span>Квитанция 30.10.2020</span></h2>
+                      <p class="widget-subtitle">Информация о переводе</p>
+                      <i class="ci-chevron_down receipt__title-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="receipt__title-after"></div>
+                </div>
+                
+
+                <div class="collapse" id="receipt-info">
+
+                  <div class="receipt__info widget">
+                    <div class="receipt-table">
+
+                      <div class="receipt-table__row">
+                        <div class="receipt-table__left">
+                          <div class="receipt-table__title">Отправитель</div>
+                          <div class="receipt-table__value">EWA</div>
+                        </div>
+                        <div class="receipt-table__right">
+                          <div class="receipt-table__title">Получатель</div>
+                          <div class="receipt-table__value">Альберт Петренко</div>
+                        </div>
                       </div>
-                      <div class="profile-card__footer">
-                        <span class="profile-card__name">Svyatoslav Ternopilsky</span>
-                        <span class="profile-card__expiry">04 / 22</span>
+
+                      <div class="receipt-table__row">
+                        <div class="receipt-table__left">
+                          <div class="receipt-table__title">Номер счета</div>
+                          <div class="receipt-table__value">123456789</div>
+                        </div>
+                        <div class="receipt-table__right">
+                          <div class="receipt-table__title">Номер карты</div>
+                          <div class="receipt-table__value">5454 5454 5454 5454</div>
+                        </div>
+                      </div>
+
+                      <div class="receipt-table__row">
+                        <div class="receipt-table__left">
+                          <div class="receipt-table__title">Дата</div>
+                          <div class="receipt-table__value">30.10.2020</div>
+                        </div>
+                        <div class="receipt-table__right">
+                          <div class="receipt-table__title">Сумма выплаты</div>
+                          <div class="receipt-table__value">500 грн</div>
+                        </div>
+                      </div>
+
+                      <div class="receipt-table__row receipt-table__commission">
+                        <div class="receipt-table__right w-100">
+                          <div class="receipt-table__title">Комиссия</div>
+                          <div class="receipt-table__value">5 грн</div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="receipt__divider">
+                    <div class="bottom-dashed"></div>
+                  </div>
+
+                  <div class="receipt__number">
+                    <div class="widget">
+                      <div class="receipt-table">
+
+                        <div class="receipt-table__row">
+                          <div class="receipt-table__left">
+                            <div class="receipt-table__title">Номер платежа</div>
+                            <div class="receipt-table__value">7681231239902</div>
+                          </div>
+                          <div class="receipt-table__right">
+                            <a href="#" class="receipt-table__link">
+                              <img src="img/test/receipt-qrcode.svg" alt="QRCode">
+                            </a>
+                          </div>
+                        </div>
+  
                       </div>
                     </div>
                   </div>
+
+                  <div class="receipt__save">
+                    <a href="img/visa-logo.svg" download>
+                      <i class="ci-file_pdf"></i><span>Скачать квитанцию</span>
+                    </a>
+                  </div>
+
+                  <!-- receipt send widget -->
+                  <div class="receipt-send widget" id="receipt-send-widget">
+                    <div class="widget-title">
+                      <p class="mb-0 dark-blue"><i class="ci-mail"></i><span>Отправить на Email</span></p>
+                    </div>
+                    <div class="receipt-send__form">
+                      <form action="/">
+                        <div class="form-group receipt-send__input">
+                          <input type="text" class="form-control form-input" placeholder="Введите email">
+                        </div>
+                        <button type="submit" class="btn btn-blue">Отправить</button>
+                      </form>
+                    </div>
+                  </div><!-- receipt send widget -->
+                  
                 </div>
-                <div class="card-success__close">
-                  <p>Ваша карта успешно добавлена</p>
-                  <a href="#" class="btn btn-green btn-block">Закрыть</a>
+
+              </div><!-- receipt widget -->
+
+              <!-- support withdraw widget -->
+              <div class="support-common widget" id="support-withdraw-widget">
+                <div class="support-card">
+                  <div class="widget-title bottom-dashed">
+                    <h2><i class="ci-user_voice"></i><span>Служба поддержки</span></h2>
+                  </div>
+                  <div class="support-card__text">
+                    <p class="d-none d-md-block">Наши специалисты работают для вас 24/7, если у вас возникли вопросы пишите нам на почту или звоните по номеру ниже.</p>
+                    <p class="small d-md-none">Если у вас возникли вопросы пишите или звоните нам.</p>
+                  </div>
+                  <div class="support-card__info">
+                    <div class="support-card__contact support-card__contact--email">
+                      <span>
+                        <a href="mailto:help@ewa.com">help@ewa.com</a>
+                      </span>
+                      <p class="mb-0"><small>Пишите нам на email</small></p>
+                    </div>
+                    <div class="support-card__contact support-card__contact--phone d-none d-md-block mb-0">
+                      <span>
+                        <a href="tel:+380 (44) 502 11 60">+380 (44) 502 11 60</a>
+                        <a href="tel:0 800 60 11 60">0 800 60 11 60</a>
+                      </span>
+                      <p class="mb-0"><small>Время работы с 9.00 до 21.00 / Пн - Вс</small></p>
+                    </div>
+                    <div class="support-card__contact support-card__contact--phone d-md-none">
+                      <span>
+                        <a href="tel:+380 (44) 502 11 60">+380 (44) 502 11 60</a>
+                      </span>
+                      <p class="mb-0"><small>Пн - Пт / c 9:00 до 21:00</small></p>
+                    </div>
+                    <div class="support-card__contact support-card__contact--phone mb-0 d-md-none">
+                      <span>
+                        <a href="tel:0 800 60 11 60">0 800 60 11 60</a>
+                      </span>
+                      <p class="mb-0"><small>Круглосуточно</small></p>
+                    </div>
+                  </div>
                 </div>
-              </div><!-- card add success widget -->
+              </div><!-- support withdraw widget -->
 
             </div>
 

@@ -1,0 +1,238 @@
+// ----------------------------------------------------------------------------
+// This file contains all styles related to the receipt widget
+// ----------------------------------------------------------------------------
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.receipt {
+  margin-bottom: 2.875rem;
+
+  .widget {
+    position: relative;
+    margin-bottom: 0;
+    z-index: 1;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
+  .widget-title {
+    padding-bottom: 0;
+  }
+
+  .collapse {
+    border-radius: 0.875rem;
+  }
+
+  &__title {
+    position: relative;
+    border-radius: 0.875rem;
+    box-shadow: 0px 40px 50px rgba(45, 60, 90, 0.05);
+    cursor: pointer;
+
+    i {
+      &.receipt__title-arrow {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        color: $dark-blue;
+        transition: transform 0.3s ease-in;
+      }
+    }
+
+    &-after {
+      position: absolute;
+      content: ' ';
+      bottom: -14px;
+      left: 24px;
+      width: calc(100% - 48px);
+      height: 28px;
+      border: 1px solid #F0F0F0;
+      border-radius: 0.875rem;
+      background-color: #F5F6F7;
+    }
+
+    &[aria-expanded="true"] {
+      i {
+        &.receipt__title-arrow {
+          transform: rotate(180deg);
+          transition: transform 0.3s ease-in;
+        }
+      }
+
+      .receipt__title-after {
+        display: none;
+      }
+    }
+  }
+
+  &__info {
+    margin-top: 1.125rem;
+
+    &.widget {
+      padding-bottom: 0;
+      border-bottom-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+    }
+  }
+
+  .receipt-table {
+    &__row {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #E0E2E6;
+
+      &:not(:first-of-type) {
+        padding-top: 1rem;
+      }
+    }
+
+    &__left {
+      .receipt-table__value {
+        padding-right: 0.5rem;
+      }
+    }
+  
+    &__right {
+      text-align: right;
+
+      .receipt-table__value {
+        padding-left: 0.5rem;
+      }
+    }
+
+    &__title, &__value {
+      line-height: 1.2;
+    }
+  
+    &__title {
+      margin-bottom: 0.5rem;
+      font-size: 0.875rem;
+      color: $grey;
+    }
+
+    &__value {
+      font-size: 1.125rem;
+      word-break: break-all;
+    }
+
+    &__commission {
+      border-bottom: 0;
+    }
+  }
+
+  &__divider {
+    position: relative;
+    height: calc(3rem - 2px);
+    background-color: #ffffff;
+    z-index: 1;
+    overflow: hidden;
+
+    &::before, &::after {
+      position: absolute;
+      content: ' ';
+      width: 3rem;
+      height: 3rem;
+      top: -1px;
+      border-radius: 50%;
+      background-color: #F5F5F7;
+    }
+
+    &::before {
+      left: -1.5rem;
+    }
+
+    &::after {
+      right: -1.5rem;
+    }
+
+    .bottom-dashed {
+      height: 100%;
+
+      &::after {
+        left: 2.375rem;
+        width: calc(100% - 4.75rem);
+        height: 2px;
+        top: calc(50% - 1px);
+      }
+    }
+  }
+
+  &__number {
+    z-index: 3;
+    background-color: #F5F5F5;
+
+    .widget {
+      padding-top: 0.75rem;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+    }
+
+    .receipt-table {
+      &__row {
+        align-items: flex-end;
+        border-bottom: 0;
+      }
+
+      &__link {
+        display: block;
+        width: 5rem;
+        height: 5rem;
+  
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  &__save {
+    margin-top: 2rem;
+    text-align: center;
+
+    a {
+      color: $blue;
+
+      span {
+        margin-left: 0.5rem;
+        vertical-align: middle;
+      }
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  @include until($sm) {
+    &__divider {
+      height: calc(2rem - 2px);
+  
+      &::before, &::after {
+        width: 2rem;
+        height: 2rem;
+      }
+  
+      &::before {
+        left: -1rem;
+      }
+  
+      &::after {
+        right: -1rem;
+      }
+    }
+
+    &__number {
+      .receipt-table {
+        &__row {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}
