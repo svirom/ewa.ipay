@@ -37,7 +37,6 @@
   }
 
   @include until($sm) {
-
     &__money {
       &.bottom-dashed {
         &::after {

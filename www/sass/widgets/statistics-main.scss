@@ -112,3 +112,32 @@
     margin-top: 2.375rem;
   }
 }
+
+.statistics-button {
+  margin-top: 1.875rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+
+  p {
+    margin-bottom: 1.5rem;
+    color: #C0C5CE;
+  }
+
+  .btn-statistics {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+    color: $grey;
+    line-height: 1.25;
+    border: 1px solid #F0F0F0;
+    border-radius: 0.75rem;
+    box-shadow: 10px 30px 50px rgba(45, 60, 90, 0.1);
+    background-color: #ffffff;
+  }
+
+  @include until($sm) {
+    p {
+      font-size: 0.875rem;
+    }
+  }
+}

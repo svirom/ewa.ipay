@@ -27,7 +27,7 @@ $(document).ready(function() {
   });
 
   // back-to-top
-  $('#back-to-top').click(function(e) {
+  $('#back-to-top, #btn-statistics').click(function(e) {
     e.preventDefault();
     $('html, body').animate({scrollTop: 0}, 600);
  });
