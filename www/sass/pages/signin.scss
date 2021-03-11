@@ -73,6 +73,8 @@
 
   &--404 {
     background-image: url('../img/signin/404.svg');
+    background-position: right 3.125rem center;
+    background-size: calc(100% - 3.125rem);
   }
 
   &--support {

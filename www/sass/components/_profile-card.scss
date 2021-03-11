@@ -75,4 +75,15 @@
     margin-top: 1rem;
     color: $grey;
   }
+
+  &__name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__expiry {
+    flex-shrink: 0;
+    padding-left: 8px;
+  }
 }

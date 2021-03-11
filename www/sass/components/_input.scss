@@ -78,17 +78,18 @@
       margin-bottom: 0;
       background-position: center;
       background-repeat: no-repeat;
+      background-size: contain;
 
       &.card-visa {
         background-image: url('../img/visa-logo.svg');
       }
 
       &.card-mastercard {
-        // background-image: url('../img/visa-logo.svg');
+        background-image: url('../img/mastercard-logo.svg');
       }
 
       &.card-prostir {
-        // background-image: url('../img/visa-logo.svg');
+        background-image: url('../img/prostir-logo.svg');
       }
     }
   }

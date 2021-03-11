@@ -14,9 +14,9 @@
 
     <!-- styles -->
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/card-add.css">
+    <link rel="stylesheet" href="/css/card-success.css">
 
-    <title>Add card 2</title>
+    <title>Add card Success Mastercard</title>
   </head>
   <body>
 
@@ -222,75 +222,32 @@
         <div class="container">
           <div class="row justify-content-center">
 
-            <div class="col-lg-7 col-xl-6">
+            <div class="col-lg-6 col-xl-5">
 
-              <!-- card add widget -->
-              <div class="card-add widget" id="card-add-widget">
-                <div class="widget-title bottom-dashed">
-                  <h2><i class="ci-bar_chart_horizontal"></i><span>Добавление карты</span></h2>
-                  <p class="widget-subtitle">Добавляйте ваши любимые карты</p>
+              <!-- card add success widget -->
+              <div class="card-success" id="card-success-widget">
+                <div class="card-success__icon">
+                  <i class="ci-circle_check"></i>
                 </div>
-                <div class="card-add__info">
-                  <div class="card-add__title">
-                    <h3>Подтверждение карты</h3>
-                    <p>Для подтверждения карты у вас будут списаны и возвращены средства в размере 1 грн.</p>
-                  </div>
-                  <div class="card-add__form card-form">
-                    <form action="/">
-
-                      <div class="card-form__label">Введите Имя и Фамилию с карты</div>
-
-                      <div class="row no-gutters">
-                        <div class="col-sm-6 p-right">
-                          <div class="form-group has-success">
-                            <input type="text" class="form-control form-input" placeholder="Имя" value="Альберт">
-                            <div class="help-block"></div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 p-left">
-                          <div class="form-group has-success">
-                            <input type="text" class="form-control form-input" placeholder="Фамилия" value="Кравець">
-                            <div class="help-block"></div>
-                          </div>
-                        </div>
+                <div class="card-success__card">
+                  <div class="profile-card">
+                    <div class="profile-card__logo logo-mastercard-white"></div>
+                    <div class="profile-card__info">
+                      <div class="profile-card__mask">
+                        <span class="profile-card__mask-number"><span>4545</span>&nbsp;&nbsp;&nbsp;<span>4545</span>&nbsp;&nbsp;&nbsp;<span>4545</span>&nbsp;&nbsp;&nbsp;<span>1456</span></span>
                       </div>
-
-                      <div class="card-form__label">Введите данные карты</div>
-
-                      <div class="row no-gutters mb-1">
-                        <div class="col-sm p-right">
-                          <div class="form-group has-success">
-                            <input type="tel" class="form-control form-input input-card" placeholder="0000 0000 0000 0000" value="4444 4444 4444 4444">
-                            <label class="label-card card-visa"></label>
-                            <div class="help-block"></div>
-                          </div>
-                        </div>
-                        <div class="col-sm-auto p-left">
-
-                          <div class="row no-gutters card-form__data">
-                            <div class="col-6 col-sm-auto p-right">
-                              <div class="form-group has-success">
-                                <input type="tel" class="form-control form-input text-center" placeholder="MM / ГГ" value="12 / 24">
-                                <div class="help-block"></div>
-                              </div>
-                            </div>
-                            <div class="col-6 col-sm-auto p-left">
-                              <div class="form-group has-success">
-                                <input type="password" class="form-control form-input text-center" placeholder="CVV" value="123">
-                                <div class="help-block"></div>
-                              </div>
-                            </div>
-                          </div>
-
-                        </div>
+                      <div class="profile-card__footer">
+                        <span class="profile-card__name">Svyatoslav Ternopilsky</span>
+                        <span class="profile-card__expiry">04 / 22</span>
                       </div>
-
-                      <button type="submit" class="btn btn-blue btn-block">Добавить карту</button>
-
-                    </form>
+                    </div>
                   </div>
                 </div>
-              </div><!-- card add widget -->
+                <div class="card-success__close">
+                  <p>Ваша карта успешно добавлена</p>
+                  <a href="#" class="btn btn-green btn-block">Закрыть</a>
+                </div>
+              </div><!-- card add success widget -->
 
             </div>
 
@@ -328,5 +285,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="/js/custom.js"></script>
+    <script src="/js/profile-add.js"></script>
   </body>
 </html>

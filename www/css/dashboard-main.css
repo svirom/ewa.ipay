@@ -23,10 +23,12 @@
 
 .dashboard-main__title--day {
   background-image: url("../img/dashboard/day@2x.png");
+  /* background-image: url('../img/dashboard/day.svg'); */
 }
 
 .dashboard-main__title--night {
   background-image: url("../img/dashboard/night@2x.png");
+  /* background-image: url('../img/dashboard/night.svg'); */
 }
 
 .dashboard-main p, .dashboard-main span, .dashboard-main a {
