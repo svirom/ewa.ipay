@@ -1,0 +1,63 @@
+.container-preloader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1002;
+  background-color: rgba(238, 246, 255, 0.5);
+}
+
+.preloader {
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+  background-color: rgba(85, 165, 255, 0.1);
+}
+
+.preloader svg {
+  -webkit-animation: 1.2s linear infinite preloader-animation;
+          animation: 1.2s linear infinite preloader-animation;
+}
+
+.preloader svg circle {
+  display: block;
+  fill: transparent;
+  stroke: #55A5FF;
+  stroke-linecap: round;
+  stroke-dasharray: 217;
+  stroke-dashoffset: 217;
+  stroke-width: 10px;
+}
+
+@-webkit-keyframes preloader-animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=preloader.css.map */

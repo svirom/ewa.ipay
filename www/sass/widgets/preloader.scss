@@ -1,0 +1,60 @@
+// ------------------------------------------------------------------
+// This file contains all styles related to the preloader
+// ------------------------------------------------------------------
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.container-preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1002;
+  background-color: rgba(#EEF6FF, 0.5);
+}
+
+.preloader {
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+  background-color: rgba($blue, 0.1);
+
+  svg {
+    animation: 1.2s linear infinite preloader-animation;
+
+    circle {
+      display: block;
+      fill: transparent;
+      stroke: $blue;
+      stroke-linecap: round;
+      stroke-dasharray: 217;
+      stroke-dashoffset: 217;
+      stroke-width: 10px;
+      }
+  }
+}
+
+@-webkit-keyframes preloader-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
