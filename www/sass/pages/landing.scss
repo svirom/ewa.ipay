@@ -1,0 +1,204 @@
+// -------------------------------------------------------------------
+// This file contains all styles related to the landing page
+// -------------------------------------------------------------------
+
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.landing-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 3.75rem 3.625rem;
+
+  h1 {
+    margin-bottom: 1.125rem;
+    @include font(2rem, 700, 1.3);
+  }
+
+  h2 {
+    margin-bottom: 0.875rem;
+    @include font(1.625rem, 700, 1.4);
+  }
+
+  h3 {
+    margin-bottom: 0.875rem;
+    @include font(1.125rem, 400, 1.35);
+  }
+
+  @include until($lg) {
+    padding: 3.75rem 3.75rem;
+  }
+
+  @include until($md) {
+    padding: 1.875rem 0 3.75rem;
+  }
+
+  @include until($sm) {
+    h1 {
+      font-size: 1.75rem;
+    }
+  }
+}
+
+.btn-landing {
+  width: 15rem;
+  margin-top: 0.5rem;
+  background-color: $blue;
+}
+
+.landing-header {
+  padding: 0 2.3125rem;
+
+  @include until($lg) {
+    padding: 0;
+  }
+}
+
+.landing-logo {
+  margin-bottom: 2rem;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+
+  @include until($md) {
+    margin-bottom: 1.25rem;
+  }
+}
+
+.landing-image {
+  text-align: right;
+
+  img {
+    margin-right: 2.25rem;
+  }
+
+  @include until($lg) {
+    img {
+      max-width: 10.625rem;
+    }
+  }
+
+  @include until($md) {
+    padding-top: 1.875rem;
+    text-align: left;
+  }
+}
+
+.landing-info {
+  padding-top: 3.75rem;
+
+  .landing-info__title {
+    margin-bottom: 2rem;
+    padding-left: 2.3125rem;
+    font-size: 1.125rem;
+    line-height: 1.35;
+  }
+
+  @include until($lg) {
+    .landing-info__title {
+      padding-left: 0;
+    }
+  }
+
+  @include until($md) {
+    .landing-info__title {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.landing-card {
+  position: relative;
+  height: 100%;
+  padding: 1.5rem;
+  border: 1px solid #E6E6E6;
+
+  .ci-short_right {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    color: $grey;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2rem;
+    margin-bottom: 1.5rem;
+
+    svg {
+      fill: $blue;
+    }
+
+    i {
+      font-size: 2rem;
+      color: $blue;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  &--left {
+    border-right: 0;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  &--right {
+    border-left: 0;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+
+  @include until($lg) {
+    padding-bottom: 4.5rem;
+
+    .ci-short_right {
+      top: auto;
+      right: auto;
+      left: 1.5rem;
+      bottom: 1.5rem;
+      transform: rotate(90deg);
+    }
+
+    &--left {
+      border-right: 1px solid #E6E6E6;
+      border-bottom: 0;
+      border-top-right-radius: 0.5rem;
+      border-bottom-left-radius: 0;
+    }
+  
+    &--right {
+      padding-bottom: 1.5rem;
+      border-left: 1px solid #E6E6E6;
+      border-top: 0;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 0.5rem;
+    }
+  }
+}
+
+.landing-footer {
+  padding-top: 2.5rem;
+  text-align: center;
+
+  @include until($xxl) {
+    padding-top: 4.5rem;
+  }
+
+  @include until($lg) {
+    text-align: left;
+  }
+
+  @include until($lg) {
+    padding-top: 3.75rem;
+  }
+}
