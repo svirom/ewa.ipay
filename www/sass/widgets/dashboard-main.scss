@@ -18,6 +18,8 @@
   }
 
   &__title {
+    -ms-flex: 0 1 100%; 
+    /*ie11 fix*/
     position: relative;
     padding-left: 5.25rem;
     background-position: left 0.75rem top;

@@ -29,6 +29,8 @@
 
   &__logo {
     height: 2.5rem;
+    margin-bottom: auto;
+    /*ie11 fix*/
     background-position: left center;
     background-repeat: no-repeat;
 
