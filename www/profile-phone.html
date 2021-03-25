@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="/css/profile-main.css">
     <link rel="stylesheet" href="/css/profile-add.css">
 
-    <title>Profile 1 card</title>
+    <title>Profile change phone</title>
   </head>
   <body>
 
@@ -242,7 +242,7 @@
                   </div>
                 </div>
                 <div class="profile-main__phone">
-                  <button class="profile-main__phone-edit" type="button" data-toggle="collapse" data-target="#phone-edit" aria-expanded="false" aria-controls="phone-edit"><i class="ci-edit"></i></button>
+                  <button class="profile-main__phone-edit" type="button" data-toggle="collapse" data-target="#phone-edit" aria-expanded="true" aria-controls="phone-edit"><i class="ci-edit"></i></button>
                   <h3>
                     <span class="profile-main__phone-current">+380 (66) 123 45 67</span>
                     <span class="profile-main__phone-text">Новый номер телефона</span>
@@ -250,12 +250,12 @@
                   <p class="profile-main__phone-current">Номер телефона</p>
                   <p class="profile-main__phone-text">+380 (66) 123 45 67</p>
                 </div>
-                <div class="profile-main__form collapse" id="phone-edit">
-                  <form action="/">
-                    <div class="form-group">
+                <div class="profile-main__form collapse show" id="phone-edit">
+                  <form>
+                    <div class="form-group has-success">
                       <input type="tel" class="form-control form-input" placeholder="+ 380 (00) 000 00 00">
                     </div>
-                    <button type="submit" class="btn btn-blue btn-block">Сохранить</button>
+                    <button type="submit" class="btn btn-blue btn-block btn-phone-edit">Сохранить</button>
                     <button class="btn btn-cancel btn-block" type="button" data-toggle="collapse" data-target="#phone-edit" aria-expanded="false" aria-controls="phone-edit">Отменить</button>
                   </form>
                 </div>

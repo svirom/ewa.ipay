@@ -84,3 +84,69 @@
   font-size: 0.875rem;
   line-height: 1;
 }
+
+/* basic modal style */
+.modal {
+  .modal-content {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border: 0;
+    border-radius: 0.875rem;
+    box-shadow: 20px 80px 90px rgba(45, 60, 90, 0.15);
+  }
+
+  .modal-header, .modal-body, .modal-footer {
+    width: 21.875rem;
+    margin: auto;
+    padding: 0;
+  }
+
+  .modal-header {
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 0;
+
+    .close {
+      position: absolute;
+      right: 1.5rem;
+      top: 1.5rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      margin: 0;
+      padding: 0;
+      text-shadow: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .modal-footer {
+    border-top: 0;
+  }
+
+  @include at-least($sm) {
+    .modal-dialog {
+      max-width: 540px;
+    }
+  }
+
+  @include until($sm) {
+    .modal-content {
+      padding-left: 0.875rem;
+      padding-right: 0.875rem;
+    }
+
+    .modal-header, .modal-body, .modal-footer {
+      width: 100%;
+    }
+
+    .modal-header {
+      .close {
+        top: 0.875rem;
+        right: 0.875rem;
+      }
+    }
+  }
+}

@@ -85,3 +85,132 @@
     }
   }
 }
+
+.phone-edit-modal {
+  .modal-header {
+    width: 25rem;
+
+    .modal-title {
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+      line-height: 1.35;
+    }
+  }
+
+  .modal-footer {
+    justify-content: center;
+    padding-top: 2rem;
+
+    & > * {
+      margin: 0;
+    }
+
+    .btn {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .btn-phone-again {
+      padding-top: 0;
+      padding-bottom: 0;
+      font-size: 1rem;
+      line-height: 1.4;
+      color: $dark-blue;
+      background-color: transparent;
+    
+      &:hover:not(.disabled):not(:disabled) {
+        text-decoration: underline;
+        box-shadow: none;    
+      }
+    }
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    margin: 0 auto 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0px 40px 50px $card-shadow;
+
+    i {
+      font-size: 2rem;
+    }
+  }
+
+  &--success, &--unsuccess {
+    .modal-header {
+      .modal-title {
+        margin-bottom: 0.875rem;
+      }
+    }
+
+    .modal-footer {
+      padding-top: 0;
+    }
+  }
+
+  &--success {
+    .phone-edit-modal__icon {
+      color: $green;
+      background-color: rgba($light-green, 0.1);
+
+      i {
+        filter: drop-shadow(0px 4px 10px rgba(20, 210, 165, 0.15));
+      }
+    }
+  }
+
+  &--unsuccess {
+    .phone-edit-modal__icon {
+      color: $red;
+      background-color: rgba($red, 0.1);
+
+      i {
+        filter: drop-shadow(0px 4px 10px rgba(255, 95, 95, 0.15));
+      }
+    }
+
+    .modal-header {
+      .modal-title {
+        color:$red;
+      }
+    }
+  }
+
+  @include until($sm) {
+    .modal-content {
+      padding-bottom: 0.875rem;
+    }
+
+    .modal-header {
+      width: 100%;
+
+      .modal-title {
+        margin-bottom: 0.875rem;
+        font-size: 1.125rem;
+      }
+
+      p {
+        font-size: 0.875rem;
+      }
+    }
+
+    .modal-footer {
+      padding-top: 1.5rem;
+
+      p, .btn-phone-again {
+        font-size: 0.875rem;
+        line-height: 1.6;
+      }
+    }
+  }
+
+  &--success, &--unsuccess {
+    .modal-footer {
+      padding-top: 0;
+    }
+  }
+}

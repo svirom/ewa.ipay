@@ -22,59 +22,14 @@
   margin-bottom: 1.5rem;
 }
 
-.delete-card .modal-content {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  border: 0;
-  border-radius: 0.875rem;
-  -webkit-box-shadow: 20px 80px 90px rgba(45, 60, 90, 0.15);
-          box-shadow: 20px 80px 90px rgba(45, 60, 90, 0.15);
-}
-
-.delete-card .modal-header, .delete-card .modal-body, .delete-card .modal-footer {
-  width: 21.875rem;
-  margin: auto;
-  padding: 0;
-}
-
-.delete-card .modal-header {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-bottom: 0;
-}
-
 .delete-card .modal-header .modal-title {
   margin-bottom: 0.75rem;
   line-height: 1.35;
 }
 
-.delete-card .modal-header .close {
-  position: absolute;
-  right: 1.5rem;
-  top: 1.5rem;
-  width: 1.5rem;
-  height: 1.5rem;
-  margin: 0;
-  padding: 0;
-  text-shadow: none;
-}
-
-.delete-card .modal-header .close:focus {
-  outline: none;
-}
-
 .delete-card .modal-body .profile-card {
   margin-top: 1.125rem;
   margin-bottom: 1.5rem;
-}
-
-.delete-card .modal-footer {
-  border-top: 0;
 }
 
 .delete-card .modal-footer .btn {
@@ -85,24 +40,7 @@
   margin-bottom: 0.75rem;
 }
 
-@media screen and (min-width: 576px) {
-  .delete-card .modal-dialog {
-    max-width: 540px;
-  }
-}
-
 @media screen and (max-width: 575px) {
-  .delete-card .modal-content {
-    padding-left: 0.875rem;
-    padding-right: 0.875rem;
-  }
-  .delete-card .modal-header, .delete-card .modal-body, .delete-card .modal-footer {
-    width: 100%;
-  }
-  .delete-card .modal-header .close {
-    top: 0.875rem;
-    right: 0.875rem;
-  }
   .delete-card .modal-body .profile-card {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
