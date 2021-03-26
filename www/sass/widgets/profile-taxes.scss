@@ -1,0 +1,30 @@
+// ------------------------------------------------------------------
+// This file contains all styles related to the profile taxes widget
+// ------------------------------------------------------------------
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.profile-taxes {
+  overflow: auto;
+
+  .widget-title {
+    padding-left: 0.25rem;
+
+    svg {
+      fill: $red;
+    }
+  }
+
+  &__img {
+    float: right;
+  }
+
+  &__info {
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

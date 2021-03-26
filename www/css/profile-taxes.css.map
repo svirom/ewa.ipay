@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AASA,AAAA,cAAc,CAAC;EACb,QAAQ,EAAE,IAAI;CAmBf;;AApBD,AAGE,cAHY,CAGZ,aAAa,CAAC;EACZ,YAAY,EAAE,OAAO;CAKtB;;AATH,AAMI,cANU,CAGZ,aAAa,CAGX,GAAG,CAAC;EACF,IAAI,ECDJ,OAAO;CDER;;AAGF,AAAD,mBAAM,CAAC;EACL,KAAK,EAAE,KAAK;CACb;;AAEA,AACC,oBADK,CACL,CAAC,CAAC;EACA,aAAa,EAAE,CAAC;CACjB",
+    "sources": [
+        "../sass/widgets/profile-taxes.scss",
+        "../sass/abstracts/_variables.scss",
+        "../sass/abstracts/_mixins.scss"
+    ],
+    "names": [],
+    "file": "profile-taxes.css"
+}
