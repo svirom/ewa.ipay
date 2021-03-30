@@ -1,0 +1,45 @@
+// --------------------------------------------------------------------
+// This file contains all styles related to the taxes amount widget
+// --------------------------------------------------------------------
+
+// 1. Configuration and helpers
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.taxes-amount {
+  &.widget {
+    padding: 0;
+  }
+
+  &__title {
+    padding: 1.5rem 1.5rem 0;
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.625rem;
+    height: 2.625rem;
+    border-radius: 0.875rem;
+    background-color: rgba($red, 0.1);
+  }
+
+  &__info {
+    padding: 0.875rem 1.5rem 1.5rem;
+  }
+
+  &__amount {
+    @include font(1.5rem, 500, 1.35);
+  }
+
+  &:hover {
+    .taxes-amount__info {
+      background: linear-gradient(0deg, rgba(255, 95, 95, 0.05) 0%, rgba(255, 95, 95, 0) 100%);
+    }
+
+    .taxes-amount__amount {
+      color: $red;
+    }
+  }
+}

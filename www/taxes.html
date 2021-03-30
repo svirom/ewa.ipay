@@ -14,11 +14,11 @@
 
     <!-- styles -->
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/profile-main.css">
-    <link rel="stylesheet" href="/css/profile-add.css">
-    <link rel="stylesheet" href="/css/profile-taxes.css">
+    <link rel="stylesheet" href="/css/taxes-amount.css">
+    <link rel="stylesheet" href="/css/taxes-main.css">
+    <link rel="stylesheet" href="/css/withdraw-common.css">
 
-    <title>Profile 0 cards</title>
+    <title>Taxes</title>
   </head>
   <body>
 
@@ -127,12 +127,9 @@
                     </li>
 
                     <li class="main-nav__item main-nav__notification main-nav__notification--new dropdown">
-                      <!-- <span class="main-nav__link">
-                        <i class="ci-notification_dot"></i>
-                      </span> -->
                       <a href="#" role="button" class="main-nav__link" id="dropdown-notification" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="ci-notification_dot"></i>
-                        <span class="badge notification-badge">2</span>
+                        <span class="badge notification-badge">4</span>
                       </a>
                       <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-notification">
 
@@ -224,85 +221,70 @@
         <div class="container">
           <div class="row">
 
-            <div class="col-lg">
+            <div class="col-lg-3 d-none d-lg-block">
+              <!-- taxes amount widget -->
+              <div class="taxes-amount widget" id="taxes-amount-widget">
+                <div class="taxes-amount__title">
+                  <div class="taxes-amount__img">
+                    <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.71838 11.4061H8.36802L9.28457 10.5945H5.63493L4.71838 11.4061Z" fill="#FF5F5F"/>
+                      <path d="M6.9997 19.3808C6.92917 19.3808 6.85927 19.3793 6.78852 19.376C5.55069 19.3204 4.54081 18.6638 4.08705 17.6195C3.71931 16.7736 3.71522 15.5252 4.80553 14.5595L5.8137 13.6667H2.30234C1.21783 15.0507 0.96859 16.8061 1.67869 18.4406C2.49739 20.3246 4.40532 21.5579 6.65648 21.6589C6.77003 21.664 6.88465 21.6667 6.9997 21.6667C10.6758 21.6667 13.6663 19.0178 13.6663 15.762H11.0857C11.0857 17.7574 9.2528 19.3808 6.9997 19.3808Z" fill="#FF5F5F"/>
+                      <path d="M6.99984 2.61907C7.07038 2.61907 7.14027 2.62059 7.21102 2.62383C8.44886 2.67945 9.45874 3.33601 9.9125 4.38039C10.2802 5.22628 10.2843 6.47465 9.19401 7.44036L8.18585 8.3333H11.6972C12.7817 6.94932 13.0312 5.1939 12.3209 3.55944C11.5022 1.67546 9.59422 0.442135 7.34306 0.341184C7.2293 0.336041 7.11489 0.333374 6.99984 0.333374C3.32376 0.333374 0.333252 2.9823 0.333252 6.23808H2.91387C2.91387 4.24248 4.74675 2.61907 6.99984 2.61907Z" fill="#FF5F5F"/>
+                      <path d="M13.1293 11.7871H0.871338V13.286H13.1293V11.7871Z" fill="#FF5F5F"/>
+                      <path d="M13.1293 8.7146H0.871338V10.2134H13.1293V8.7146Z" fill="#FF5F5F"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="taxes-amount__info">
+                  <div class="taxes-amount__amount">20 500 грн</div>
+                  <p class="extra-small mt-1">Удержано налогов</p>
+                  <p class="small mb-0 pt-1"><span>За период: </span><span class="dark-blue">Май 2021 год</span></p>
+                </div>
+              </div><!-- taxes amount widget -->
+            </div>
 
-              <!-- profile main widget -->
-              <div class="profile-main widget" id="profile-main-widget">
-                <div class="widget-title bottom-dashed">
-                  <h2><i class="ci-user"></i><span>Ваш профиль</span></h2>
-                  <p class="widget-subtitle">Общая информация</p>
-                </div>
-                <div class="profile-main__info">
-                  <div class="profile-main__info-row">
-                    <h3>Святослав Тернопольский</h3>
-                    <p>Главный инженер</p>
-                  </div>
-                  <div class="profile-main__info-row">
-                    <h3>iPay.ua - Онлайн платежи и переводы</h3>
-                    <p>Компания</p>
-                  </div>
-                </div>
-                <div class="profile-main__phone">
-                  <button class="profile-main__phone-edit" type="button" data-toggle="collapse" data-target="#phone-edit" aria-expanded="false" aria-controls="phone-edit"><i class="ci-edit"></i></button>
-                  <h3>
-                    <span class="profile-main__phone-current">+380 (66) 123 45 67</span>
-                    <span class="profile-main__phone-text">Новый номер телефона</span>
-                  </h3>
-                  <p class="profile-main__phone-current">Номер телефона</p>
-                  <p class="profile-main__phone-text">+380 (66) 123 45 67</p>
-                </div>
-                <div class="profile-main__form collapse" id="phone-edit">
-                  <form action="/">
-                    <div class="form-group">
-                      <input type="tel" class="form-control form-input" placeholder="+ 380 (00) 000 00 00">
+            <div class="col-lg-6">
+
+              <!-- taxes main widget -->
+              <div class="taxes-main" id="taxes-main-widget">
+
+                
+                <div class="taxes-main__cards">
+
+                  <div class="taxes-card">
+                    <div class="taxes-card__img"></div>
+                    <div class="taxes-card__info">
+                      <p class="taxes-card__title">Видано за І-у половину місяця</p>
+                      <p class="taxes-card__withheld">Удержано: 5 000 грн</p>
                     </div>
-                    <button type="submit" class="btn btn-blue btn-block">Сохранить</button>
-                    <button class="btn btn-cancel btn-block" type="button" data-toggle="collapse" data-target="#phone-edit" aria-expanded="false" aria-controls="phone-edit">Отменить</button>
-                  </form>
-                </div>
-              </div><!-- profile main widget -->
+                  </div>
 
-              <!-- profile taxes widget -->
-              <div class="profile-taxes widget" id="profile-taxes-widget">
-                <img src="img/taxes/taxes.svg" alt="Taxes" class="profile-taxes__img">
-                <div class="widget-title">
-                  <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3.28882 8.30451H6.02604L6.71345 7.6958H3.97623L3.28882 8.30451Z"/>
-                    <path d="M4.99987 14.2855C4.94697 14.2855 4.89455 14.2844 4.84148 14.282C3.91311 14.2402 3.1557 13.7478 2.81538 12.9645C2.53957 12.3301 2.53651 11.3938 3.35424 10.6696L4.11036 10H1.47684C0.663467 11.038 0.476534 12.3546 1.00911 13.5804C1.62313 14.9934 3.05408 15.9184 4.74245 15.9941C4.82761 15.9979 4.91358 15.9999 4.99987 15.9999C7.75693 15.9999 9.99981 14.0133 9.99981 11.5714H8.06435C8.06435 13.068 6.68969 14.2855 4.99987 14.2855Z"/>
-                    <path d="M4.99994 1.71427C5.05284 1.71427 5.10526 1.71541 5.15833 1.71784C6.0867 1.75956 6.84411 2.25198 7.18443 3.03526C7.46024 3.66968 7.4633 4.60596 6.64557 5.33024L5.88945 5.99995H8.52297C9.33634 4.96196 9.52344 3.6454 8.9907 2.41955C8.37668 1.00656 6.94573 0.0815708 5.25736 0.00585714C5.17204 0.00200003 5.08623 0 4.99994 0C2.24288 0 0 1.9867 0 4.42853H1.93546C1.93546 2.93183 3.31012 1.71427 4.99994 1.71427Z"/>
-                    <path d="M9.5971 8.59033H0.403656V9.71447H9.5971V8.59033Z"/>
-                    <path d="M9.5971 6.28589H0.403656V7.41002H9.5971V6.28589Z"/>
-                  </svg>
                 </div>
-                <div class="profile-taxes__info">
-                  <p class="dark-blue">Узнайте сколько налогов вы платите</p>
-                  <p class="small">Удержано 20 500 грн за май 2020</p>
-                </div>
-                <div class="profile-taxes__link">
-                  <a href="#"><span>Подробнее</span><i class="ci-long_right"></i></a>
-                </div>
-              </div><!-- profile taxes widget -->
+
+              </div><!-- taxes main widget -->
 
             </div>
 
-            <div class="col-lg">
-
-              <!-- profile add card widget -->
-              <div class="profile-add widget" id="profile-add-widget">
-                <div class="widget-title bottom-dashed">
-                  <h2><i class="ci-bar_chart_horizontal"></i><span>Добавить карту</span></h2>
-                  <p class="widget-subtitle">Сохраняйте ваши любимые карты</p>
+            <div class="col-lg-3 d-none d-lg-block">
+              <!-- withdraw common widget -->
+              <div class="withdraw-common widget" id="withdraw-common-widget">
+                <div class="widget-title">
+                  <p class="h2">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.28882 8.30451H6.02604L6.71345 7.6958H3.97623L3.28882 8.30451Z"/>
+                      <path d="M4.99987 14.2855C4.94697 14.2855 4.89455 14.2844 4.84148 14.282C3.91311 14.2402 3.1557 13.7478 2.81538 12.9645C2.53957 12.3301 2.53651 11.3938 3.35424 10.6696L4.11036 10H1.47684C0.663467 11.038 0.476534 12.3546 1.00911 13.5804C1.62313 14.9934 3.05408 15.9184 4.74245 15.9941C4.82761 15.9979 4.91358 15.9999 4.99987 15.9999C7.75693 15.9999 9.99981 14.0133 9.99981 11.5714H8.06435C8.06435 13.068 6.68969 14.2855 4.99987 14.2855Z"/>
+                      <path d="M4.99994 1.71427C5.05284 1.71427 5.10526 1.71541 5.15833 1.71784C6.0867 1.75956 6.84411 2.25198 7.18443 3.03526C7.46024 3.66968 7.4633 4.60596 6.64557 5.33024L5.88945 5.99995H8.52297C9.33634 4.96196 9.52344 3.6454 8.9907 2.41955C8.37668 1.00656 6.94573 0.0815708 5.25736 0.00585714C5.17204 0.00200003 5.08623 0 4.99994 0C2.24288 0 0 1.9867 0 4.42853H1.93546C1.93546 2.93183 3.31012 1.71427 4.99994 1.71427Z"/>
+                      <path d="M9.5971 8.59033H0.403656V9.71447H9.5971V8.59033Z"/>
+                      <path d="M9.5971 6.28589H0.403656V7.41002H9.5971V6.28589Z"/>
+                    </svg>
+                  </p>
                 </div>
-                <div class="profile-add__info">
-                  <div class="profile-add__title">
-                    <h3>Ваши карты</h3>
-                    <p>У вас еще нет сохраненных карт, нажмите “Добавить карту”, что бы сохранить и быстро получать деньги до зарплаты.</p>
-                  </div>
-                  <div class="profile-add__cards"></div>
+                <div class="withdraw-common__amount"><span class="currency-icon-light">35 000</span></div>
+                <p class="small mb-0">Доступные средства для снятия</p>
+                <div class="withdraw-common__link">
+                  <a href="#"><span>Снять деньги</span><i class="ci-long_right"></i></a>
                 </div>
-                <a href="#" class="btn btn-blue btn-block">Добавить карту</a>
-              </div><!-- profile add card widget -->
-
+              </div><!-- withdraw common widget -->
             </div>
 
           </div>
@@ -310,6 +292,7 @@
       </main><!-- main content -->
 
       <!-- main footer -->
+      <!-- <footer class="main-footer no-button"> -->
       <footer class="main-footer">
         <div class="container-md">
           <div class="row">
@@ -331,33 +314,6 @@
       </footer><!-- main footer -->
 
     </div>
-
-    <!-- Modal phone edit -->
-    <div class="phone-edit-modal modal fade" id="phone-edit-modal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content text-center">
-          <div class="modal-header">
-            <h5 class="modal-title">Введите OTP пароль</h5>
-            <p class="mb-4">Проверьте ваши SMS сообщения. Мы отправили пароль на ваш номер <span class="dark-blue text-nowrap">+380 (66) 679 19 87</span></p>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body px-3 px-sm-0">
-            <form action="/">
-              <div class="form-group">
-                <input type="tel" class="form-control form-input" placeholder="0 0 0 0">
-              </div>
-              <button type="submit" class="btn btn-blue btn-block">Отправить</button>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <p class="mb-1">Не получили пароль?</p>
-            <button type="button" class="btn btn-block btn-phone-again">Отправить пароль еще раз</button>
-          </div>
-        </div>
-      </div>
-    </div>
     
 
     <!-- Optional JavaScript -->
@@ -366,7 +322,5 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="/js/custom.js"></script>
-    <script src="/js/profile-main.js"></script>
-    <script src="/js/profile-add.js"></script>
   </body>
 </html>
