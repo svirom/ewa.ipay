@@ -1,7 +1,85 @@
 // -----------------------------------------------------------------------------
-// This file contains all styles related to the checkbox (radio) component.
+// This file contains all styles related to the checkbox and radio component.
 // -----------------------------------------------------------------------------
 
+// checkbox
+.checkbox-control {
+  position: relative;
+  padding-left: 2.875rem;
+
+  a {
+    white-space: nowrap;
+  }
+
+  @include until($sm) {
+    padding-left: 2rem;
+    font-size: 0.875rem;
+  }
+}
+
+.checkbox-input {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: 2rem;
+  height: 2rem;
+  opacity: 0;
+
+  &:checked {
+    &~.checkbox-label {
+      &::after {
+        background-image: url("data:image/svg+xml,%3Csvg width='16' height='12' viewBox='0 0 16 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.52495 11.657L0.574951 6.70702L1.98895 5.29302L5.52645 8.82652L5.52495 8.82802L14.01 0.343018L15.424 1.75702L6.93895 10.243L5.52595 11.656L5.52495 11.657Z' fill='%232D3C5A'/%3E%3C/svg%3E");
+        background-size: 16px 12px;
+      }
+    }
+  }
+
+  @include until($sm) {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+.checkbox-label {
+  position: relative;
+  margin-bottom: 0;
+  line-height: 2rem;
+  color: $grey;
+
+  &::before, &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: -2.875rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &::before {
+    border: 1px solid #C2C7D1;
+    border-radius: 0.5rem;
+    pointer-events: none;
+    background-color: #ffffff;
+  }
+
+  &::after {
+    background: no-repeat 50% / 50% 50%;
+  }
+
+  @include until($sm) {
+    line-height: 1.5rem;
+
+    &::before, &::after {
+      width: 1.5rem;
+      height: 1.5rem;
+      left: -2rem;
+    }
+  }
+}
+
+// radio
 .radio-control {
   position: relative;
 }

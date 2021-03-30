@@ -12,6 +12,7 @@
 
   .widget-title {
     padding-left: 0.25rem;
+    padding-bottom: 0.75rem;
 
     svg {
       fill: $red;
@@ -25,6 +26,39 @@
   &__info {
     p {
       margin-bottom: 0;
+
+      &:first-child {
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__link {
+    padding-top: 1.5rem;
+
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    span {
+      vertical-align: middle;
+    }
+
+    i {
+      margin-left: 1.125rem;
+    }
+  }
+
+  @include until($sm) {
+    &.widget {
+      padding-top: 0.875rem;
+      padding-bottom: 0.875rem;
+    }
+
+    &__img {
+      display: none;
     }
   }
 }
