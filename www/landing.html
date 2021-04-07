@@ -22,102 +22,208 @@
   </head>
   <body>
 
-    <div class="container-lg">
-      <div class="row justify-content-center">
+    <div class="landing-wrapper">
 
-        <div class="col-xl-10">
+      <!-- landing header -->
+      <header class="landing-header">
 
-          <!-- landing wrapper -->
-          <div class="landing-wrapper">
+        <div class="container-md">
+          <div class="row">
+            <div class="col">
 
-            <div class="landing-header">
-              <div class="row">
+              <div class="nav-wrapper">
 
-                <div class="col-md-8 col-lg-6">
-                  <div class="landing-logo">
+                <div class="lang-nav">
+                  <div class="lang-nav__logo">
                     <img src="/img/logo-nav.svg" alt="Logo">
                   </div>
-
-                  <div class="landing-title">
-                    <h1>Більше не потрібно<br> чекати день зарплати.</h1>
-                    <p>Заробітна плата нараховується кожний день.</p>
-                    <a href="#" class="btn btn-landing">Увійти</a>
+                  <div class="select-lang dropdown">
+                    <a role="button" class="select-lang__select" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">RU</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">UA</a>
+                      <a class="dropdown-item" href="#">EN</a>
+                    </div>
                   </div>
-
+                  <div class="mobile-nav">
+                    <button type="button" data-trigger="#mobile-menu" class="mobile-nav__button">
+                      <span class="nav-opener"><span></span></span>
+                    </button>
+                    <div class="mobile-overlay"></div>
+                    <div class="mobile-menu" id="mobile-menu">
+                      <button type="button" class="close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <div class="mobile-menu__main">
+                        <ul>
+                          <li><a href="#landing-works" data-scroll="anchor">Как это работает</a></li>
+                          <li><a href="#landing-advantages" data-scroll="anchor">Преимущества</a></li>
+                          <li><a href="#landing-faqs" data-scroll="anchor">Вопросы и ответы</a></li>
+                        </ul>
+                      </div>
+                      <div class="mobile-menu__login">
+                        <p class="small">Для сотрудника</p>
+                        <a href="#" class="btn btn-green btn-block">Войти</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="col-md-4 col-lg-6 landing-image">
-                  <img src="img/landing/landing-header.svg" alt="Image">
+                <nav>
+                  <ul class="landing-nav">
+                    <li class="landing-nav__item">
+                      <a href="#landing-works" data-scroll="anchor">Как это работает</a>
+                    </li>
+                    <li class="landing-nav__item">
+                      <a href="#landing-advantages" data-scroll="anchor">Преимущества</a>
+                    </li>
+                    <li class="landing-nav__item">
+                      <a href="#landing-faqs" data-scroll="anchor">Вопросы и ответы</a>
+                    </li>
+                  </ul>
+                </nav>
+
+                <div class="landing-login">
+                  <a href="#" class="btn btn-green">Войти</a>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </header><!-- landing header -->
+
+      <!-- landing hero -->
+      <div class="landing-hero">
+
+        <div class="container-md">
+          <div class="row justify-content-between">
+
+            <div class="col-md-7 col-lg-5">
+              <div class="landing-title">
+                <h1>Зарплата каждый день</h1>
+                <p class="mb-4">Первый сервис в Украине, с которым сотрудники могут получить зарплату в любом месте и в любое время.</p>
+                <div class="landing-image d-md-none"></div>
+                <a href="#" class="btn btn-green btn-block">Войти</a>
+                <p class="landing-title__footer mb-0"><span class="align-middle">Сервис создан при поддержке</span> <img src="/img/visa-logo.svg" alt="Visa"></p>
+              </div>
+            </div>
+
+            <div class="col-md-5 col-lg-6 d-none d-md-block">
+              <img src="img/landing/landing-hero.svg" alt="Image">
+            </div>
+
+          </div>
+        </div>
+
+      </div><!-- landing hero -->
+
+      <!-- landing works -->
+      <div class="landing-works" id="landing-works">
+
+        <div class="container-md">
+
+          <div class="row justify-content-center landing-works-title">
+            <div class="col-md-8 col-lg-6 text-center">
+              <h2>Как это работает</h2>
+              <p>Больше не нужно долго ждать Дня Зарплаты. Теперь можно получать зарплату каждый день. Легко и быстро!</p>
+            </div>
+          </div>
+
+          <div class="row">
+            
+            <div class="col-md-6">
+              <div class="landing-works-img">
+
+                <div class="tab-content">
+                        
+                  <div class="tab-pane fade show active" id="withdraw-works" role="tabpanel" aria-labelledby="withdraw-works-tab">
+                    <div class="tab-pane-img">
+                      <img src="/img/landing/withdraw-works.png" srcset="/img/landing/withdraw-works.png 1x, /img/landing/withdraw-works@2x.png 2x" alt="Image">
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="statistics-works" role="tabpanel" aria-labelledby="statistics-works-tab">
+                    <div class="tab-pane-img">
+                      <img src="/img/landing/statistics-works.png" srcset="/img/landing/statistics-works.png 1x, /img/landing/statistics-works@2x.png 2x" alt="Image">
+                    </div>
+                  </div>
+              
                 </div>
 
               </div>
             </div>
 
-            <div class="landing-info">
+            <div class="col-md-6">
+              <div class="landing-works-info">
 
-              <div class="row">
-                <div class="col-12">
-                  <p class="landing-info__title">Знайома ситуація?</p>
-                </div>
-              </div>
+                <nav>
+                  <div class="nav flex-column" role="tablist">
 
-              <div class="row no-gutters">
-
-                <div class="col-lg-4">
-                  <div class="landing-card landing-card--left">
-                    <div class="landing-card__header">
-                      <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.71875 11.4061H8.36838L9.28493 10.5945H5.6353L4.71875 11.4061Z"/>
-                        <path d="M7.00007 19.3808C6.92953 19.3808 6.85964 19.3793 6.78889 19.376C5.55105 19.3204 4.54117 18.6638 4.08741 17.6195C3.71968 16.7736 3.71559 15.5252 4.8059 14.5595L5.81406 13.6667H2.3027C1.2182 15.0507 0.968957 16.8061 1.67906 18.4406C2.49776 20.3246 4.40569 21.5579 6.65685 21.6589C6.77039 21.664 6.88502 21.6667 7.00007 21.6667C10.6762 21.6667 13.6667 19.0178 13.6667 15.762H11.086C11.086 17.7574 9.25316 19.3808 7.00007 19.3808Z"/>
-                        <path d="M7.00009 2.61907C7.07062 2.61907 7.14051 2.62059 7.21127 2.62383C8.4491 2.67945 9.45898 3.33601 9.91274 4.38039C10.2805 5.22628 10.2846 6.47465 9.19425 7.44036L8.18609 8.3333H11.6975C12.782 6.94932 13.0314 5.1939 12.3211 3.55944C11.5024 1.67546 9.59446 0.442135 7.34331 0.341184C7.22955 0.336041 7.11514 0.333374 7.00009 0.333374C3.324 0.333374 0.333496 2.9823 0.333496 6.23808H2.91411C2.91411 4.24248 4.74699 2.61907 7.00009 2.61907Z"/>
-                        <path d="M13.1295 11.7871H0.871582V13.286H13.1295V11.7871Z"/>
-                        <path d="M13.1295 8.7146H0.871582V10.2134H13.1295V8.7146Z"/>
-                      </svg>
-                    </div>
-                    <h3>Зарплата</h3>
-                    <p>Ви отримали зарплату</p>
-                    <i class="ci-short_right"></i>
-                  </div>
-                </div>
-
-                <div class="col-lg-4">
-                  <div class="landing-card">
-                    <div class="landing-card__header">
+                    <a class="nav-link active" id="withdraw-works-tab" data-toggle="pill" href="#withdraw-works" role="tab" aria-controls="withdraw-works" aria-selected="true">
                       <i class="ci-credit_card"></i>
-                    </div>
-                    <h3>Платежі</h3>
-                    <p>Оплатив комунальні<br> Вніс платежі по кредиту<br> Оплатив навчання</p>
-                    <i class="ci-short_right"></i>
-                  </div>
-                </div>
+                      <h3>Выводите зарплату</h3>
+                      <p class="mb-0 mb-md-2">Не ждите даты выдачи зарплаты, теперь вы можете ее получать в любой день! Выводить зарплату можно на ваш IBAN счет, или на любую карту.</p>
+                    </a>
 
-                <div class="col-lg-4">
-                  <div class="landing-card landing-card--right">
-                    <div class="landing-card__header">
-                      <i class="ci-sad"></i>
-                    </div>
-                    <h3>Гроші закінчились</h3>
-                    <p>А тут як раз День нарождення у дівчини а до зарплати ще тиждень</p>
+                    <a class="nav-link" id="statistics-works-tab" data-toggle="pill" href="#statistics-works" role="tab" aria-controls="statistics-works" aria-selected="false">
+                      <i class="ci-bar_chart"></i>
+                      <h3>Доступ к статистике</h3>
+                      <p class="mb-0 mb-md-2">Каждый день вы получаете обновленную статистику по вашей зарплате.</p>
+                    </a>
+
                   </div>
-                </div>
+                </nav>
 
               </div>
-
             </div>
 
-            <div class="landing-footer">
-
-              <h2>Знімай свої зароблені кошти, не чекаючи дня виплати зп</h2>
-              <p>Ми не даємо гроші під %. Ви отримуєте ваші особисті, вже зароблені кошти</p>
-              <a href="#" class="btn btn-landing">Увійти</a>
-
-            </div>
-
-          </div><!-- landing wrapper -->
+          </div>
 
         </div>
 
-      </div>
+      </div><!-- landing works -->
+
+      <!-- landing advantages -->
+      <div class="landing-advantages" id="landing-advantages">
+
+        <div class="container-md">
+
+          <div class="row justify-content-center landing-advantages-title">
+            <div class="col-md-8 col-lg-6 text-center">
+              <h2>Преимущества сервиса</h2>
+              <p>Первый сервис в Украине, с которым сотрудники могут получить заработанную зарплату в любой удобный день.</p>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="col-12">
+
+              <ul class="nav mb-3 justify-content-center" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="employee-advantages-tab" data-toggle="pill" href="#employee-advantages" role="tab" aria-controls="employee-advantages" aria-selected="true">Для сотрудника</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="employer-advantages-tab" data-toggle="pill" href="#employer-advantages" role="tab" aria-controls="employer-advantages" aria-selected="false">Для работадателя</a>
+                </li>
+              </ul>
+
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="employee-advantages" role="tabpanel" aria-labelledby="employee-advantages-tab">.1.</div>
+                <div class="tab-pane fade" id="employer-advantages" role="tabpanel" aria-labelledby="employer-advantages-tab">.2.</div>
+                
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div><!-- landing advantages -->
+
     </div>
     
 
@@ -126,5 +232,6 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="/js/landing.js"></script>
   </body>
 </html>
