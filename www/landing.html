@@ -57,7 +57,7 @@
                         <ul>
                           <li><a href="#landing-works" data-scroll="anchor">Как это работает</a></li>
                           <li><a href="#landing-advantages" data-scroll="anchor">Преимущества</a></li>
-                          <li><a href="#landing-faqs" data-scroll="anchor">Вопросы и ответы</a></li>
+                          <li><a href="#landing-faq" data-scroll="anchor">Вопросы и ответы</a></li>
                         </ul>
                       </div>
                       <div class="mobile-menu__login">
@@ -77,7 +77,7 @@
                       <a href="#landing-advantages" data-scroll="anchor">Преимущества</a>
                     </li>
                     <li class="landing-nav__item">
-                      <a href="#landing-faqs" data-scroll="anchor">Вопросы и ответы</a>
+                      <a href="#landing-faq" data-scroll="anchor">Вопросы и ответы</a>
                     </li>
                   </ul>
                 </nav>
@@ -206,13 +206,80 @@
                   <a class="nav-link active" id="employee-advantages-tab" data-toggle="pill" href="#employee-advantages" role="tab" aria-controls="employee-advantages" aria-selected="true">Для сотрудника</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="employer-advantages-tab" data-toggle="pill" href="#employer-advantages" role="tab" aria-controls="employer-advantages" aria-selected="false">Для работадателя</a>
+                  <a class="nav-link" id="employer-advantages-tab" data-toggle="pill" href="#employer-advantages" role="tab" aria-controls="employer-advantages" aria-selected="false">Для работодателя</a>
                 </li>
               </ul>
 
-              <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="employee-advantages" role="tabpanel" aria-labelledby="employee-advantages-tab">.1.</div>
-                <div class="tab-pane fade" id="employer-advantages" role="tabpanel" aria-labelledby="employer-advantages-tab">.2.</div>
+              <div class="tab-content">
+
+                <div class="tab-pane fade show active" id="employee-advantages" role="tabpanel" aria-labelledby="employee-advantages-tab">
+
+                  <div class="employee-advantages">
+                    <div class="row">
+
+                      <div class="col-lg-4 mb-4 mb-lg-0">
+                        <div class="advantages-card advantages-card--access">
+                          <i class="ci-credit_card"></i>
+                          <h4>Доступ к деньгам</h4>
+                          <p class="mb-0">Вы можете просматривать свой доступный баланс на зарплатном счету и перевести необходимую сумму на свою карту</p>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4 mb-4 mb-lg-0">
+                        <div class="advantages-card advantages-card--statistics">
+                          <i class="ci-bar_chart"></i>
+                          <h4>Статистика дохода</h4>
+                          <p class="mb-0">Детальная статистика начислений зарплаты и снятия средств позволяет понимать свои финансовые потоки</p>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4">
+                        <div class="advantages-card advantages-card--online">
+                          <i class="ci-circle_check"></i>
+                          <h4>Доступ везде и всегда</h4>
+                          <p class="mb-0">“Зарплата каждый день” - это онлайн сервис. Вам необходимо только подключение к интернету, компьютер или смартфон</p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="employee-promo">
+                    <div class="row justify-content-center">
+                      <div class="col-md-8 col-lg-6">
+                        <div class="employee-promo__badge">Ваша компания еще не подключена?</div>
+                        <h3>Ускорьте процесс подключения вашей компании к сервису "Зарплата каждый день"</h3>
+                        <button type="button" class="btn btn-blue btn-block" data-toggle="modal" data-target="#employeeModal">Оставить заявку</button>
+                        <p class="small mb-0 px-5 px-md-0">Уже более 8 000 сотрудников оставили заявку</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="tab-pane fade" id="employer-advantages" role="tabpanel" aria-labelledby="employer-advantages-tab">
+
+                  <div class="employer-promo">
+                    <div class="row justify-content-center">
+                      <div class="col-md-8 col-lg-6">
+                        <h3>Много работодателей по всему миру уже предлагают ранний доступ к зарплате</h3>
+                      </div>
+                      <div class="col-md-10 col-lg-8">
+                        <div class="employer-promo__logos">
+                          <img src="/img/landing/employer-walmart.svg" alt="Walmart">
+                          <img src="/img/landing/employer-mazda.svg" alt="Mazda">
+                          <img src="/img/landing/employer-burger-king.svg" alt="Burger King">
+                          <img src="/img/landing/employer-mc-donalds.svg" alt="Mc Donald's">
+                          <img src="/img/landing/employer-dominos-pizza.svg" alt="Domino's Pizza">
+                          <img src="/img/landing/employer-walt-disney.svg" alt="Walt Disney">
+                        </div>
+                        <p class="mb-4">Это позволяет увеличить удовлетворенность рабочими условиями, увеличивает взаимное доверие между работадатеолем и сотрудником, а так же увеличивает финансовое благополучие сотрудников.</p>
+                        <button type="button" class="btn btn-blue btn-block" data-toggle="modal" data-target="#employerModal">Подключиться</button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
                 
               </div>
 
@@ -224,7 +291,200 @@
 
       </div><!-- landing advantages -->
 
+      <!-- landing faq -->
+      <div class="landing-faq" id="landing-faq">
+        <div class="container-md">
+
+          <div class="row justify-content-center">
+
+            <div class="col-lg-10 text-center landing-faq-title">
+              <h2>Вопросы и ответы</h2>
+            </div>
+
+            <div class="col-lg-10">
+
+              <div class="faq-accordion" id="faq-accordion">
+
+                <div class="faq-card">
+                  <div class="faq-card__header" id="faq-header-1">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#faq-collapse-1" aria-expanded="true" aria-controls="faq-collapse-1">
+                        <span>Что требуется для подключения?</span>
+                        <i class="ci-chevron_down"></i>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="faq-collapse-1" class="collapse show" aria-labelledby="faq-header-1" data-parent="#faq-accordion">
+                    <div class="faq-card__body">
+                      <p class="mb-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="faq-card">
+                  <div class="faq-card__header" id="faq-header-2">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq-collapse-2" aria-expanded="false" aria-controls="faq-collapse-2">
+                        <span>ООО ФК "УНИВЕРСАЛЬНЫЕ ПЛАТЕЖНЫЕ СИСТЕМЫ"</span>
+                        <i class="ci-chevron_down"></i>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="faq-collapse-2" class="collapse" aria-labelledby="faq-header-2" data-parent="#faq-accordion">
+                    <div class="faq-card__body">
+                      <p class="mb-4">ФК ТОВ «УНІВЕРСАЛЬНІ ПЛАТІЖНІ РІШЕННЯ» - фінансова установа, зареєстрована У встановленому законодавством України порядку, яка надає послуги на підставі Ліцензії НБУ (№ 3 від 11.11.2013 року) на переказ грошових коштів.Також ФК ТОВ «УНІВЕРСАЛЬНІ ПЛАТІЖНІ РІШЕННЯ» приєдналася до Внутрішньодержавної небанківської платіжної системи «Фінансовий світ» (договір №14 від 11.12.2013 року) та до Міжнародної системи грошових переказів «АVERS» (договір № 126/2014 від 06.10.2014 року).</p>
+                      <img src="/img/landing/certificate-1.png" alt="Certificate">
+                      <img src="/img/landing/certificate-2.png" alt="Certificate">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="faq-card">
+                  <div class="faq-card__header" id="faq-header-3">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq-collapse-3" aria-expanded="false" aria-controls="faq-collapse-3">
+                        <span>Как работает онлайн сервис “Зарплата каждый день”</span>
+                        <i class="ci-chevron_down"></i>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="faq-collapse-3" class="collapse" aria-labelledby="faq-header-3" data-parent="#faq-accordion">
+                    <div class="faq-card__body">
+                      <p class="mb-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="landing-faq-questions">
+                Если у вас остались вопросы пишите нам <a href="mailto:help@ewa.com">help@ewa.com</a>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-5">
+              <div class="faq-more-title text-center">
+                <h3 class="h2">Узнайте больше</h3>
+                <p>Задавайте любые вопросы нашим специалистам удобным для вас способом</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+
+            <div class="col-sm-10 col-md-9 col-lg-6">
+
+              <div class="row faq-more-cards">
+
+                <div class="col-4">
+                  <a href="#" class="faq-more-card faq-more-card--telegram">
+                    <img src="/img/landing/faq-telegram.svg" alt="Telegram">
+                    <p class="mb-0 mt-4">Telegram</p>
+                  </a>
+                </div>
+    
+                <div class="col-4">
+                  <a href="#" class="faq-more-card faq-more-card--viber">
+                    <img src="/img/landing/faq-viber.svg" alt="Viber">
+                    <p class="mb-0 mt-4">Viber</p>
+                  </a>
+                </div>
+    
+                <div class="col-4">
+                  <a href="#" class="faq-more-card faq-more-card--facebook">
+                    <img src="/img/landing/faq-facebook.svg" alt="Facebook">
+                    <p class="mb-0 mt-4">Facebook</p>
+                  </a>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div><!-- landing faq -->
+
     </div>
+
+    <!-- modal employee -->
+    <div class="advantages-modal modal fade" id="employeeModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h2 class="modal-title">Заполните форму</h2>
+            <p>Мы свяжемся с вашим работадателем и презентуем ему сервис “Зарплата каждый день”</p>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="/">
+              <div class="form-group">
+                <input type="text" class="form-control form-input" placeholder="Название компании">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control form-input" placeholder="Ваше Имя">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control form-input" placeholder="Ваш Email">
+              </div>
+              <div class="form-group">
+                <input type="tel" class="form-control form-input" placeholder="Номер телефона">
+              </div>
+              <div class="form-group checkbox-control">
+                <input class="checkbox-input" type="checkbox" id="anonym-check">
+                <label class="checkbox-label" for="anonym-check">Хотите остаться анонимным?</label>
+              </div>
+              <button type="submit" class="btn btn-blue btn-block">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div><!-- modal employee -->
+
+    <!-- modal employer -->
+    <div class="advantages-modal modal fade" id="employerModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h2 class="modal-title">Хотите подключить вашу компанию к сервису?</h2>
+            <p>Заполните форму ниже</p>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="/">
+              <div class="form-group">
+                <input type="text" class="form-control form-input" placeholder="Название компании">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control form-input" placeholder="Ваша должность в компании">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control form-input" placeholder="Ваше Имя">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control form-input" placeholder="Ваш Email">
+              </div>
+              <div class="form-group mb-3 mb-sm-4">
+                <input type="tel" class="form-control form-input" placeholder="Номер телефона">
+              </div>
+              <button type="submit" class="btn btn-blue btn-block">Отправить</button>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <p class="mb-0 mt-3 mt-sm-4">Подключение полностью бесплатное</p>
+          </div>
+        </div>
+      </div>
+    </div><!-- modal employer -->
     
 
     <!-- Optional JavaScript -->

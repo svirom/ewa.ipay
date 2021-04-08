@@ -10,21 +10,18 @@ $(document).ready(function() {
     $('.mobile-overlay').toggleClass('show');
   }); 
 
-  $('.mobile-menu .close, .mobile-overlay').click(function() {
+  $('.mobile-menu .close, .mobile-overlay, [data-scroll="anchor"]').click(function() {
     $('.mobile-overlay').removeClass('show');
     $('.mobile-menu').removeClass('show');
     $('body').removeClass('overflow-hidden');
   });
 
   // scroll to anchor
-  $('a').click(function(e) {
-    if ($(this).data('scroll') == 'anchor') {
-      e.preventDefault();
+  $('[data-scroll="anchor"]').click(function(e) {
+    e.preventDefault();
+    var anchor = $(this).attr('href');
 
-      var anchor = $(this).attr('href');
-
-      $('html, body').animate({scrollTop: $(anchor).offset().top}, 600);
-    }
+    $('html, body').animate({scrollTop: $(anchor).offset().top}, 600);
   });
 
 })
