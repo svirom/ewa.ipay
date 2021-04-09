@@ -9,7 +9,7 @@
 @import '../abstracts/mixins';
 
 .landing-wrapper {
-  padding: 6rem 0 5rem;
+  padding: 6rem 0 3.75rem;
 
   h1, h2, h3, h4 {
     margin-bottom: 1.5rem;
@@ -46,7 +46,7 @@
   }
 
   @include until($lg) {
-    padding: 4.5rem 0 3.5rem;
+    padding: 4.5rem 0 2.5rem;
   }
 
   @include until($md) {
@@ -99,7 +99,7 @@
     right: 0;
     transform : translateX(100%);
     width: 70%;
-    max-width: 16rem;
+    max-width: 20rem;
     padding-top: 8rem;
     padding-bottom: 1.875rem;
     text-align: center;
@@ -340,7 +340,7 @@
       }
 
       &::after {
-        height: 3.75rem;
+        height: 100%;
         transition: height 0.3s;
       }
     }
@@ -352,7 +352,7 @@
   }
 
   @include until($md) {
-    padding: 2rem 0;
+    padding: 2rem 0 1rem;
 
     .nav-link {
       h3 {
@@ -570,6 +570,7 @@
   }
 }
 
+// modal
 .advantages-modal {
   &.modal {
     .modal-dialog {
@@ -720,6 +721,7 @@
 @include until($lg) {
   .landing-faq {
     padding-top: 6rem;
+    padding-bottom: 3.75rem;
     background: linear-gradient(180deg, #ffffff 0%, #ffffff 36px, #F7FBFF 36px, rgba(247, 251, 255, 0) 100%);
   }
 
@@ -777,6 +779,12 @@
 
   &__body {
     padding: 0 2rem 1.5rem;
+
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 
   @include until($md) {
@@ -854,10 +862,6 @@
   text-align: center;
   border-radius: 1.5rem;
 
-  img {
-    transition: transform 0.3s;
-  }
-
   p {
     font-weight: 500;
   }
@@ -868,6 +872,10 @@
     p {
       color: #49A5E8;
     }
+
+    &:hover {
+      background-color: rgba(#49A5E8, 0.2);
+    }
   }
 
   &--viber {
@@ -875,6 +883,10 @@
 
     p {
       color: #8861B2;
+    }
+
+    &:hover {
+      background-color: rgba(#8861B2, 0.2);
     }
   }
 
@@ -884,14 +896,157 @@
     p {
       color: #4A99F7;
     }
+
+    &:hover {
+      background-color: rgba(#4A99F7, 0.2);
+    }
   }
 
   &:hover {
     text-decoration: none;
+  }
+}
+
+// landing contacts
+.landing-contacts {
+  padding-top: 5rem;
+}
+
+.landing-contacts-title {
+  padding-bottom: 1.5rem;
+
+  img {
+    width: 3.5rem;
+  }
+
+  h2 {
+    margin-top: 2rem;
+  }
+}
+
+@include until($lg) {
+  .landing-contacts {
+    padding-top: 2.5rem;
+  }
+
+  .landing-contacts-title {
+    padding-bottom: 1rem;
 
     img {
-      transform: scale(1.1);
+      width: 2rem;
     }
+
+    h2 {
+      margin-top: 0.875rem;
+    }
+  }
+}
+
+.contacts-card {
+  padding: 2.1875rem 4.0625rem;
+  text-align: center;
+  border: 1px solid #E5E5E5;
+  border-radius: 1.5rem;
+  background-color: #ffffff;
+
+  .btn {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  &__title {
+    display: inline-block;
+    position: relative;
+    padding: 0 1.125rem 0.875rem;
+    color: #5A6478;
+
+    &::before, &::after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      transition: all 0.3s;
+    }
+
+    &::before {
+      background-color: #F0F0F0;
+    }
+
+    &::after {
+      background-color: $blue;
+      visibility: hidden;
+      transform: scaleX(0);
+    }
+  }
+
+  &__info {
+    padding-top: 2rem;
+  }
+
+  &__contact {
+    margin-bottom: 1.5rem;
+    padding-top: 2.375rem;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    p {
+      color: $grey;
+    }
+
+    &--email {
+      background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.69543 13.3909C7.05067 13.3909 6.52686 12.8671 6.52686 12.2223C6.52686 11.5795 7.05067 11.0557 7.69543 11.0557C8.34019 11.0557 8.864 11.5795 8.864 12.2223C8.864 12.8671 8.34019 13.3909 7.69543 13.3909ZM12.2383 13.3909C11.5935 13.3909 11.0697 12.8671 11.0697 12.2223C11.0697 11.5795 11.5935 11.0557 12.2383 11.0557C12.883 11.0557 13.4069 11.5795 13.4069 12.2223C13.4069 12.8671 12.883 13.3909 12.2383 13.3909ZM15.6127 12.2223C15.6127 12.8671 16.1365 13.3909 16.7812 13.3909C17.426 13.3909 17.9498 12.8671 17.9498 12.2223C17.9498 11.5795 17.426 11.0557 16.7812 11.0557C16.1365 11.0557 15.6127 11.5795 15.6127 12.2223Z' fill='%2355A5FF'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.02 2C6.21 2 2 6.74612 2 12.015C2 13.6975 2.49 15.4291 3.35 17.0115C3.51 17.2729 3.53 17.6024 3.42 17.9139L2.75 20.1572C2.6 20.698 3.06 21.0976 3.57 20.9374L5.59 20.3375C6.14 20.1572 6.57 20.3866 7.08 20.698C8.54 21.5583 10.36 22 12 22C16.96 22 22 18.1642 22 11.985C22 6.65598 17.7 2 12.02 2Z' stroke='%2355A5FF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    }
+
+    &--phone {
+      background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.98995 4.87351C3.30627 4.34875 5.05018 2.44377 6.2929 2.50127C6.66469 2.53311 6.99334 2.75698 7.26037 3.01783H7.2614C7.87351 3.61756 9.62974 5.88094 9.72834 6.35745C9.97175 7.52611 8.57806 8.19978 9.00428 9.37769C10.0909 12.0364 11.9632 13.9086 14.6232 14.994C15.8002 15.4212 16.4739 14.0287 17.6427 14.2711C18.1192 14.3707 20.3839 16.1257 20.9826 16.7388V16.7388C21.2425 17.0048 21.4684 17.3344 21.4992 17.7062C21.5454 19.0155 19.5222 20.7829 19.1278 21.0088C18.1973 21.6753 16.9833 21.663 15.5034 20.975C11.3737 19.2569 4.77391 12.782 3.02384 8.49657C2.35421 7.02496 2.30902 5.8029 2.98995 4.87351Z' stroke='%2355A5FF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14.5654 2.75C18.2674 3.161 21.1904 6.081 21.6064 9.782' stroke='%2355A5FF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14.5654 6.29297C16.3354 6.63797 17.7184 8.02097 18.0634 9.79097' stroke='%2355A5FF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    }
+  }
+
+  &__footer {
+    padding-top: 0.5rem;
+  }
+
+  &:hover {
+    border-color: #F7FBFF;
+    background-color: #F7FBFF;
+
+    .contacts-card__title {
+      &::after {
+        visibility: visible;
+        transform: scaleX(1);
+      }
+    }
+  }
+
+  @include until($xl) {
+    padding: 2.1875rem;
+  }
+
+  @include until($md) {
+    padding: 1.875rem;
+
+    &__info {
+      padding-top: 1.5rem;
+    }
+
+    &__footer {
+      padding-top: 0;
+    }
+  }
+}
+
+// landing footer
+.landing-footer {
+  padding-top: 3.75rem;
+
+  p {
+    color: $grey;
+  }
+
+  @include until($lg) {
+    padding-top: 2rem;
   }
 }
 
