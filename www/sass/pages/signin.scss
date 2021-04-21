@@ -149,9 +149,13 @@
     padding-top: 2.5rem;
     padding-bottom: 3.75rem;
     padding-left: 0;
+    min-height: calc(var(--vh, 1vh) * 100);
+    /* mobile browsers height fix */
 
     &--404 {
-      min-height: calc(100vh - 12.5rem);
+      /* min-height: calc(100vh - 12.5rem); */
+      min-height: calc(var(--vh, 1vh) * 100 - 12.5rem);
+      /* mobile browsers height fix */
     }
   }
 
@@ -160,6 +164,8 @@
 
     &--404 {
       min-height: 100vh;
+      min-height: calc(var(--vh, 1vh) * 100);
+      /* mobile browsers height fix */
     }
   }
 }
@@ -283,6 +289,7 @@
 
   @include until($sm) {
     border-top: 0;
+    margin-top: 1.5rem;
 
     &__button {
       display: block;
