@@ -1,55 +1,45 @@
 .landing-wrapper {
   padding: 6rem 0 3.75rem;
 }
-
 .landing-wrapper h1, .landing-wrapper h2, .landing-wrapper h3, .landing-wrapper h4 {
   margin-bottom: 1.5rem;
 }
-
 .landing-wrapper h1 {
   font-size: 3.875rem;
   font-weight: 700;
   line-height: 1.3;
 }
-
 .landing-wrapper h2, .landing-wrapper .h2 {
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.15;
 }
-
 .landing-wrapper h3 {
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.15;
 }
-
 .landing-wrapper h4 {
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1;
 }
-
 .landing-wrapper p {
   color: #5A6478;
 }
-
 .landing-wrapper img {
   max-width: 100%;
 }
-
 @media screen and (max-width: 1199px) {
   .landing-wrapper h1 {
     font-size: 2.875rem;
   }
 }
-
 @media screen and (max-width: 991px) {
   .landing-wrapper {
     padding: 4.5rem 0 2.5rem;
   }
 }
-
 @media screen and (max-width: 767px) {
   .landing-wrapper h1 {
     font-size: 1.5rem;
@@ -72,19 +62,15 @@
   background-color: #ffffff;
   z-index: 1002;
 }
-
 .landing-header .lang-nav {
   position: relative;
 }
-
 .landing-header .lang-nav__logo {
   margin-right: 2rem;
 }
-
 .landing-header .mobile-nav {
   margin-right: 0;
 }
-
 .landing-header .mobile-nav__button {
   position: absolute;
   right: 0;
@@ -92,7 +78,6 @@
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-
 .landing-header .mobile-menu {
   left: auto;
   right: 0;
@@ -104,30 +89,24 @@
   padding-bottom: 1.875rem;
   text-align: center;
 }
-
 .landing-header .mobile-menu__main li {
   margin-bottom: 1.75rem;
 }
-
 .landing-header .mobile-menu__main a {
   font-size: 1.125rem;
 }
-
 .landing-header .mobile-menu__login .btn {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-
 .landing-header .mobile-menu button.close {
   left: auto;
   right: 0.9375rem;
 }
-
 .landing-header .mobile-menu.show {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
-
 @media screen and (max-width: 991px) {
   .landing-header {
     height: 4.5rem;
@@ -141,18 +120,14 @@
 }
 
 .nav-wrapper {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
   height: 6rem;
 }
-
 @media screen and (max-width: 991px) {
   .nav-wrapper {
     height: 4.5rem;
@@ -160,21 +135,17 @@
 }
 
 .landing-nav {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
 .landing-nav__item:not(:last-child) {
   margin-right: 2.5rem;
 }
-
 .landing-nav__item a {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   color: #969DAC;
 }
-
 .landing-nav__item a:hover {
   text-decoration: none;
   color: #2D3C5A;
@@ -185,17 +156,14 @@
     display: none;
   }
 }
-
 .landing-hero {
   padding: 7.5rem 0 3.75rem;
 }
-
 @media screen and (max-width: 991px) {
   .landing-hero {
     padding: 4.5rem 0 0;
   }
 }
-
 @media screen and (max-width: 767px) {
   .landing-hero {
     padding-top: 2.5rem;
@@ -205,17 +173,14 @@
 .landing-title h1 + p {
   line-height: 1.65;
 }
-
 .landing-title .btn {
   max-width: 15.9375rem;
   margin-bottom: 5rem;
 }
-
 .landing-title__footer span {
   margin-right: 0.5rem;
   color: #969DAC;
 }
-
 @media screen and (max-width: 767px) {
   .landing-title {
     text-align: center;
@@ -227,7 +192,6 @@
     font-size: 0.875rem;
   }
 }
-
 @media screen and (max-width: 575px) {
   .landing-title .btn {
     max-width: none;
@@ -258,32 +222,25 @@
     padding-bottom: 0.75rem;
   }
 }
-
 .landing-works-img {
   height: 100%;
   border-radius: 1.5rem;
   background-color: #F7FBFF;
 }
-
 .landing-works-img .tab-content, .landing-works-img .tab-pane {
   height: 100%;
 }
-
 .landing-works-img .tab-pane-img {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: end;
+      align-items: flex-end;
   height: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
 }
-
 @media screen and (max-width: 767px) {
   .landing-works-img {
     margin-left: -15px;
@@ -296,66 +253,52 @@
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
-
 .landing-works-info .nav-link {
   position: relative;
   max-width: 21.875rem;
   padding: 0 0 0 1.875rem;
 }
-
 .landing-works-info .nav-link i {
   color: #C0C5CE;
 }
-
 .landing-works-info .nav-link h3 {
   margin-top: 0.875rem;
 }
-
 .landing-works-info .nav-link::before, .landing-works-info .nav-link::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   width: 2px;
   background-color: #F0F0F0;
 }
-
 .landing-works-info .nav-link::before {
   height: 100%;
 }
-
 .landing-works-info .nav-link::after {
   height: 0;
-  -webkit-transition: height 0.3s;
   transition: height 0.3s;
   background-color: #55A5FF;
 }
-
 .landing-works-info .nav-link:not(:last-child) {
   margin-bottom: 2.5rem;
 }
-
 .landing-works-info .nav-link:hover i {
   color: #55A5FF;
 }
-
 .landing-works-info .nav-link.active i {
   color: #55A5FF;
 }
-
 .landing-works-info .nav-link.active::after {
   height: 100%;
-  -webkit-transition: height 0.3s;
   transition: height 0.3s;
 }
-
 @media screen and (max-width: 991px) {
   .landing-works-info {
     padding-top: 0;
     padding-bottom: 0;
   }
 }
-
 @media screen and (max-width: 767px) {
   .landing-works-info {
     padding: 2rem 0 1rem;
@@ -372,23 +315,19 @@
   padding-top: 7.5rem;
   padding-bottom: 5rem;
 }
-
 .landing-advantages .nav-item {
   position: relative;
 }
-
 .landing-advantages .nav-item:not(:last-child) {
   margin-right: 1.875rem;
 }
-
 .landing-advantages .nav-link {
   padding: 0.5rem 1.25rem 0.875rem;
   color: #5A6478;
 }
-
 .landing-advantages .nav-link::after {
   position: absolute;
-  content: '';
+  content: "";
   bottom: 0;
   left: 0;
   width: 100%;
@@ -397,35 +336,28 @@
   visibility: hidden;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
 .landing-advantages .nav-link:hover {
   color: #2D3C5A;
 }
-
 .landing-advantages .nav-link.active {
   color: #2D3C5A;
 }
-
 .landing-advantages .nav-link.active::after {
   visibility: visible;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
-
 .landing-advantages .tab-content {
   padding-top: 1.625rem;
 }
-
 @media screen and (max-width: 991px) {
   .landing-advantages {
     padding-top: 6rem;
     padding-bottom: 1.75rem;
   }
 }
-
 @media screen and (max-width: 767px) {
   .landing-advantages .nav-link {
     padding-left: 0.5rem;
@@ -451,42 +383,33 @@
   border: 1px solid #E6E6E6;
   border-radius: 1.5rem;
 }
-
 .advantages-card i {
   font-size: 2rem;
 }
-
 .advantages-card h4 {
   margin-top: 1.5rem;
 }
-
 .advantages-card--access i {
   color: #55A5FF;
 }
-
 .advantages-card--access:hover {
   border-color: rgba(85, 165, 255, 0.1);
   background-color: rgba(85, 165, 255, 0.05);
 }
-
 .advantages-card--statistics i {
   color: #FF5F5F;
 }
-
 .advantages-card--statistics:hover {
   border-color: rgba(255, 95, 95, 0.1);
   background-color: rgba(255, 95, 95, 0.05);
 }
-
 .advantages-card--online i {
   color: #14D2A5;
 }
-
 .advantages-card--online:hover {
   border-color: rgba(20, 210, 165, 0.1);
   background-color: rgba(20, 210, 165, 0.05);
 }
-
 @media screen and (max-width: 767px) {
   .advantages-card {
     padding: 1.875rem 0.875rem;
@@ -497,7 +420,6 @@
   padding-top: 2.625rem;
   text-align: center;
 }
-
 .employee-promo__badge {
   display: inline-block;
   width: 100%;
@@ -508,14 +430,12 @@
   border-radius: 1.5rem;
   background-color: rgba(85, 165, 255, 0.1);
 }
-
 .employee-promo .btn {
   max-width: 14.25rem;
   margin: 0 auto 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
-
 @media screen and (max-width: 767px) {
   .employee-promo {
     padding-top: 2rem;
@@ -538,35 +458,28 @@
 .employer-promo {
   text-align: center;
 }
-
 .employer-promo__logos {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 0.5rem;
   margin-bottom: 2rem;
 }
-
 .employer-promo .btn {
   max-width: 14.25rem;
   margin: 0 auto 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
-
 @media screen and (max-width: 575px) {
   .employer-promo__logos {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
     margin-top: 0;
     margin-bottom: 1.5rem;
   }
@@ -578,16 +491,13 @@
 .advantages-modal.modal .modal-dialog {
   max-width: 45.625rem;
 }
-
 .advantages-modal.modal .modal-content {
   padding: 2rem 0.875rem;
   border-radius: 1.5rem;
 }
-
 .advantages-modal.modal .modal-header {
   width: 26.25rem;
 }
-
 .advantages-modal.modal .modal-header .close {
   right: 2rem;
   top: 2rem;
@@ -596,49 +506,40 @@
   font-size: 2rem;
   font-weight: 400;
 }
-
 .advantages-modal.modal .modal-title {
   margin-bottom: 1.5rem;
   font-size: 2rem;
   font-weight: 500;
   line-height: 1.33;
 }
-
 .advantages-modal.modal .modal-body {
   padding-top: 0.9375rem;
 }
-
 .advantages-modal.modal p {
   color: #5A6478;
 }
-
 .advantages-modal.modal .checkbox-control {
   padding-left: 2.375rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-
 .advantages-modal.modal .checkbox-input {
   width: 1.5rem;
   height: 1.5rem;
 }
-
 .advantages-modal.modal .checkbox-label {
   line-height: 1.5rem;
   color: #5A6478;
 }
-
 .advantages-modal.modal .checkbox-label::before, .advantages-modal.modal .checkbox-label::after {
   left: -2.375rem;
   width: 1.5rem;
   height: 1.5rem;
 }
-
 .advantages-modal.modal .checkbox-label::before {
   border-color: #E0E2E6;
   border-radius: 0.25rem;
 }
-
 @media screen and (max-width: 767px) {
   .advantages-modal.modal .modal-dialog {
     max-width: 31.25rem;
@@ -647,7 +548,6 @@
     width: auto;
   }
 }
-
 @media screen and (max-width: 575px) {
   .advantages-modal.modal .modal-dialog {
     max-width: none;
@@ -687,7 +587,6 @@
 .landing-faq {
   padding-top: 7.5rem;
   padding-bottom: 5rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#F7FBFF), to(rgba(247, 251, 255, 0)));
   background: linear-gradient(180deg, #F7FBFF 0%, rgba(247, 251, 255, 0) 100%);
 }
 
@@ -700,8 +599,7 @@
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   border-radius: 0.875rem;
-  -webkit-box-shadow: 0px 0px 50px rgba(45, 60, 90, 0.05);
-          box-shadow: 0px 0px 50px rgba(45, 60, 90, 0.05);
+  box-shadow: 0px 0px 50px rgba(45, 60, 90, 0.05);
   background-color: #ffffff;
 }
 
@@ -715,70 +613,53 @@
     padding-bottom: 0.5rem;
   }
 }
-
 .faq-card {
   color: #5A6478;
 }
-
 .faq-card:not(:last-child) {
   border-bottom: 1px solid #E5E5E5;
 }
-
 .faq-card__header .btn {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
   width: 100%;
   padding: 1.5rem 2rem;
   text-align: left;
 }
-
 .faq-card__header .btn span {
   color: #5A6478;
 }
-
 .faq-card__header .btn i {
   font-size: 2rem;
   color: #8C92A0;
-  -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
-
-.faq-card__header .btn[aria-expanded="true"] span, .faq-card__header .btn[aria-expanded="true"] i {
+.faq-card__header .btn[aria-expanded=true] span, .faq-card__header .btn[aria-expanded=true] i {
   color: #2D3C5A;
 }
-
-.faq-card__header .btn[aria-expanded="true"] i {
+.faq-card__header .btn[aria-expanded=true] i {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
-
 .faq-card__header .btn:hover {
   text-decoration: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
-
 .faq-card__header .btn:hover span, .faq-card__header .btn:hover i {
   color: #2D3C5A;
 }
-
 .faq-card__body {
   padding: 0 2rem 1.5rem;
 }
-
 .faq-card__body a:hover {
   text-decoration: none;
 }
-
 @media screen and (max-width: 767px) {
   .faq-card__header .btn {
     padding-left: 0.875rem;
@@ -801,7 +682,6 @@
   text-align: center;
   color: #5A6478;
 }
-
 .landing-faq-questions a {
   color: #55A5FF;
 }
@@ -809,7 +689,6 @@
 .faq-more-title {
   padding-top: 5rem;
 }
-
 @media screen and (max-width: 991px) {
   .faq-more-title {
     padding-top: 3.75rem;
@@ -819,7 +698,6 @@
 .faq-more-cards {
   padding-top: 0.5rem;
 }
-
 @media screen and (max-width: 575px) {
   .faq-more-cards {
     padding-left: 15px;
@@ -848,47 +726,36 @@
   text-align: center;
   border-radius: 1.5rem;
 }
-
 .faq-more-card p {
   font-weight: 500;
 }
-
 .faq-more-card--telegram {
   background-color: rgba(73, 165, 232, 0.1);
 }
-
 .faq-more-card--telegram p {
   color: #49A5E8;
 }
-
 .faq-more-card--telegram:hover {
   background-color: rgba(73, 165, 232, 0.2);
 }
-
 .faq-more-card--viber {
   background-color: rgba(136, 97, 178, 0.1);
 }
-
 .faq-more-card--viber p {
   color: #8861B2;
 }
-
 .faq-more-card--viber:hover {
   background-color: rgba(136, 97, 178, 0.2);
 }
-
 .faq-more-card--facebook {
   background-color: rgba(74, 153, 247, 0.1);
 }
-
 .faq-more-card--facebook p {
   color: #4A99F7;
 }
-
 .faq-more-card--facebook:hover {
   background-color: rgba(74, 153, 247, 0.2);
 }
-
 .faq-more-card:hover {
   text-decoration: none;
 }
@@ -900,11 +767,9 @@
 .landing-contacts-title {
   padding-bottom: 1.5rem;
 }
-
 .landing-contacts-title img {
   width: 3.5rem;
 }
-
 .landing-contacts-title h2 {
   margin-top: 2rem;
 }
@@ -923,7 +788,6 @@
     margin-top: 0.875rem;
   }
 }
-
 .contacts-card {
   padding: 2.1875rem 4.0625rem;
   text-align: center;
@@ -931,85 +795,69 @@
   border-radius: 1.5rem;
   background-color: #ffffff;
 }
-
 .contacts-card .btn {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-
 .contacts-card__title {
   display: inline-block;
   position: relative;
   padding: 0 1.125rem 0.875rem;
   color: #5A6478;
 }
-
 .contacts-card__title::before, .contacts-card__title::after {
   position: absolute;
-  content: '';
+  content: "";
   bottom: 0;
   left: 0;
   width: 100%;
   height: 2px;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
 .contacts-card__title::before {
   background-color: #F0F0F0;
 }
-
 .contacts-card__title::after {
   background-color: #55A5FF;
   visibility: hidden;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
 }
-
 .contacts-card__info {
   padding-top: 2rem;
 }
-
 .contacts-card__contact {
   margin-bottom: 1.5rem;
   padding-top: 2.375rem;
   background-position: center top;
   background-repeat: no-repeat;
 }
-
 .contacts-card__contact p {
   color: #969DAC;
 }
-
 .contacts-card__contact--email {
   background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.69543 13.3909C7.05067 13.3909 6.52686 12.8671 6.52686 12.2223C6.52686 11.5795 7.05067 11.0557 7.69543 11.0557C8.34019 11.0557 8.864 11.5795 8.864 12.2223C8.864 12.8671 8.34019 13.3909 7.69543 13.3909ZM12.2383 13.3909C11.5935 13.3909 11.0697 12.8671 11.0697 12.2223C11.0697 11.5795 11.5935 11.0557 12.2383 11.0557C12.883 11.0557 13.4069 11.5795 13.4069 12.2223C13.4069 12.8671 12.883 13.3909 12.2383 13.3909ZM15.6127 12.2223C15.6127 12.8671 16.1365 13.3909 16.7812 13.3909C17.426 13.3909 17.9498 12.8671 17.9498 12.2223C17.9498 11.5795 17.426 11.0557 16.7812 11.0557C16.1365 11.0557 15.6127 11.5795 15.6127 12.2223Z' fill='%2355A5FF'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.02 2C6.21 2 2 6.74612 2 12.015C2 13.6975 2.49 15.4291 3.35 17.0115C3.51 17.2729 3.53 17.6024 3.42 17.9139L2.75 20.1572C2.6 20.698 3.06 21.0976 3.57 20.9374L5.59 20.3375C6.14 20.1572 6.57 20.3866 7.08 20.698C8.54 21.5583 10.36 22 12 22C16.96 22 22 18.1642 22 11.985C22 6.65598 17.7 2 12.02 2Z' stroke='%2355A5FF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
-
 .contacts-card__contact--phone {
   background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.98995 4.87351C3.30627 4.34875 5.05018 2.44377 6.2929 2.50127C6.66469 2.53311 6.99334 2.75698 7.26037 3.01783H7.2614C7.87351 3.61756 9.62974 5.88094 9.72834 6.35745C9.97175 7.52611 8.57806 8.19978 9.00428 9.37769C10.0909 12.0364 11.9632 13.9086 14.6232 14.994C15.8002 15.4212 16.4739 14.0287 17.6427 14.2711C18.1192 14.3707 20.3839 16.1257 20.9826 16.7388V16.7388C21.2425 17.0048 21.4684 17.3344 21.4992 17.7062C21.5454 19.0155 19.5222 20.7829 19.1278 21.0088C18.1973 21.6753 16.9833 21.663 15.5034 20.975C11.3737 19.2569 4.77391 12.782 3.02384 8.49657C2.35421 7.02496 2.30902 5.8029 2.98995 4.87351Z' stroke='%2355A5FF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14.5654 2.75C18.2674 3.161 21.1904 6.081 21.6064 9.782' stroke='%2355A5FF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14.5654 6.29297C16.3354 6.63797 17.7184 8.02097 18.0634 9.79097' stroke='%2355A5FF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
-
 .contacts-card__footer {
   padding-top: 0.5rem;
 }
-
 .contacts-card:hover {
   border-color: #F7FBFF;
   background-color: #F7FBFF;
 }
-
 .contacts-card:hover .contacts-card__title::after {
   visibility: visible;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
-
 @media screen and (max-width: 1199px) {
   .contacts-card {
     padding: 2.1875rem;
   }
 }
-
 @media screen and (max-width: 767px) {
   .contacts-card {
     padding: 1.875rem;
@@ -1025,14 +873,11 @@
 .landing-footer {
   padding-top: 3.75rem;
 }
-
 .landing-footer p {
   color: #969DAC;
 }
-
 @media screen and (max-width: 991px) {
   .landing-footer {
     padding-top: 2rem;
   }
-}
-/*# sourceMappingURL=landing.css.map */
+}/*# sourceMappingURL=landing.css.map */

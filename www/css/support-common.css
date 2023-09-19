@@ -3,44 +3,33 @@
   font-size: 1rem;
   font-weight: 400;
 }
-
 .support-common .support-card {
   padding: 0;
   border: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
-
 .support-common .support-card__info {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   padding-top: 1.5rem;
 }
-
 .support-common .support-card__text {
   padding-top: 1.185rem;
 }
-
 .support-common .support-card__contact {
   margin-bottom: 1.5rem;
   padding-left: 2.25rem;
 }
-
 .support-common .support-card__contact a {
   margin-right: 0;
 }
-
 .support-common .support-card__contact a::after {
   display: none;
 }
-
 .support-common .support-card__contact p {
   margin-top: 0;
   line-height: 1.15;
 }
-
 @media screen and (max-width: 991px) {
   .support-common .widget-title {
     padding-bottom: 0;
@@ -64,7 +53,6 @@
     padding-top: 1.25rem;
   }
 }
-
 @media screen and (max-width: 575px) {
   .support-common .widget-title {
     padding-bottom: 1.5rem;
@@ -87,5 +75,4 @@
   .support-common .support-card__text {
     padding-top: 1.185rem;
   }
-}
-/*# sourceMappingURL=support-common.css.map */
+}/*# sourceMappingURL=support-common.css.map */

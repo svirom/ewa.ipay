@@ -5,19 +5,15 @@
   font-weight: 400;
   line-height: 1.375;
 }
-
 .withdraw-faq__list {
   padding-top: 1.125rem;
 }
-
 .withdraw-faq__list li {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.72;
   color: #969DAC;
 }
-
 .withdraw-faq__list li:not(:last-child) {
   margin-bottom: 1rem;
-}
-/*# sourceMappingURL=withdraw-faq.css.map */
+}/*# sourceMappingURL=withdraw-faq.css.map */

@@ -1,44 +1,34 @@
 .profile-taxes {
   overflow: auto;
 }
-
 .profile-taxes .widget-title {
   padding-left: 0.25rem;
   padding-bottom: 0.75rem;
 }
-
 .profile-taxes .widget-title svg {
   fill: #FF5F5F;
 }
-
 .profile-taxes__img {
   float: right;
 }
-
 .profile-taxes__info p {
   margin-bottom: 0;
 }
-
 .profile-taxes__info p:first-child {
   font-weight: 500;
 }
-
 .profile-taxes__link {
   padding-top: 1.5rem;
 }
-
 .profile-taxes__link a:hover {
   text-decoration: none;
 }
-
 .profile-taxes__link span {
   vertical-align: middle;
 }
-
 .profile-taxes__link i {
   margin-left: 1.125rem;
 }
-
 @media screen and (max-width: 575px) {
   .profile-taxes.widget {
     padding-top: 0.875rem;
@@ -47,5 +37,4 @@
   .profile-taxes__img {
     display: none;
   }
-}
-/*# sourceMappingURL=profile-taxes.css.map */
+}/*# sourceMappingURL=profile-taxes.css.map */

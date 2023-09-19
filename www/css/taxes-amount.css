@@ -1,43 +1,32 @@
 .taxes-amount.widget {
   padding: 0;
 }
-
 .taxes-amount__title {
   padding: 1.5rem 1.5rem 0;
 }
-
 .taxes-amount__img {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   width: 2.625rem;
   height: 2.625rem;
   border-radius: 0.875rem;
   background-color: rgba(255, 95, 95, 0.1);
 }
-
 .taxes-amount__info {
   padding: 0.875rem 1.5rem 1.5rem;
 }
-
 .taxes-amount__amount {
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.35;
 }
-
 .taxes-amount:hover .taxes-amount__info {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 95, 95, 0.05)), to(rgba(255, 95, 95, 0)));
   background: linear-gradient(0deg, rgba(255, 95, 95, 0.05) 0%, rgba(255, 95, 95, 0) 100%);
 }
-
 .taxes-amount:hover .taxes-amount__amount {
   color: #FF5F5F;
-}
-/*# sourceMappingURL=taxes-amount.css.map */
+}/*# sourceMappingURL=taxes-amount.css.map */

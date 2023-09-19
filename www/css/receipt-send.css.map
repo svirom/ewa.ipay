@@ -1,11 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AASA,AAAA,aAAa,CAAC;EACZ,UAAU,EAAE,IAAI;CA2CjB;;AA5CD,AAGE,aAHW,CAGX,aAAa,CAAC;EACZ,cAAc,EAAE,IAAI;CACrB;;AALH,AAOE,aAPW,CAOX,IAAI,CAAC;EACH,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,UAAU;CACxB;;AAEA,AACC,oBADM,AACL,WAAW,CAAC;EACX,SAAS,EAAE,CAAC;EACZ,aAAa,EAAE,CAAC;EAChB,aAAa,EAAE,MAAM;CACtB;;AAjBL,AAoBE,aApBW,CAoBX,IAAI,CAAC;EACH,OAAO,EAAE,mBAAmB;CAC7B;;AEnBD,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EFHrC,AAyBI,aAzBS,CAyBT,aAAa,CAAC;IACZ,cAAc,EAAE,MAAM;GACvB;EA3BL,AA6BI,aA7BS,CA6BT,IAAI,CAAC;IACH,cAAc,EAAE,MAAM;GACvB;EAEA,AAAD,oBAAQ,EAjCZ,aAAa,CAiCC,IAAI,CAAC;IACb,KAAK,EAAE,IAAI;GACZ;EAEA,AACC,oBADM,AACL,WAAW,CAAC;IACX,aAAa,EAAE,QAAQ;IACvB,aAAa,EAAE,CAAC;GACjB",
-    "sources": [
-        "../sass/widgets/receipt-send.scss",
-        "../sass/abstracts/_variables.scss",
-        "../sass/abstracts/_mixins.scss"
-    ],
-    "names": [],
-    "file": "receipt-send.css"
-}
+{"version":3,"sources":["../sass/widgets/receipt-send.scss","receipt-send.css","../sass/abstracts/_mixins.scss"],"names":[],"mappings":"AASA;EACE,gBAAA;ACRF;ADUE;EACE,oBAAA;ACRJ;ADWE;EACE,oBAAA;EAAA,aAAA;EACA,qBAAA;MAAA,uBAAA;ACTJ;ADaI;EACE,oBAAA;MAAA,YAAA;EACA,gBAAA;EACA,qBAAA;ACXN;ADeE;EACE,4BAAA;ACbJ;ACLE;EFsBE;IACE,sBAAA;ECdJ;EDiBE;IACE,0BAAA;QAAA,sBAAA;ECfJ;EDkBE;IACE,WAAA;EChBJ;EDoBI;IACE,uBAAA;IACA,gBAAA;EClBN;AACF","file":"receipt-send.css"}

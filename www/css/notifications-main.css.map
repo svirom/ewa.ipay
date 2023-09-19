@@ -1,11 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAQA,AAAA,mBAAmB,CAAC;EAClB,cAAc,EAAE,MAAM;CAavB;;AAdD,AAGE,mBAHiB,CAGjB,EAAE,CAAC;EACD,aAAa,EAAE,MAAM;CACtB;;AALH,AAOE,mBAPiB,CAOjB,kBAAkB,CAAC;EACjB,aAAa,EAAE,MAAM;CACtB;;AAEA,AAAD,2BAAS,CAAC;EACR,cAAc,EAAE,MAAM;CACvB",
-    "sources": [
-        "../sass/widgets/notifications-main.scss",
-        "../sass/abstracts/_variables.scss",
-        "../sass/abstracts/_mixins.scss"
-    ],
-    "names": [],
-    "file": "notifications-main.css"
-}
+{"version":3,"sources":["../sass/widgets/notifications-main.scss","notifications-main.css"],"names":[],"mappings":"AAQA;EACE,sBAAA;ACPF;ADSE;EACE,qBAAA;ACPJ;ADUE;EACE,qBAAA;ACRJ;ADWE;EACE,sBAAA;ACTJ","file":"notifications-main.css"}

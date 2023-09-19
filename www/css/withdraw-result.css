@@ -2,33 +2,25 @@
   padding-top: 1.25rem;
   margin-bottom: 2rem;
 }
-
 .withdraw-result__icon {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   width: 5rem;
   height: 5rem;
   margin: auto;
   border-radius: 1.5rem;
-  -webkit-box-shadow: 0px 40px 50px rgba(45, 60, 90, 0.1);
-          box-shadow: 0px 40px 50px rgba(45, 60, 90, 0.1);
+  box-shadow: 0px 40px 50px rgba(45, 60, 90, 0.1);
 }
-
 .withdraw-result__icon i {
   font-size: 2rem;
 }
-
 .withdraw-result__icon svg {
   fill: #0AB48C;
 }
-
 .withdraw-result__amount {
   margin-top: 2rem;
   margin-bottom: 0.5rem;
@@ -37,80 +29,64 @@
   line-height: 1.05;
   text-align: center;
 }
-
 .withdraw-result__amount span {
   margin-right: 0.375rem;
   vertical-align: middle;
 }
-
 .withdraw-result__title {
   line-height: 2;
   color: #969DAC;
   text-align: center;
 }
-
 .withdraw-result__close {
   margin-top: 1.5rem;
   text-align: center;
 }
-
 .withdraw-result__close .btn {
   max-width: 21.875rem;
   margin: auto;
   padding: 0.8125rem 1.5rem;
 }
-
 .withdraw-result--success .withdraw-result__icon {
   color: #0AB48C;
   background-color: rgba(20, 210, 165, 0.1);
 }
-
 .withdraw-result--success .withdraw-result__icon i {
   -webkit-filter: drop-shadow(0px 4px 10px rgba(20, 210, 165, 0.15));
           filter: drop-shadow(0px 4px 10px rgba(20, 210, 165, 0.15));
 }
-
 .withdraw-result--success .withdraw-result__amount {
   color: #0AB48C;
 }
-
 .withdraw-result--success .withdraw-result__amount svg {
   fill: #0AB48C;
   fill-opacity: 0.5;
 }
-
 .withdraw-result--unsuccess {
   margin-bottom: 3.75rem;
 }
-
 .withdraw-result--unsuccess .withdraw-result__icon {
   color: #FF5F5F;
   background-color: rgba(255, 95, 95, 0.1);
 }
-
 .withdraw-result--unsuccess .withdraw-result__icon i {
   -webkit-filter: drop-shadow(0px 4px 10px rgba(255, 95, 95, 0.15));
           filter: drop-shadow(0px 4px 10px rgba(255, 95, 95, 0.15));
 }
-
 .withdraw-result--unsuccess .withdraw-result__amount {
   color: #FF5F5F;
 }
-
 .withdraw-result--unsuccess .withdraw-result__amount svg {
   fill: #FF5F5F;
   fill-opacity: 0.5;
 }
-
 @media screen and (max-width: 991px) {
   .withdraw-result {
     padding-top: 0;
   }
 }
-
 @media screen and (max-width: 575px) {
   .withdraw-result__close .btn {
     max-width: 17rem;
   }
-}
-/*# sourceMappingURL=withdraw-result.css.map */
+}/*# sourceMappingURL=withdraw-result.css.map */

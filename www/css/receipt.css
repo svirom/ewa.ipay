@@ -1,48 +1,38 @@
 .receipt {
   margin-bottom: 2.875rem;
 }
-
 .receipt .widget {
   position: relative;
   margin-bottom: 0;
   z-index: 1;
 }
-
 .receipt .widget:hover {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
-
 .receipt .widget-title {
   padding-bottom: 0;
 }
-
 .receipt .collapse {
   border-radius: 0.875rem;
 }
-
 .receipt__title {
   position: relative;
   border-radius: 0.875rem;
-  -webkit-box-shadow: 0px 40px 50px rgba(45, 60, 90, 0.05);
-          box-shadow: 0px 40px 50px rgba(45, 60, 90, 0.05);
+  box-shadow: 0px 40px 50px rgba(45, 60, 90, 0.05);
   cursor: pointer;
 }
-
 .receipt__title i.receipt__title-arrow {
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
   color: #2D3C5A;
-  -webkit-transition: -webkit-transform 0.3s ease-in;
   transition: -webkit-transform 0.3s ease-in;
   transition: transform 0.3s ease-in;
   transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
 }
-
 .receipt__title-after {
   position: absolute;
-  content: ' ';
+  content: " ";
   bottom: -14px;
   left: 24px;
   width: calc(100% - 48px);
@@ -51,76 +41,59 @@
   border-radius: 0.875rem;
   background-color: #F5F6F7;
 }
-
-.receipt__title[aria-expanded="true"] i.receipt__title-arrow {
+.receipt__title[aria-expanded=true] i.receipt__title-arrow {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  -webkit-transition: -webkit-transform 0.3s ease-in;
   transition: -webkit-transform 0.3s ease-in;
   transition: transform 0.3s ease-in;
   transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
 }
-
-.receipt__title[aria-expanded="true"] .receipt__title-after {
+.receipt__title[aria-expanded=true] .receipt__title-after {
   display: none;
 }
-
 .receipt__info {
   margin-top: 1.125rem;
 }
-
 .receipt__info.widget {
   padding-bottom: 0;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
 }
-
 .receipt .receipt-table__row {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   padding-bottom: 1rem;
   border-bottom: 1px solid #E0E2E6;
 }
-
 .receipt .receipt-table__row:not(:first-of-type) {
   padding-top: 1rem;
 }
-
 .receipt .receipt-table__left .receipt-table__value {
   padding-right: 0.5rem;
 }
-
 .receipt .receipt-table__right {
   text-align: right;
 }
-
 .receipt .receipt-table__right .receipt-table__value {
   padding-left: 0.5rem;
 }
-
 .receipt .receipt-table__title, .receipt .receipt-table__value {
   line-height: 1.2;
 }
-
 .receipt .receipt-table__title {
   margin-bottom: 0.5rem;
   font-size: 0.875rem;
   color: #969DAC;
 }
-
 .receipt .receipt-table__value {
   font-size: 1.125rem;
   word-break: break-all;
 }
-
 .receipt .receipt-table__commission {
   border-bottom: 0;
 }
-
 .receipt__divider {
   position: relative;
   height: calc(3rem - 2px);
@@ -128,82 +101,66 @@
   z-index: 1;
   overflow: hidden;
 }
-
 .receipt__divider::before, .receipt__divider::after {
   position: absolute;
-  content: ' ';
+  content: " ";
   width: 3rem;
   height: 3rem;
   top: -1px;
   border-radius: 50%;
   background-color: #F5F5F7;
 }
-
 .receipt__divider::before {
   left: -1.5rem;
 }
-
 .receipt__divider::after {
   right: -1.5rem;
 }
-
 .receipt__divider .bottom-dashed {
   height: 100%;
 }
-
 .receipt__divider .bottom-dashed::after {
   left: 2.375rem;
   width: calc(100% - 4.75rem);
   height: 2px;
   top: calc(50% - 1px);
 }
-
 .receipt__number {
   z-index: 3;
   background-color: #F5F5F5;
 }
-
 .receipt__number .widget {
   padding-top: 0.75rem;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
-
 .receipt__number .receipt-table__row {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+      align-items: flex-end;
   border-bottom: 0;
 }
-
 .receipt__number .receipt-table__link {
   display: block;
   width: 5rem;
   height: 5rem;
 }
-
 .receipt__number .receipt-table__link img {
   max-width: 100%;
 }
-
 .receipt__save {
   margin-top: 2rem;
   text-align: center;
 }
-
 .receipt__save a {
   color: #55A5FF;
 }
-
 .receipt__save a span {
   margin-left: 0.5rem;
   vertical-align: middle;
 }
-
 .receipt__save a:hover {
   text-decoration: none;
 }
-
 @media screen and (max-width: 575px) {
   .receipt__divider {
     height: calc(2rem - 2px);
@@ -221,5 +178,4 @@
   .receipt__number .receipt-table__row {
     padding-bottom: 0;
   }
-}
-/*# sourceMappingURL=receipt.css.map */
+}/*# sourceMappingURL=receipt.css.map */

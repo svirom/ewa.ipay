@@ -1,13 +1,10 @@
 .container-preloader {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   position: fixed;
   left: 0;
   top: 0;
@@ -23,12 +20,10 @@
   border-radius: 50%;
   background-color: rgba(85, 165, 255, 0.1);
 }
-
 .preloader svg {
   -webkit-animation: 1.2s linear infinite preloader-animation;
           animation: 1.2s linear infinite preloader-animation;
 }
-
 .preloader svg circle {
   display: block;
   fill: transparent;
@@ -49,7 +44,6 @@
             transform: rotate(360deg);
   }
 }
-
 @keyframes preloader-animation {
   0% {
     -webkit-transform: rotate(0deg);
@@ -59,5 +53,4 @@
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
-}
-/*# sourceMappingURL=preloader.css.map */
+}/*# sourceMappingURL=preloader.css.map */
